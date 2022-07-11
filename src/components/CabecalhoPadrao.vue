@@ -1,18 +1,22 @@
 <template>
   <header class="cabecalho container">
     <div class="container">
-      <img src="@/assets/Logo.png" alt="Logo da Alura Geek">
+      <LogoPadrao />
       <input class="busca" name="busca" type="search" placeholder="O que deseja encontrar? "/>
     </div>
-    <a href="" class="botao-login">Login</a>
+    <router-link to="/login" class="botao-login">Login</router-link>
   </header>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "@vue/runtime-core";
+import LogoPadrao from "./LogoPadrao.vue";
 
 export default defineComponent({
-    name: 'CabecalhoPadrao'
+    name: 'CabecalhoPadrao',
+    components: {
+      LogoPadrao
+    }
 })
 </script>
 
