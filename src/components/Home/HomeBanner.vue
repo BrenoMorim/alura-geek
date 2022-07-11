@@ -2,7 +2,7 @@
   <section class="banner">
     <h1 class="titulo">Dezembro Promocional</h1>
     <h2 class="subtitulo">Produtos selecionados com até 33% de desconto</h2>
-    <a href="#consoles" class="botao">Ver Consoles</a>
+    <a href="#Consoles" class="botao">Ver Consoles</a>
   </section>
 </template>
 

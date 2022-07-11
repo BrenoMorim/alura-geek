@@ -2,11 +2,19 @@
   <section class="produtos">
     <div :id="categoria">
         <div class="produtos__cabecalho">
-            <h3 class="produtos__titulo">{{titulo}}</h3>
+            <h3 class="produtos__titulo">{{categoria}}</h3>
             <a href="" class="produtos__link">Ver tudo ➜</a>
         </div>
         <div class="lista__produtos">
             <CardProduto 
+                v-for="produto in produtos.filter(produto => produto.categoria === categoria)"
+                v-bind:key="produto.id"
+                :nome="produto.nome"
+                :preco="produto.preco.toLocaleString()"
+                :urlImagem="produto.urlImagem"
+
+            />
+            <!-- <CardProduto 
                 nome="Copo Star Wars"
                 preco=20
                 urlImagem="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaXfQbnlGDSdI9l_vihb3KoWxqwrTa-rxFag&usqp=CAU"
@@ -25,24 +33,30 @@
                 nome="Bonecos de crochê"
                 preco=40
                 urlImagem="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxQmXj3H4A0wFEHGqWsNnX4rycMr2ZaHJwdw&usqp=CAU"
-            />
+            /> -->
         </div>
     </div>
   </section>
 </template>
 
 <script lang="ts">
-import { defineComponent } from "@vue/runtime-core";
+import store from "@/store";
+import { defineComponent, computed } from "@vue/runtime-core";
 import CardProduto from "./CardProduto.vue";
 
 export default defineComponent({
     name: 'ListaDeProdutos',
     props: {
-        titulo: String,
         categoria: String
     },
     components: {
         CardProduto
+    },
+    setup() {
+        store.dispatch('OBTER_PRODUTOS');
+        return {
+            produtos: computed(() => store.state.produtos)
+        }
     }
 })
 </script>
