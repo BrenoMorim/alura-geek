@@ -19,7 +19,7 @@ export default defineComponent({
     background-image: url('@/assets/banner.png');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    max-width: 100vw;
     padding: 13rem 8rem 5rem 8rem;
     color: var(--branco);
 }

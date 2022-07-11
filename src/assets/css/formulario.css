@@ -1,0 +1,31 @@
+.formulario {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.formulario__titulo {
+    color: var(--cinza-escuro);
+    font-weight: 700;
+    font-size: 18px;
+}
+.formulario__campo {
+    color: var(--cinza-escuro);
+    background-color: var(--branco);
+    border-bottom: 1px solid var(--cinza-escuro);
+    padding: 1rem;
+    width: 30vw;
+}
+.formulario__campo::placeholder {
+    font-family: var(--fonte-principal);
+    color: var(--cinza);
+}
+.formulario__botao {
+    color: var(--branco);
+    background-color: var(--azul);
+    padding: .75rem 1rem;
+    display: inline-block;
+    width: fit-content;
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-family: var(--fonte-principal);
+}

@@ -18,7 +18,7 @@
             <h3 class="formulario__titulo">Fale conosco</h3>
             <input class="formulario__campo" placeholder="Nome" type="text" id="nome" name="nome" required>
             <textarea class="formulario__campo" placeholder="Escreva sua mensagem" name="mensagem" id="mensagem" cols="30" rows="3" required></textarea>
-            <button type="submit" class="botao">Enviar Mensagem</button> 
+            <button type="submit" class="formulario__botao">Enviar Mensagem</button> 
         </form>
     </div>
   </footer>
@@ -31,58 +31,35 @@
 import { defineComponent } from "@vue/runtime-core";
 
 export default defineComponent ({
-    name: 'HomeFooter'
+    name: 'FooterPadrao'
 })
 </script>
 
 <style scoped>
+@import url("@/assets/css/formulario.css");
 .footer {
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
     background-color: var(--azul-claro);
     padding: 2rem 8rem;
+    font-family: var(--fonte-principal);
 }
 .link {
     text-decoration: none;
     color: var(--cinza-escuro);
-    font-weight: 500;
+    font-weight: 700;
 }
 .lista-links > li {
     margin-bottom: 1.25rem;
-}
-.formulario {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-}
-.formulario__titulo {
-    color: var(--cinza-escuro);
-    font-weight: 700;
-    font-size: 18px;
-}
-.formulario__campo {
-    color: var(--cinza-escuro);
-    background-color: var(--branco);
-    border-bottom: 1px solid var(--cinza-escuro);
-    padding: 1rem;
-    width: 30vw;
-}
-.botao {
-    color: var(--branco);
-    background-color: var(--azul);
-    padding: .75rem 1rem;
-    display: inline-block;
-    width: fit-content;
-    font-size: 1.2rem;
-    font-weight: 100;
 }
 .info-desenvolvedor {
     text-align: center;
     color: var(--cinza-escuro);
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.75rem;
     margin: 2rem 0;
+    font-family: var(--fonte-principal);
 }
 </style>

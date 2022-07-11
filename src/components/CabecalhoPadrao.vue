@@ -12,7 +12,7 @@
 import { defineComponent } from "@vue/runtime-core";
 
 export default defineComponent({
-    name: 'HomeCabecalho'
+    name: 'CabecalhoPadrao'
 })
 </script>
 
@@ -30,7 +30,7 @@ export default defineComponent({
   border: 2px solid var(--azul);
   color: var(--azul);
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
   padding: 1rem 5rem;
 }
