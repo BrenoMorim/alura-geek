@@ -1,11 +1,11 @@
 <template>
   <article class="produto-detalhado">
-    <h2 class="produto__nome">{{nome}}</h2>
     <div class="container">
         <div class="imagem-container">
             <img class="produto__imagem" :src="urlImagem" :alt="nome">
         </div>
         <div class="descricao__container">
+            <h2 class="produto__nome">{{nome}}</h2>
             <p class="produto__descricao">{{descricao}}</p>
             <h4 class="produto__preco">Preço: R$ {{preco.toFixed(2).replace('.', ',')}}</h4>
         </div>
@@ -25,7 +25,7 @@ export default defineComponent({
         },
         preco: {
             required: true,
-            type: String
+            type: Number
         },
         urlImagem: {
             required: true,
@@ -48,9 +48,9 @@ export default defineComponent({
     display: flex;
 }
 .produto__nome {
-    font-size: 3rem;
+    font-size: 2.75rem;
     font-weight: 700;
-    margin-bottom: 2rem;
+    margin-bottom: 1.25rem;
 }
 .imagem-container {
     width: 36%;
@@ -61,7 +61,7 @@ export default defineComponent({
     margin: .5rem auto;
 }
 .produto__preco {
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-weight: 700;
     margin-top: 1.5rem;
 }
@@ -71,7 +71,7 @@ export default defineComponent({
     margin-left: 1.5rem;
 }
 .produto__descricao {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 300;
 }
 </style>

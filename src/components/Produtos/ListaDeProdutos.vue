@@ -33,7 +33,7 @@ export default defineComponent({
         },
         nomeDisplay: {
             type: String,
-            required: true
+            required: false
         }
     },
     components: {
