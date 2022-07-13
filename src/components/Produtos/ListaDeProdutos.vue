@@ -2,38 +2,18 @@
   <section class="produtos">
     <div :id="categoria">
         <div class="produtos__cabecalho">
-            <h3 class="produtos__titulo">{{categoria}}</h3>
+            <h3 class="produtos__titulo">{{nomeDisplay ? nomeDisplay : categoria}}</h3>
             <a href="" class="produtos__link">Ver tudo ➜</a>
         </div>
         <div class="lista__produtos">
             <CardProduto 
                 v-for="produto in produtos.filter(produto => produto.categoria === categoria)"
                 v-bind:key="produto.id"
+                :id="produto.id"
                 :nome="produto.nome"
                 :preco="produto.preco.toLocaleString()"
                 :urlImagem="produto.urlImagem"
-
             />
-            <!-- <CardProduto 
-                nome="Copo Star Wars"
-                preco=20
-                urlImagem="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaXfQbnlGDSdI9l_vihb3KoWxqwrTa-rxFag&usqp=CAU"
-            />
-            <CardProduto 
-                nome="Headset"
-                preco=80
-                urlImagem="https://www.hypeness.com.br/1/2015/12/produtoStarWars9.jpg"
-            />
-            <CardProduto 
-                nome="Chaveiro Darth Vader"
-                preco=15
-                urlImagem="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi9trd9m_dc0S7NmNS-02YmZtjkwholfSuZg&usqp=CAU"
-            />
-            <CardProduto 
-                nome="Bonecos de crochê"
-                preco=40
-                urlImagem="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxQmXj3H4A0wFEHGqWsNnX4rycMr2ZaHJwdw&usqp=CAU"
-            /> -->
         </div>
     </div>
   </section>
@@ -47,7 +27,14 @@ import CardProduto from "./CardProduto.vue";
 export default defineComponent({
     name: 'ListaDeProdutos',
     props: {
-        categoria: String
+        categoria: {
+            type: String,
+            required: false
+        },
+        nomeDisplay: {
+            type: String,
+            required: true
+        }
     },
     components: {
         CardProduto

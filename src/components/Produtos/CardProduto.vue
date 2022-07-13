@@ -3,7 +3,7 @@
         <img class="produto__imagem" :src="urlImagem" :alt="nome"/>
         <p class="produto__nome">{{nome}}</p>
         <p class="produto__preco">R$ {{Number(preco).toFixed(2).replace('.', ',')}}</p>
-        <a href="" class="produto__link">Ver produto</a>
+        <router-link :to="'/produtos/' + this.id" class="produto__link">Ver produto</router-link>
     </article>
 </template>
 
@@ -13,6 +13,10 @@ import { defineComponent } from "@vue/runtime-core";
 export default defineComponent({
     name: 'CardProduto',
     props: {
+        id: {
+            required: true,
+            type: String
+        },
         nome: {
             required: true,
             type: String
