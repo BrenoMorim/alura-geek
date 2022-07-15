@@ -21,7 +21,8 @@
 
 <script lang="ts">
 import store from "@/store";
-import { defineComponent, computed } from "@vue/runtime-core";
+import IProduto from "@/types/IProduto";
+import { defineComponent } from "@vue/runtime-core";
 import CardProduto from "./CardProduto.vue";
 
 export default defineComponent({
@@ -34,15 +35,37 @@ export default defineComponent({
         nomeDisplay: {
             type: String,
             required: false
+        },
+        idProdutosOcultados: {
+            default: [] as string[]
+        },
+        maximoDeItens: {
+            type: Number,
+            required: false
         }
     },
     components: {
         CardProduto
     },
-    setup() {
-        store.dispatch('OBTER_PRODUTOS');
+    data() {
         return {
-            produtos: computed(() => store.state.produtos)
+            produtos: [] as IProduto[]
+        }
+    },
+    async created() {
+        await store.dispatch('OBTER_PRODUTOS');
+        this.produtos = store.state.produtos;
+        if (this.categoria) {
+            this.produtos = this.produtos.filter(produto => this.filtrarProduto(produto));
+        }
+        if (this.maximoDeItens) {
+            this.produtos = this.produtos.slice(0, this.maximoDeItens);
+        }
+    },
+    methods: {
+        filtrarProduto(produto: IProduto) {
+            return (produto.categoria === this.categoria &&
+                this.idProdutosOcultados.indexOf(produto.id) === -1)
         }
     }
 })

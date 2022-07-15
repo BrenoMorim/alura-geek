@@ -53,7 +53,8 @@
       {
           "nome": "Administrador",
           "email": "admin@admin.com",
-          "senha": "admin123"
+          "senha": "admin123",
+          "role": "admin"
       }
   ]
 }

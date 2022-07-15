@@ -8,7 +8,12 @@
                 :urlImagem="produtoPrincipal.urlImagem"
                 :preco="produtoPrincipal.preco"
             />
-            <ListaDeProdutos :categoria="produtoPrincipal.categoria" :nomeDisplay="'Produtos Similares'"/>
+            <ListaDeProdutos 
+                :categoria="produtoPrincipal.categoria" 
+                :nomeDisplay="'Produtos Similares'"
+                :idProdutosOcultados="[produtoPrincipal.id]"
+                :maximoDeItens="10"
+            />
         </div>
     </section>
 </template>

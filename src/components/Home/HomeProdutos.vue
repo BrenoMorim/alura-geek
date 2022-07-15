@@ -1,8 +1,8 @@
 <template>
   <section class="produtos">
-    <ListaDeProdutos categoria="Star Wars"/>    
-    <ListaDeProdutos categoria="Consoles"/>
-    <ListaDeProdutos categoria="Diversos"/>
+    <ListaDeProdutos categoria="Star Wars" :maximoDeItens="6"/>    
+    <ListaDeProdutos categoria="Consoles" :maximoDeItens="6"/>
+    <ListaDeProdutos categoria="Diversos" :maximoDeItens="6"/>
   </section>
 </template>
 

@@ -1,2 +1,4 @@
 export const OBTER_PRODUTOS = 'OBTER_PRODUTOS';
 export const OBTER_PRODUTO_POR_ID = 'OBTER_PRODUTO_POR_ID';
+export const FAZER_LOGIN = 'FAZER_LOGIN';
+export const FAZER_LOGOUT = 'FAZER_LOGOUT';
