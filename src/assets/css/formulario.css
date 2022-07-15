@@ -3,10 +3,35 @@
     flex-direction: column;
     row-gap: 1rem;
 }
+.pagina-formulario {
+    padding: 4rem 8rem;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 100vw;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cinza-claro);
+    box-sizing: content-box;
+    height: auto;
+    min-height: 400px;
+}
 .formulario__titulo {
     color: var(--cinza-escuro);
     font-weight: 700;
     font-size: 18px;
+}
+.formulario__titulo--maior {
+    font-size: 1.5rem;
+}
+.formulario__label {
+    color: var(--cinza-escuro);
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    display: block;
+    text-align: left;
 }
 .formulario__campo {
     color: var(--cinza-escuro);
@@ -14,25 +39,28 @@
     border-bottom: 1px solid var(--cinza-escuro);
     padding: 1rem;
     width: 30vw;
+    display: block;
 }
 .formulario__campo::placeholder {
     font-family: var(--fonte-principal);
     color: var(--cinza);
 }
+.formulario__botao--maior, .formulario__campo--maior {
+    width: 45vw;
+    margin-top: .5rem;
+}
 .formulario__botao {
     color: var(--branco);
     background-color: var(--azul);
     padding: .75rem 1rem;
-    display: inline-block;
-    width: fit-content;
     font-size: 1.2rem;
     font-weight: 300;
+    width: auto;
     font-family: var(--fonte-principal);
 }
 .mensagem-erro {
-    margin-top: 1rem;
+    margin-top: .5rem;
     color: red;
-    padding: .5rem;
     font-size: 1.5rem;
     font-weight: 500;
     text-align: center;

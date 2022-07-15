@@ -5,6 +5,7 @@
       <input class="busca" name="busca" type="search" placeholder="O que deseja encontrar? "/>
     </div>
     <router-link v-if="usuarioLogado?.nome === undefined" to="/login" class="cabecalho__botao">Login</router-link>
+    <router-link v-if="usuarioLogado?.nome === undefined" to="/cadastroUsuario" class="cabecalho__botao">Cadastre-se</router-link>
     <p v-if="usuarioLogado?.nome !== undefined">Bem-vindo, {{usuarioLogado.nome}}</p>
     <button v-if="usuarioLogado?.nome !== undefined" @click="logout()" class="cabecalho__botao">Logout</button>
   </header>

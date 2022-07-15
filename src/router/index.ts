@@ -1,8 +1,9 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import LoginView from '../views/LoginView.vue'
-import NaoEncontradoView from '../views/NaoEncontradoView.vue'
-import ProdutoDetalhadoView from '../views/ProdutoDetalhadoView.vue'
+import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
+import HomeView from '../views/HomeView.vue';
+import LoginView from '../views/LoginView.vue';
+import NaoEncontradoView from '../views/NaoEncontradoView.vue';
+import ProdutoDetalhadoView from '../views/ProdutoDetalhadoView.vue';
+import CadastrarUsuarioView from '../views/CadastrarUsuarioView.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -21,15 +22,20 @@ const routes: Array<RouteRecordRaw> = [
     component: ProdutoDetalhadoView
   },
   {
+    path: '/cadastroUsuario',
+    name: 'cadastro-usuario',
+    component: CadastrarUsuarioView
+  },
+  {
     path: '/:pathMatch(.*)*',
     name: 'nao-encontrado',
     component: NaoEncontradoView
   }
-]
+];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
-})
+});
 
-export default router
+export default router;

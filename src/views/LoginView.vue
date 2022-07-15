@@ -1,9 +1,9 @@
 <template>
-  <form class="formulario formulario__login" @submit.prevent="fazerLogin()">
-    <h3 class="formulario__titulo login__titulo">Iniciar Sessão</h3>
-    <input v-model="usuario.email" name="email" type="email" class="formulario__campo login__campo" placeholder="Digite seu email" required>
-    <input v-model="usuario.senha" type="password" name="senha" class="formulario__campo login__campo" placeholder="Digite sua senha" required>
-    <button class="formulario__botao login__botao" type="submit">Entrar</button>
+  <form class="formulario pagina-formulario" @submit.prevent="fazerLogin()">
+    <h3 class="formulario__titulo formulario__titulo--maior ">Iniciar Sessão</h3>
+    <input v-model="usuario.email" name="email" type="email" class="formulario__campo formulario__campo--maior" placeholder="Digite seu email" required>
+    <input v-model="usuario.senha" type="password" name="senha" class="formulario__campo formulario__campo--maior" placeholder="Digite sua senha" required>
+    <button class="formulario__botao formulario__botao--maior" type="submit">Entrar</button>
     <p v-if="mensagemDeErro" class="mensagem-erro">{{mensagemDeErro}}</p>
   </form>
 </template>
@@ -37,26 +37,4 @@ export default defineComponent({
 
 <style scoped>
 @import url('@/assets/css/formulario.css');
-
-.formulario__login {
-  padding: 4rem 8rem;
-  text-align: center;
-  margin: 0 auto;
-  max-width: 100vw;
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--cinza-claro);
-}
-.login__botao, .login__campo {
-  box-sizing: border-box;
-  width: 35vw;
-  margin-top: .5rem; 
-}
-.login__titulo {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
 </style>
