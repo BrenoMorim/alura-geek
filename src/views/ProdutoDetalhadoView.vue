@@ -15,10 +15,12 @@
 
 <script lang="ts">
 import store from "@/store";
-import { computed, defineComponent } from "@vue/runtime-core";
+import { defineComponent } from "@vue/runtime-core";
 import ProdutoDetalhado from '@/components/Produtos/ProdutoDetalhado.vue';
 import ListaDeProdutos from '@/components/Produtos/ListaDeProdutos.vue';
 import NaoEncontradoView from '@/views/NaoEncontradoView.vue';
+import { OBTER_PRODUTO_POR_ID } from "@/types/Actions";
+import IProduto from "@/types/IProduto";
 
 export default defineComponent({
     name: 'ProdutoDetalhadoView',
@@ -28,12 +30,20 @@ export default defineComponent({
         NaoEncontradoView
     },
     data() {
-        store.dispatch('OBTER_PRODUTOS');
-        const id = this.$route.params.id;
-        const produtoEncontrado = store.state.produtos.find(produto => produto.id == id);
         return {
-            produtoPrincipal: computed(() => produtoEncontrado),
-            id: id
+            produtoPrincipal: {} as IProduto | undefined
+        }
+    },
+    async created() {
+        await this.carregarProduto();
+        this.$watch(() => this.$route.params, async () => {
+            await this.carregarProduto();
+        })
+    },
+    methods: {
+        async carregarProduto() {
+            await store.dispatch(OBTER_PRODUTO_POR_ID, this.$route.params.id);
+            this.produtoPrincipal = store.state.produtoDetalhado;
         }
     }
 })

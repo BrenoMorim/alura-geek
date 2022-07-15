@@ -7,7 +7,7 @@
         <div class="descricao__container">
             <h2 class="produto__nome">{{nome}}</h2>
             <p class="produto__descricao">{{descricao}}</p>
-            <h4 class="produto__preco">Preço: R$ {{preco.toFixed(2).replace('.', ',')}}</h4>
+            <h4 class="produto__preco">Preço: R$ {{preco?.toFixed(2).replace('.', ',')}}</h4>
         </div>
     </div>
   </article>
@@ -21,19 +21,19 @@ export default defineComponent({
     props: {
         nome: {
             required: true,
-            type: String
+            default: ''
         },
         preco: {
             required: true,
-            type: Number
+            default: 0
         },
         urlImagem: {
             required: true,
-            type: String
+            default: ''
         },
         descricao: {
             required: true,
-            type: String
+            default: ''
         }
     }
 })
