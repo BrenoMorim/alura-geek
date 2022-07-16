@@ -4,6 +4,7 @@ import LoginView from '../views/LoginView.vue';
 import NaoEncontradoView from '../views/NaoEncontradoView.vue';
 import ProdutoDetalhadoView from '../views/ProdutoDetalhadoView.vue';
 import CadastrarUsuarioView from '../views/CadastrarUsuarioView.vue';
+import ProdutosView from '../views/ProdutosView.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -30,6 +31,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/:pathMatch(.*)*',
     name: 'nao-encontrado',
     component: NaoEncontradoView
+  },
+  {
+    path: '/produtos',
+    name: 'produtos',
+    component: ProdutosView
   }
 ];
 

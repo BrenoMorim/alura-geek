@@ -2,7 +2,10 @@
   <header class="cabecalho container">
     <div class="container">
       <LogoPadrao />
-      <input class="busca" name="busca" type="search" placeholder="O que deseja encontrar? "/>
+      <div class="container busca__container">
+        <input v-model="busca" class="busca__campo" name="busca" type="search" placeholder="O que deseja encontrar?"/>
+        <img class="busca__lupa" src="@/assets/icons/busca.svg" role="button" @click="buscar()" alt="Realizar a busca">
+      </div>
     </div>
     <router-link v-if="usuarioLogado?.nome === undefined" to="/login" class="cabecalho__botao">Login</router-link>
     <router-link v-if="usuarioLogado?.nome === undefined" to="/cadastroUsuario" class="cabecalho__botao">Cadastre-se</router-link>
@@ -25,7 +28,8 @@ export default defineComponent({
     },
     data() {
       return {
-        usuarioLogado: {} as IUsuario | undefined
+        usuarioLogado: {} as IUsuario | undefined,
+        busca: ''
       }
     },
     created() {
@@ -37,6 +41,9 @@ export default defineComponent({
       );
     },
     methods: {
+      buscar() {
+        this.$router.push({ name: "produtos", query: {busca: this.busca} });
+      },
       logout() {
         store.dispatch(FAZER_LOGOUT);
         this.usuarioLogado = undefined;
@@ -49,9 +56,9 @@ export default defineComponent({
 .container {
   display: flex;
   align-items: center;
-  column-gap: 1.5rem;
 }
 .cabecalho {
+  column-gap: 1.5rem;
   justify-content: space-between;
   padding: 2rem 8rem;
 }
@@ -63,14 +70,26 @@ export default defineComponent({
   font-size: 16px;
   padding: 1rem 5rem;
 }
-.busca {
+.busca__container {
   background-color: var(--cinza-claro);
-  padding: .75rem;
   width: 30vw;
   border-radius: 10px;
-  background-image: url('@/assets/icons/busca.svg');
-  background-repeat: no-repeat;
-  background-position: right;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: .5rem .75rem;
   color: var(--cinza);
+}
+.busca__lupa {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  background-color: var(--cinza);
+  padding: .5rem;
+  border-radius: 50%;
+}
+.busca__campo {
+  width: 100%;
 }
 </style>

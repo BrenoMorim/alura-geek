@@ -16,7 +16,7 @@ export default defineComponent({
 
 <style scoped>
 .banner {
-    background-image: url('@/assets/banner.png');
+    background-image: url('@/assets/img/banner.png');
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 100vw;

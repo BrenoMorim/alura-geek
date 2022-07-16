@@ -3,11 +3,11 @@
     <div :id="categoria">
         <div class="produtos__cabecalho">
             <h3 class="produtos__titulo">{{nomeDisplay ? nomeDisplay : categoria}}</h3>
-            <a href="" class="produtos__link">Ver tudo ➜</a>
+            <router-link :to="`/produtos?busca=${categoria}`" class="produtos__link">Ver tudo ➜</router-link>
         </div>
         <div class="lista__produtos">
             <CardProduto 
-                v-for="produto in produtos.filter(produto => produto.categoria === categoria)"
+                v-for="produto in produtos"
                 v-bind:key="produto.id"
                 :id="produto.id"
                 :nome="produto.nome"
@@ -29,8 +29,7 @@ export default defineComponent({
     name: 'ListaDeProdutos',
     props: {
         categoria: {
-            type: String,
-            required: false
+            default: ''
         },
         nomeDisplay: {
             type: String,
@@ -41,6 +40,10 @@ export default defineComponent({
         },
         maximoDeItens: {
             type: Number,
+            required: false
+        },
+        busca: {
+            type: String,
             required: false
         }
     },
@@ -55,17 +58,35 @@ export default defineComponent({
     async created() {
         await store.dispatch('OBTER_PRODUTOS');
         this.produtos = store.state.produtos;
-        if (this.categoria) {
-            this.produtos = this.produtos.filter(produto => this.filtrarProduto(produto));
-        }
-        if (this.maximoDeItens) {
-            this.produtos = this.produtos.slice(0, this.maximoDeItens);
-        }
+        this.filtrarProdutos();
+        this.$watch(() => this.$props.busca, 
+        () => {
+            this.produtos = store.state.produtos;
+            this.filtrarProdutos();
+        });
     },
     methods: {
-        filtrarProduto(produto: IProduto) {
-            return (produto.categoria === this.categoria &&
-                this.idProdutosOcultados.indexOf(produto.id) === -1)
+        filtrarProdutos() {
+            if (this.categoria) {
+                this.produtos = this.produtos
+                    .filter(produto => produto.categoria === this.categoria);
+            }
+            if (this.idProdutosOcultados.length > 0) {
+                this.produtos = this.produtos
+                    .filter(produto => this.idProdutosOcultados.indexOf(produto.id) === -1);
+            }
+            if (this.maximoDeItens) {
+                this.produtos = this.produtos.slice(0, this.maximoDeItens);
+            }
+            if (this.busca) {
+                this.realizarBusca();
+            }
+        },
+        realizarBusca() {
+            this.produtos = this.produtos.filter(produto => {
+                return (produto.nome.toLowerCase().includes(this.busca!.toLowerCase()) ||
+                produto.categoria.toLowerCase().includes(this.busca!.toLowerCase()));
+            });
         }
     }
 })
@@ -84,6 +105,7 @@ export default defineComponent({
 .lista__produtos {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 .produtos__titulo {
     color: var(--cinza-escuro);

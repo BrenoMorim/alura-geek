@@ -1,6 +1,6 @@
 <template>
     <router-link to="/">
-        <img src="@/assets/Logo.png" alt="Logo da Alura Geek"/>
+        <img src="@/assets/img/Logo.png" alt="Logo da Alura Geek"/>
     </router-link>
 </template>
 
