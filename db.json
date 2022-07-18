@@ -47,6 +47,14 @@
       "preco": 20,
       "descricao": "Um copo do Darth Vader",
       "urlImagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaXfQbnlGDSdI9l_vihb3KoWxqwrTa-rxFag&usqp=CAU"
+    },
+    {
+      "nome": "Bonecos de crochê",
+      "descricao": "Bonecos bem bonitos do Star Wars",
+      "preco": 10,
+      "categoria": "Star Wars",
+      "urlImagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxQmXj3H4A0wFEHGqWsNnX4rycMr2ZaHJwdw&usqp=CAU",
+      "id": "Kvhpkxl"
     }
   ],
   "usuarios": [
@@ -63,6 +71,18 @@
       "email": "breno@usuario.com",
       "senha": "1234567",
       "role": "usuario"
+    }
+  ],
+  "mensagens": [
+    {
+      "nome": "Breno",
+      "mensagem": "Muito bom o site!",
+      "id": 1
+    },
+    {
+      "nome": "Teste",
+      "mensagem": "Testando o envio de mensagens!",
+      "id": 2
     }
   ]
 }

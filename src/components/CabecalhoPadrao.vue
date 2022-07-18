@@ -7,10 +7,11 @@
         <img class="busca__lupa" src="@/assets/icons/busca.svg" role="button" @click="buscar()" alt="Realizar a busca">
       </div>
     </div>
-    <router-link v-if="usuarioLogado?.nome === undefined" to="/login" class="cabecalho__botao">Login</router-link>
-    <router-link v-if="usuarioLogado?.nome === undefined" to="/cadastroUsuario" class="cabecalho__botao">Cadastre-se</router-link>
+    <router-link v-if="usuarioLogado?.nome === undefined" :to="{name: 'login'}" class="cabecalho__botao">Login</router-link>
+    <router-link v-if="usuarioLogado?.nome === undefined" :to="{name: 'cadastro-usuario'}" class="cabecalho__botao">Cadastre-se</router-link>
     <p v-if="usuarioLogado?.nome !== undefined">Bem-vindo, {{usuarioLogado.nome}}</p>
-    <button v-if="usuarioLogado?.nome !== undefined" @click="logout()" class="cabecalho__botao">Logout</button>
+    <router-link v-if="usuarioLogado?.role === 'admin'" :to="{name: 'novo-produto'}" class="cabecalho__botao">Novo Produto</router-link>
+    <button v-if="usuarioLogado?.nome !== undefined" @click="logout()" class="cabecalho__botao cabecalho__botao--logout">Logout</button>
   </header>
 </template>
 
@@ -47,6 +48,7 @@ export default defineComponent({
       logout() {
         store.dispatch(FAZER_LOGOUT);
         this.usuarioLogado = undefined;
+        this.$router.push({name: 'home'});
       }
     }
 })
@@ -67,8 +69,12 @@ export default defineComponent({
   color: var(--azul);
   text-decoration: none;
   font-weight: 400;
-  font-size: 16px;
-  padding: 1rem 5rem;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+}
+.cabecalho__botao--logout {
+  cursor: pointer;
+  background-color: var(--branco);
 }
 .busca__container {
   background-color: var(--cinza-claro);

@@ -8,7 +8,6 @@
     text-align: center;
     margin: 0 auto;
     max-width: 100vw;
-    height: 50vh;
     align-items: center;
     justify-content: center;
     background-color: var(--cinza-claro);
@@ -57,11 +56,20 @@
     font-weight: 300;
     width: auto;
     font-family: var(--fonte-principal);
+    cursor: pointer;
 }
-.mensagem-erro {
+.mensagem-erro, .mensagem-sucesso {
     margin-top: .5rem;
-    color: red;
     font-size: 1.5rem;
     font-weight: 500;
     text-align: center;
+}
+.mensagem-sucesso {
+    color: var(--verde);
+    padding: .5rem 1rem;
+    border: 2px solid var(--verde);
+    border-radius: .5rem;
+}
+.mensagem-erro {
+    color: var(--vermelho);
 }

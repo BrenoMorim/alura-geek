@@ -55,8 +55,6 @@ export default defineComponent({
             this.$router.push({ name: 'login' });
         },
         validarFormulario(): boolean {
-            console.log('validando formulario');
-            
             let valido = true;
             if(this.usuario.nome.length < 5 || this.usuario.nome.length > 30) {
                 valido = false;

@@ -14,6 +14,7 @@
                 :preco="produto.preco.toLocaleString()"
                 :urlImagem="produto.urlImagem"
             />
+            <p v-if="produtos.length == 0" class="mensagem-erro">Não foi possível encontrar nenhum produto =(</p>
         </div>
     </div>
   </section>
@@ -79,13 +80,13 @@ export default defineComponent({
                 this.produtos = this.produtos.slice(0, this.maximoDeItens);
             }
             if (this.busca) {
-                this.realizarBusca();
+                this.realizarBusca(this.busca as string);
             }
         },
-        realizarBusca() {
+        realizarBusca(busca: string) {
             this.produtos = this.produtos.filter(produto => {
-                return (produto.nome.toLowerCase().includes(this.busca!.toLowerCase()) ||
-                produto.categoria.toLowerCase().includes(this.busca!.toLowerCase()));
+                return (produto.nome.toLowerCase().includes(busca.toLowerCase()) ||
+                produto.categoria.toLowerCase().includes(busca.toLowerCase()));
             });
         }
     }
@@ -115,6 +116,10 @@ export default defineComponent({
     color: var(--azul);
     font-size: 1rem;
     text-decoration: none;
+    font-weight: 700;
+}
+.mensagem-erro {
+    color: red;
     font-weight: 700;
 }
 </style>

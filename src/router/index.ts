@@ -4,6 +4,7 @@ import LoginView from '../views/LoginView.vue';
 import NaoEncontradoView from '../views/NaoEncontradoView.vue';
 import ProdutoDetalhadoView from '../views/ProdutoDetalhadoView.vue';
 import CadastrarUsuarioView from '../views/CadastrarUsuarioView.vue';
+import CadastrarProdutoView from '../views/CadastrarProdutoView.vue';
 import ProdutosView from '../views/ProdutosView.vue';
 
 const routes: Array<RouteRecordRaw> = [
@@ -16,6 +17,16 @@ const routes: Array<RouteRecordRaw> = [
     path: '/login',
     name: 'login',
     component: LoginView
+  },
+  {
+    path: '/produtos',
+    name: 'produtos',
+    component: ProdutosView
+  },
+  {
+    path: '/produtos/novo',
+    name: 'novo-produto',
+    component: CadastrarProdutoView
   },
   {
     path: '/produtos/:id',
@@ -32,11 +43,6 @@ const routes: Array<RouteRecordRaw> = [
     name: 'nao-encontrado',
     component: NaoEncontradoView
   },
-  {
-    path: '/produtos',
-    name: 'produtos',
-    component: ProdutosView
-  }
 ];
 
 const router = createRouter({

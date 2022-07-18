@@ -1,5 +1,5 @@
 import http from '@/http'
-import { CADASTRAR_USUARIO, FAZER_LOGIN, FAZER_LOGOUT, OBTER_PRODUTOS, OBTER_PRODUTO_POR_ID } from '@/types/Actions';
+import { CADASTRAR_PRODUTO, CADASTRAR_USUARIO, ENVIAR_MENSAGEM, FAZER_LOGIN, FAZER_LOGOUT, OBTER_PRODUTOS, OBTER_PRODUTO_POR_ID } from '@/types/Actions';
 import { DEFINIR_PRODUTOS, DEFINIR_PRODUTO_POR_ID, DEFINIR_USUARIO_LOGADO, DESLOGAR_USUARIO } from '@/types/Mutations';
 import IProduto from '@/types/IProduto';
 import IUsuario from '@/types/IUsuario';
@@ -73,7 +73,7 @@ export default createStore({
     async [CADASTRAR_USUARIO] (_, usuario) {
       try {
         // Verifica se já existe um usuário cadastrado com esse email
-        const res = await http.get(`/usuarios?email=${usuario.email}`);
+        const res = await http.get(`/usuarios/${usuario.email}`);
         const usuariosCadastradosComEmail = res.data as IUsuario[];
         if (usuariosCadastradosComEmail.length > 0) {
           return false;
@@ -82,6 +82,22 @@ export default createStore({
         return true
       } catch(erro) {
         return false;
+      }
+    },
+    async [CADASTRAR_PRODUTO] (_, produto) {
+      try {
+        if (this.state.usuarioLogado?.role !== 'admin') return false;
+        await http.post('/produtos', produto);
+        return true;
+      } catch(erro) {
+        return false;
+      }
+    },
+    async [ENVIAR_MENSAGEM] (_, mensagem) {
+      try {
+        await http.post('/mensagens', mensagem);
+      } catch(erro) {
+        console.log(erro);   
       }
     }
   },
