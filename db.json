@@ -1,19 +1,11 @@
 {
   "produtos": [
     {
-      "id": "1",
-      "nome": "Copo Star Wars",
-      "categoria": "Star Wars",
-      "preco": 20,
-      "descricao": "Um copo do Darth Vader",
-      "urlImagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaXfQbnlGDSdI9l_vihb3KoWxqwrTa-rxFag&usqp=CAU"
-    },
-    {
       "id": "2",
       "nome": "Headset",
       "categoria": "Star Wars",
       "preco": 80,
-      "descricao": "Um fone de ouvido gamer do star wars",
+      "descricao": "Um fone de ouvido gamer do star wars bem legal!",
       "urlImagem": "https://www.hypeness.com.br/1/2015/12/produtoStarWars9.jpg"
     },
     {
@@ -21,16 +13,8 @@
       "nome": "Chaveiro Darth Vader",
       "categoria": "Consoles",
       "preco": 15,
-      "descricao": "Um chaveiro simples do darth vader de borracha",
+      "descricao": "Um chaveiro simples do darth vader de borracha, muito legal e barato!",
       "urlImagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi9trd9m_dc0S7NmNS-02YmZtjkwholfSuZg&usqp=CAU"
-    },
-    {
-      "id": "4",
-      "nome": "Bonecos de crochê",
-      "categoria": "Consoles",
-      "preco": 40,
-      "descricao": "Três personagens feitos em crochê artesanal",
-      "urlImagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxQmXj3H4A0wFEHGqWsNnX4rycMr2ZaHJwdw&usqp=CAU"
     },
     {
       "id": "5",
@@ -55,6 +39,14 @@
       "categoria": "Star Wars",
       "urlImagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxQmXj3H4A0wFEHGqWsNnX4rycMr2ZaHJwdw&usqp=CAU",
       "id": "Kvhpkxl"
+    },
+    {
+      "urlImagem": "https://www.hypeness.com.br/1/2015/12/produtoStarWars9.jpg",
+      "categoria": "Consoles",
+      "preco": 120,
+      "nome": "Fone de ouvido gamer",
+      "descricao": "Um headset incrível bem funcional e legal =).",
+      "id": "WUEEjhy"
     }
   ],
   "usuarios": [

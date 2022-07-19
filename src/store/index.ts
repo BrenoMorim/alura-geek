@@ -1,5 +1,5 @@
 import http from '@/http'
-import { CADASTRAR_PRODUTO, CADASTRAR_USUARIO, ENVIAR_MENSAGEM, FAZER_LOGIN, FAZER_LOGOUT, OBTER_PRODUTOS, OBTER_PRODUTO_POR_ID } from '@/types/Actions';
+import { CADASTRAR_PRODUTO, CADASTRAR_USUARIO, DELETAR_PRODUTO, ENVIAR_MENSAGEM, FAZER_LOGIN, FAZER_LOGOUT, OBTER_PRODUTOS, OBTER_PRODUTO_POR_ID } from '@/types/Actions';
 import { DEFINIR_PRODUTOS, DEFINIR_PRODUTO_POR_ID, DEFINIR_USUARIO_LOGADO, DESLOGAR_USUARIO } from '@/types/Mutations';
 import IProduto from '@/types/IProduto';
 import IUsuario from '@/types/IUsuario';
@@ -87,7 +87,20 @@ export default createStore({
     async [CADASTRAR_PRODUTO] (_, produto) {
       try {
         if (this.state.usuarioLogado?.role !== 'admin') return false;
-        await http.post('/produtos', produto);
+        if (produto.id) {
+          await http.put(`/produtos/${produto.id}`, produto);
+        } else {
+          await http.post('/produtos', produto);
+        }
+        return true;
+      } catch(erro) {
+        return false;
+      }
+    },
+    async [DELETAR_PRODUTO] (_, id) {
+      try {
+        if (this.state.usuarioLogado?.role !== 'admin') return false;
+        await http.delete(`/produtos/${id}`);
         return true;
       } catch(erro) {
         return false;

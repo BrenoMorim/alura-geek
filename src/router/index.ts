@@ -29,6 +29,11 @@ const routes: Array<RouteRecordRaw> = [
     component: CadastrarProdutoView
   },
   {
+    path: '/produtos/editar/:id',
+    name: 'editar-produto',
+    component: CadastrarProdutoView
+  },
+  {
     path: '/produtos/:id',
     name: 'produto-detalhado',
     component: ProdutoDetalhadoView

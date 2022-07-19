@@ -44,6 +44,10 @@
     font-family: var(--fonte-principal);
     color: var(--cinza);
 }
+.formulario textarea {
+    font-family: var(--fonte-principal);
+    font-size: 0.9rem;
+}
 .formulario__botao--maior, .formulario__campo--maior {
     width: 45vw;
     margin-top: .5rem;

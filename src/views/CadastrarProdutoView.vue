@@ -43,7 +43,7 @@ import IProduto from "@/types/IProduto";
 import { Categorias } from "@/types/Categorias";
 import { defineComponent } from "@vue/runtime-core";
 import IUsuario from "@/types/IUsuario";
-import { CADASTRAR_PRODUTO } from "@/types/Actions";
+import { CADASTRAR_PRODUTO, OBTER_PRODUTO_POR_ID } from "@/types/Actions";
 
 export default defineComponent({
     name: 'CadastrarProdutoView',
@@ -51,6 +51,10 @@ export default defineComponent({
         this.usuarioLogado = store.state.usuarioLogado;
         if (this.usuarioLogado?.role !== 'admin') {
             this.$router.push({ name: 'home' });
+        }
+        if (this.$route.params.id) {
+            store.dispatch(OBTER_PRODUTO_POR_ID, this.$route.params.id);
+            this.produto = store.state.produtoDetalhado as IProduto;
         }
     },
     data() {

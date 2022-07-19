@@ -7,6 +7,7 @@
                 :descricao="produtoPrincipal.descricao"
                 :urlImagem="produtoPrincipal.urlImagem"
                 :preco="produtoPrincipal.preco"
+                :id="produtoPrincipal.id"
             />
             <ListaDeProdutos 
                 :categoria="produtoPrincipal.categoria" 
