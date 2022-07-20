@@ -1,5 +1,5 @@
 <template>
-  <section class="produtos">
+  <section>
     <ListaDeProdutos
         :nomeDisplay="busca ? `Buscando por '${busca}'` : 'Todos os produtos'"
         :busca="busca"
@@ -30,9 +30,3 @@ export default defineComponent({
     }
 })
 </script>
-
-<style scoped>
-.produtos {
-    padding: 2rem 8rem;
-}
-</style>

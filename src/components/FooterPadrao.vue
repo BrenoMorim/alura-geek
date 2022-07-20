@@ -70,8 +70,16 @@ export default defineComponent ({
     align-items: flex-start;
     justify-content: space-around;
     background-color: var(--azul-claro);
-    padding: 2rem 8rem;
+    padding: var(--padding-pagina);
     font-family: var(--fonte-principal);
+}
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        row-gap: 1rem;
+    }
 }
 .link {
     text-decoration: none;

@@ -32,8 +32,6 @@ export default defineComponent({
     },
     created() {
         this.usuarioLogado = store.state.usuarioLogado;
-        console.log(this.id);
-        
     },
     methods: {
         excluirProduto() {
@@ -72,11 +70,17 @@ export default defineComponent({
 
 <style scoped>
 .produto-detalhado {
-    padding: 2rem 8rem;
+    padding: var(--padding-pagina);
     color: var(--cinza-escuro);
 }
 .container {
     display: flex;
+}
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .produto__nome {
     font-size: 2.75rem;
@@ -85,6 +89,7 @@ export default defineComponent({
 }
 .imagem-container {
     width: 36%;
+    min-width: 200px;
 }
 .produto__imagem {
     width: 100%;

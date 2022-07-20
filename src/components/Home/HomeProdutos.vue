@@ -1,5 +1,5 @@
 <template>
-  <section class="produtos">
+  <section>
     <ListaDeProdutos 
       v-for="(categoria, index) in categorias" 
       :key="index" 

@@ -8,4 +8,15 @@
     --fonte-principal: 'Josefin Sans', sans-serif;
     --verde: rgb(60, 208, 60);
     --vermelho: rgb(157, 17, 17);
+    --padding-pagina: 2rem 8rem;
+}
+@media screen and (max-width: 1024px) {
+    :root {
+        --padding-pagina: 2rem 3rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    :root {
+        --padding-pagina: 1.5rem 1rem; 
+    }
 }

@@ -4,7 +4,7 @@
     row-gap: 1rem;
 }
 .pagina-formulario {
-    padding: 4rem 8rem;
+    padding: var(--padding-pagina);
     text-align: center;
     margin: 0 auto;
     max-width: 100vw;

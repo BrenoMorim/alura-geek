@@ -35,7 +35,8 @@ export default defineComponent({
 
 <style scoped>
 .produto__card {
-    width: 10rem;
+    width: 10vw;
+    min-width: 100px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -44,8 +45,8 @@ export default defineComponent({
     margin: 1rem;
 }
 .produto__imagem {
-    width: 10rem;
-    height: 10rem;
+    width: 100%;
+    height: 100%;
 }
 .produto__nome {
     font-weight: 400;

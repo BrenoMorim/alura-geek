@@ -30,7 +30,7 @@
     </div>
     <div>
         <p class="formulario__label">Preview da imagem:</p>
-        <img :src="produto.urlImagem" alt="Imagem não carregada =(">
+        <img class="preview-imagem" :src="produto.urlImagem" alt="Imagem não carregada =(">
     </div>
     <button class="formulario__botao formulario__botao--maior" type="submit">Enviar dados</button>
     <p v-for="(mensagemDeErro, index) in mensagensDeErro" :key="index" class="mensagem-erro">{{mensagemDeErro}}</p>
@@ -68,7 +68,6 @@ export default defineComponent({
     },
     methods: {
         async enviarFormulario() {
-            console.log('Enviando formulário');
             this.mensagensDeErro = [];
             this.mensagemSucesso = '';
             const formularioValido = this.validarFormulario();
@@ -106,10 +105,20 @@ export default defineComponent({
 </script>
 <style scoped>
 @import url('@/assets/css/formulario.css');
-.campos-menores {
-    width: 45vw;
-    display: flex;
-    align-items: center;
+
+@media screen and (min-width: 1024px) {
+    .campos-menores {
+        width: 45vw;
+        display: flex;
+        align-items: center;
+    }
+    #preco {
+        margin-right: 1rem;
+        width: fit-content;
+    }
+}
+.preview-imagem {
+    max-width: 80vw;
 }
 .categoria-container {
     width: 100%;
@@ -118,10 +127,6 @@ export default defineComponent({
     width: 100%;
 }
 .preco-container {
-    width: fit-content;
-}
-#preco {
-    margin-right: 1rem;
     width: fit-content;
 }
 </style>

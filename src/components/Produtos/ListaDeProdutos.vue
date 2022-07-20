@@ -95,7 +95,7 @@ export default defineComponent({
 
 <style scoped>
 .produtos {
-    padding: 4rem 8rem 1rem 8rem;
+    padding: var(--padding-pagina);
 }
 .produtos__cabecalho {
     display: flex;
