@@ -2,7 +2,7 @@
     <article class="produto__card">
         <img class="produto__imagem" :src="urlImagem" :alt="nome"/>
         <p class="produto__nome">{{nome}}</p>
-        <p class="produto__preco">R$ {{Number(preco).toFixed(2).replace('.', ',')}}</p>
+        <p class="produto__preco">R$ {{preco.toFixed(2).replace('.', ',')}}</p>
         <router-link :to="'/produtos/' + this.id" class="produto__link">Ver produto</router-link>
     </article>
 </template>
@@ -23,7 +23,7 @@ export default defineComponent({
         },
         preco: {
             required: true,
-            type: String
+            type: Number
         },
         urlImagem: {
             required: true,

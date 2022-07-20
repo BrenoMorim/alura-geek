@@ -11,7 +11,7 @@
                 v-bind:key="produto.id"
                 :id="produto.id"
                 :nome="produto.nome"
-                :preco="produto.preco.toLocaleString()"
+                :preco="produto.preco"
                 :urlImagem="produto.urlImagem"
             />
             <p v-if="produtos.length == 0" class="mensagem-erro">Não foi possível encontrar nenhum produto =(</p>

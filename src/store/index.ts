@@ -1,4 +1,4 @@
-import http from '@/http'
+import { buscarProdutoPorId, buscarProdutos, buscarUsuarioPorEmail, cadastrarProduto, cadastrarUsuario, deletarProduto, postarMensagem } from '@/http'
 import { CADASTRAR_PRODUTO, CADASTRAR_USUARIO, DELETAR_PRODUTO, ENVIAR_MENSAGEM, FAZER_LOGIN, FAZER_LOGOUT, OBTER_PRODUTOS, OBTER_PRODUTO_POR_ID } from '@/types/Actions';
 import { DEFINIR_PRODUTOS, DEFINIR_PRODUTO_POR_ID, DEFINIR_USUARIO_LOGADO, DESLOGAR_USUARIO } from '@/types/Mutations';
 import IProduto from '@/types/IProduto';
@@ -30,8 +30,8 @@ export default createStore({
   actions: {
     async [OBTER_PRODUTOS] ({ commit }) {
       try {
-        const resposta = await http.get('/produtos');
-        commit(DEFINIR_PRODUTOS, resposta.data);
+        const produtos = await buscarProdutos();
+        commit(DEFINIR_PRODUTOS, produtos);
       } catch(erro) {
         console.log(erro);
       }
@@ -43,26 +43,26 @@ export default createStore({
     async [OBTER_PRODUTO_POR_ID] ({ commit }, id) {
       if (id === undefined) return;
       try {
-        const resposta = await http.get(`/produtos/${id}`);
-        commit(DEFINIR_PRODUTO_POR_ID, resposta.data);
+        const produto = await buscarProdutoPorId(id);
+        commit(DEFINIR_PRODUTO_POR_ID, produto);
       } catch(erro) {
         commit(DEFINIR_PRODUTO_POR_ID, undefined);
-        console.log(erro);
       }
     },
     // Tenta fazer login e retorna um booleano se conseguiu ou não realizar
-    // Como não há uma api real, não há geração de token e o usuário é salvo diretamente no state
+    // Como não há uma api real, não há geração de token
+    // O usuário é salvo diretamente no state
     async [FAZER_LOGIN] ({ commit }, dados: IUsuario) {
       try {
-        const res = await http.get(`/usuarios?email=${dados.email}`);
-        const usuario = res.data.at(0) as IUsuario;
-        
+        const usuario = await buscarUsuarioPorEmail(dados.email);
         if (usuario.senha === dados.senha) {
           commit(DEFINIR_USUARIO_LOGADO, usuario);
           return true;
         }
         return false;
       } catch(erro) {
+        console.log(erro);
+        
         return false;
       }
     },
@@ -72,13 +72,7 @@ export default createStore({
     // Retorna se conseguiu cadastrar o usuário
     async [CADASTRAR_USUARIO] (_, usuario) {
       try {
-        // Verifica se já existe um usuário cadastrado com esse email
-        const res = await http.get(`/usuarios/${usuario.email}`);
-        const usuariosCadastradosComEmail = res.data as IUsuario[];
-        if (usuariosCadastradosComEmail.length > 0) {
-          return false;
-        }
-        await http.post('/usuarios', usuario);
+        await cadastrarUsuario(usuario);
         return true
       } catch(erro) {
         return false;
@@ -87,11 +81,7 @@ export default createStore({
     async [CADASTRAR_PRODUTO] (_, produto) {
       try {
         if (this.state.usuarioLogado?.role !== 'admin') return false;
-        if (produto.id) {
-          await http.put(`/produtos/${produto.id}`, produto);
-        } else {
-          await http.post('/produtos', produto);
-        }
+        await cadastrarProduto(produto);
         return true;
       } catch(erro) {
         return false;
@@ -100,7 +90,7 @@ export default createStore({
     async [DELETAR_PRODUTO] (_, id) {
       try {
         if (this.state.usuarioLogado?.role !== 'admin') return false;
-        await http.delete(`/produtos/${id}`);
+        await deletarProduto(id);
         return true;
       } catch(erro) {
         return false;
@@ -108,7 +98,7 @@ export default createStore({
     },
     async [ENVIAR_MENSAGEM] (_, mensagem) {
       try {
-        await http.post('/mensagens', mensagem);
+        await postarMensagem(mensagem);
       } catch(erro) {
         console.log(erro);   
       }
