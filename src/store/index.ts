@@ -4,6 +4,7 @@ import { DEFINIR_PRODUTOS, DEFINIR_PRODUTO_POR_ID, DEFINIR_USUARIO_LOGADO, DESLO
 import IProduto from '@/types/IProduto';
 import IUsuario from '@/types/IUsuario';
 import { createStore } from 'vuex';
+import { gerarHash, autenticarUsuario } from '@/service/senhaService';
 
 export default createStore({
   state: {
@@ -54,9 +55,9 @@ export default createStore({
     // O usuário é salvo diretamente no state
     async [FAZER_LOGIN] ({ commit }, dados: IUsuario) {
       try {
-        const usuario = await buscarUsuarioPorEmail(dados.email);
-        if (usuario.senha === dados.senha) {
-          commit(DEFINIR_USUARIO_LOGADO, usuario);
+        if (await autenticarUsuario(dados)) {
+          const usuario = await buscarUsuarioPorEmail(dados.email);
+          commit(DEFINIR_USUARIO_LOGADO, {nome: usuario.nome, email: usuario.email, role: usuario.role});
           return true;
         }
         return false;
@@ -70,9 +71,10 @@ export default createStore({
       commit(DESLOGAR_USUARIO);
     },
     // Retorna se conseguiu cadastrar o usuário
-    async [CADASTRAR_USUARIO] (_, usuario) {
+    async [CADASTRAR_USUARIO] (_, usuario: IUsuario) {
       try {
-        await cadastrarUsuario(usuario);
+        const senhaHash = gerarHash(usuario.senha);
+        await cadastrarUsuario({id: usuario.email, nome: usuario.nome, role: 'usuario', email: usuario.email, senha: senhaHash});
         return true
       } catch(erro) {
         return false;

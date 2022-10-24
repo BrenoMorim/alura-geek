@@ -3,7 +3,7 @@ import IUsuario from '@/types/IUsuario';
 import axios from 'axios';
 
 const http = axios.create({
-    baseURL: 'http://localhost:3000/',
+    baseURL: String(process.env.VUE_APP_API_URL),
     headers: {
         'Accept': 'application/json',
         'Content': 'application/json'

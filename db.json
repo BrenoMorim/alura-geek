@@ -86,14 +86,14 @@
       "id": "admin@admin.com",
       "nome": "Administrador",
       "email": "admin@admin.com",
-      "senha": "admin123",
+      "senha": "C522ovGE6Iii5MKu2qPGBj8zXEOnFv8XS4G5vwCQyS+i650PTNKjtY4wIeX++ecypHFt/YjiwK5ofHXtDF7mLg==",
       "role": "admin"
     },
     {
       "id": "teste@usuario.com",
       "nome": "teste",
       "email": "teste@usuario.com",
-      "senha": "1234567",
+      "senha": "cC3j3NGe0qXb2iA6wa0MGlGG2pb2QZgY9BMjXLdagTsdxpU8EHY5qD3eDXAwjdLZHn9S3leKr0dEem/tJoMOHg==",
       "role": "usuario"
     }
   ],
