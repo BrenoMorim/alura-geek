@@ -1,10 +1,10 @@
-import { buscarProdutoPorId, buscarProdutos, buscarUsuarioPorEmail, cadastrarProduto, cadastrarUsuario, deletarProduto, postarMensagem } from '@/http'
-import { CADASTRAR_PRODUTO, CADASTRAR_USUARIO, DELETAR_PRODUTO, ENVIAR_MENSAGEM, FAZER_LOGIN, FAZER_LOGOUT, OBTER_PRODUTOS, OBTER_PRODUTO_POR_ID } from '@/types/Actions';
-import { DEFINIR_PRODUTOS, DEFINIR_PRODUTO_POR_ID, DEFINIR_USUARIO_LOGADO, DESLOGAR_USUARIO } from '@/types/Mutations';
-import IProduto from '@/types/IProduto';
-import IUsuario from '@/types/IUsuario';
+import { buscarProdutoPorId, buscarProdutos, buscarUsuarioPorEmail, cadastrarProduto, cadastrarUsuario, deletarProduto, postarMensagem } from '../http'
+import { CADASTRAR_PRODUTO, CADASTRAR_USUARIO, DELETAR_PRODUTO, ENVIAR_MENSAGEM, FAZER_LOGIN, FAZER_LOGOUT, OBTER_PRODUTOS, OBTER_PRODUTO_POR_ID } from '../types/Actions';
+import { DEFINIR_PRODUTOS, DEFINIR_PRODUTO_POR_ID, DEFINIR_USUARIO_LOGADO, DESLOGAR_USUARIO } from '../types/Mutations';
+import IProduto from '../types/IProduto';
+import IUsuario from '../types/IUsuario';
 import { createStore } from 'vuex';
-import { gerarHash, autenticarUsuario } from '@/service/senhaService';
+import { gerarHash, autenticarUsuario } from '../service/senhaService';
 
 export default createStore({
   state: {

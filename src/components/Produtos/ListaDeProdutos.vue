@@ -21,8 +21,8 @@
 </template>
 
 <script lang="ts">
-import store from "@/store";
-import IProduto from "@/types/IProduto";
+import store from "../../store";
+import IProduto from "../../types/IProduto";
 import { defineComponent } from "@vue/runtime-core";
 import CardProduto from "./CardProduto.vue";
 

@@ -20,9 +20,9 @@
 </template>
 
 <script lang="ts">
-import store from "@/store";
-import { CADASTRAR_USUARIO } from "@/types/Actions";
-import IUsuario from "@/types/IUsuario";
+import store from "../store";
+import { CADASTRAR_USUARIO } from "../types/Actions";
+import IUsuario from "../types/IUsuario";
 import { defineComponent } from "@vue/runtime-core";
 
 export default defineComponent({

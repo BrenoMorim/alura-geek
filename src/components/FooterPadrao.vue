@@ -30,8 +30,8 @@
 </template>
 
 <script lang="ts">
-import store from "@/store";
-import { ENVIAR_MENSAGEM } from "@/types/Actions";
+import store from "../store";
+import { ENVIAR_MENSAGEM } from "../types/Actions";
 import { defineComponent } from "@vue/runtime-core";
 import LogoPadrao from "./LogoPadrao.vue";
 
@@ -64,7 +64,7 @@ export default defineComponent ({
 </script>
 
 <style scoped>
-@import url("@/assets/css/formulario.css");
+@import url("../assets/css/formulario.css");
 .footer {
     display: flex;
     align-items: flex-start;

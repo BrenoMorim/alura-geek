@@ -1,5 +1,5 @@
-import IProduto from '@/types/IProduto';
-import IUsuario from '@/types/IUsuario';
+import IProduto from '../types/IProduto';
+import IUsuario from '../types/IUsuario';
 import axios from 'axios';
 
 const http = axios.create({

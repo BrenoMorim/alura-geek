@@ -19,9 +19,9 @@
 
 <script lang="ts">
 import { defineComponent } from "@vue/runtime-core";
-import IUsuario from "@/types/IUsuario";
-import store from "@/store";
-import { DELETAR_PRODUTO } from "@/types/Actions";
+import IUsuario from "../../types/IUsuario";
+import store from "../../store";
+import { DELETAR_PRODUTO } from "../../types/Actions";
 
 export default defineComponent({
     name: 'ProdutoDetalhado',

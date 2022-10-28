@@ -9,8 +9,8 @@
 </template>
 
 <script lang="ts">
-import store from "@/store";
-import { FAZER_LOGIN } from "@/types/Actions";
+import store from "../store";
+import { FAZER_LOGIN } from "../types/Actions";
 import { defineComponent } from "@vue/runtime-core";
 
 export default defineComponent({
@@ -36,5 +36,5 @@ export default defineComponent({
 </script>
 
 <style scoped>
-@import url('@/assets/css/formulario.css');
+@import url('../assets/css/formulario.css');
 </style>

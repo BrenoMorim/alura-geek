@@ -9,7 +9,7 @@
 
 <script lang="ts">
 import { defineComponent } from "@vue/runtime-core";
-import ListaDeProdutos from "@/components/Produtos/ListaDeProdutos.vue";
+import ListaDeProdutos from "../components/Produtos/ListaDeProdutos.vue";
 
 export default defineComponent({
     name: 'ProdutosView',

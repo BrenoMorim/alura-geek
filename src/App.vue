@@ -19,8 +19,8 @@ export default defineComponent({
 </script>
 
 <style scoped>
-@import url('@/assets/css/reset.css');
-@import url('@/assets/css/_variaveis.css');
+@import url('./assets/css/reset.css');
+@import url('./assets/css/_variaveis.css');
 
 #app {
   background-color: #FEFEFE;

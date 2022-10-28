@@ -20,13 +20,13 @@
 </template>
 
 <script lang="ts">
-import store from "@/store";
+import store from "../store";
 import { defineComponent } from "@vue/runtime-core";
-import ProdutoDetalhado from '@/components/Produtos/ProdutoDetalhado.vue';
-import ListaDeProdutos from '@/components/Produtos/ListaDeProdutos.vue';
-import NaoEncontradoView from '@/views/NaoEncontradoView.vue';
-import { OBTER_PRODUTO_POR_ID } from "@/types/Actions";
-import IProduto from "@/types/IProduto";
+import ProdutoDetalhado from '../components/Produtos/ProdutoDetalhado.vue';
+import ListaDeProdutos from '../components/Produtos/ListaDeProdutos.vue';
+import NaoEncontradoView from '../views/NaoEncontradoView.vue';
+import { OBTER_PRODUTO_POR_ID } from "../types/Actions";
+import IProduto from "../types/IProduto";
 
 export default defineComponent({
     name: 'ProdutoDetalhadoView',

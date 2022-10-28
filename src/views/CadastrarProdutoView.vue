@@ -38,12 +38,12 @@
   </form>
 </template>
 <script lang="ts">
-import store from "@/store";
-import IProduto from "@/types/IProduto";
-import { Categorias } from "@/types/Categorias";
+import store from "../store";
+import IProduto from "../types/IProduto";
+import { Categorias } from "../types/Categorias";
 import { defineComponent } from "@vue/runtime-core";
-import IUsuario from "@/types/IUsuario";
-import { CADASTRAR_PRODUTO, OBTER_PRODUTO_POR_ID } from "@/types/Actions";
+import IUsuario from "../types/IUsuario";
+import { CADASTRAR_PRODUTO, OBTER_PRODUTO_POR_ID } from "../types/Actions";
 
 export default defineComponent({
     name: 'CadastrarProdutoView',

@@ -3,7 +3,7 @@
     <LogoPadrao />
     <div class="container busca__container">
       <input v-model="busca" class="busca__campo" name="busca" type="search" placeholder="O que deseja encontrar?"/>
-      <img class="busca__lupa" src="@/assets/icons/busca.svg" role="button" @click="buscar()" alt="Realizar a busca">
+      <img class="busca__lupa" src="../assets/icons/busca.svg" role="button" @click="buscar()" alt="Realizar a busca">
     </div>
     <router-link v-if="usuarioLogado?.nome === undefined" :to="{name: 'login'}" class="cabecalho__botao">Login</router-link>
     <router-link v-if="usuarioLogado?.nome === undefined" :to="{name: 'cadastro-usuario'}" class="cabecalho__botao">Cadastre-se</router-link>
@@ -14,9 +14,9 @@
 </template>
 
 <script lang="ts">
-import store from "@/store";
-import { FAZER_LOGOUT } from "@/types/Actions";
-import IUsuario from "@/types/IUsuario";
+import store from "../store";
+import { FAZER_LOGOUT } from "../types/Actions";
+import IUsuario from "../types/IUsuario";
 import { defineComponent } from "@vue/runtime-core";
 import LogoPadrao from "./LogoPadrao.vue";
 
