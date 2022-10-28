@@ -1,5 +1,5 @@
 <template>
-    <router-link to="/">
+    <router-link :to="{name: 'home'}">
         <img src="../assets/img/Logo.png" class="logo" alt="Logo da Alura Geek"/>
     </router-link>
 </template>

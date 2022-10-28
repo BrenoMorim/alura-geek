@@ -11,7 +11,7 @@ describe('No cabeçalho padrão', () => {
     })
     
     it('Deve ser renderizada a logo da alura geek', () => {
-        const logo = wrapper.find("img.logo");
+        const logo = wrapper.findComponent("img.logo");
         expect(logo).toBeTruthy();
     });
     
