@@ -7,7 +7,7 @@ describe('Na logo padrão', () => {
     const wrapper = mount(LogoPadrao);
 
     it('Deve conter router-link para navegação até a home envolvendo a logo', () => {
-        const routerLink = wrapper.get('router-link');
+        const routerLink = wrapper.get('.logo-container');
         expect(routerLink.attributes('to')).toContain({name: 'home'});
         
         const imagemLogo = routerLink.get('img.logo');

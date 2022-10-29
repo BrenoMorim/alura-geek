@@ -24,7 +24,7 @@ describe('No cabeçalho padrão', () => {
     });
 
     it('Deve conter botões de navegação para Login e Cadastro', () => {
-        const botoes = wrapper.findAll('router-link.cabecalho__botao');
+        const botoes = wrapper.findAll('.cabecalho__botao');
         const botaoLogin = botoes.find(botao => botao.text() === 'Login');
         const botaoCadastro = botoes.find(botao => botao.text() === 'Cadastre-se');
 

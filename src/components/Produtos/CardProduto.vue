@@ -3,7 +3,7 @@
         <img class="produto__imagem" :src="urlImagem" :alt="nome"/>
         <p class="produto__nome">{{nome}}</p>
         <p class="produto__preco">R$ {{preco.toFixed(2).replace('.', ',')}}</p>
-        <router-link :to="'/produtos/' + this.id" class="produto__link">Ver produto</router-link>
+        <router-link :to="'/produtos/' + id" class="produto__link">Ver produto</router-link>
     </article>
 </template>
 
