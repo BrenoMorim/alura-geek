@@ -1,6 +1,7 @@
-import { expect, describe, it } from "vitest";
+import { expect, describe, it, vi } from "vitest";
 import { mount } from '@vue/test-utils';
 import FooterPadrao from '../../components/FooterPadrao.vue';
+import store from '../../store';
 
 describe('No footer padrão', () => {
     
@@ -43,6 +44,11 @@ describe('No footer padrão', () => {
         });
 
         it('Deve enviar mensagem quando dados forem válidos', async () => {
+
+            const mockEnviarMensagem = vi.fn().mockImplementation(() => {});
+
+            store.dispatch = mockEnviarMensagem;
+
             await inputMensagem.setValue('Mensagem válida');
             await inputNome.setValue('Nome válido');
 
@@ -50,13 +56,12 @@ describe('No footer padrão', () => {
             
             const mensagemSucesso = formulario.get('.mensagem-sucesso');
             expect(mensagemSucesso.text()).toBe('Mensagem enviada com sucesso');
+            expect(mockEnviarMensagem).toHaveBeenCalledOnce();
         });
 
         it('Deve conter logo da alura geek', () => {
             const logo = wrapper.find('.logo');
             expect(logo).toBeTruthy();
         });
-
     });
-
 });

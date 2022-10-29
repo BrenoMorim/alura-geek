@@ -11,6 +11,7 @@
             <div v-if="usuarioLogado?.role === 'admin'">
                 <router-link :to="`/produtos/editar/${id}`" class="botao botao--editar">Editar Produto</router-link>
                 <button @click="excluirProduto()" class="botao botao--excluir">Excluir Produto</button>
+                <p v-if="mensagemErro" class="mensagem-erro">{{mensagemErro}}</p>
             </div>
         </div>
     </div>
@@ -27,7 +28,8 @@ export default defineComponent({
     name: 'ProdutoDetalhado',
     data() {
         return {
-            usuarioLogado: {} as IUsuario | undefined
+            usuarioLogado: {} as IUsuario | undefined,
+            mensagemErro: ''
         }
     },
     created() {
@@ -39,7 +41,10 @@ export default defineComponent({
                 store.dispatch(DELETAR_PRODUTO, this.id);
                 this.$router.push({name: 'home'});
             } catch(erro) {
-                console.log(erro);
+                this.mensagemErro = 'Não foi possível excluir o produto';
+                setTimeout(() => {
+                    this.mensagemErro = '';
+                }, 3000);
             }
         }
     },
@@ -69,6 +74,8 @@ export default defineComponent({
 </script>
 
 <style scoped>
+@import url('../../assets/css/formulario.css');
+
 .produto-detalhado {
     padding: var(--padding-pagina);
     color: var(--cinza-escuro);

@@ -5,11 +5,11 @@
       <input v-model="busca" class="busca__campo" name="busca" type="search" placeholder="O que deseja encontrar?"/>
       <img class="busca__lupa" src="../assets/icons/busca.svg" role="button" @click="buscar()" alt="Realizar a busca">
     </div>
-    <router-link v-if="usuarioLogado?.nome === undefined" :to="{name: 'login'}" class="cabecalho__botao">Login</router-link>
-    <router-link v-if="usuarioLogado?.nome === undefined" :to="{name: 'cadastro-usuario'}" class="cabecalho__botao">Cadastre-se</router-link>
-    <p v-if="usuarioLogado?.nome !== undefined">Bem-vindo, {{usuarioLogado.nome}}</p>
-    <router-link v-if="usuarioLogado?.role === 'admin'" :to="{name: 'novo-produto'}" class="cabecalho__botao">Novo Produto</router-link>
-    <button v-if="usuarioLogado?.nome !== undefined" @click="logout()" class="cabecalho__botao">Logout</button>
+    <router-link v-if="usuarioLogado?.nome === undefined" :to="{name: 'login'}" id="login" class="cabecalho__botao">Login</router-link>
+    <router-link v-if="usuarioLogado?.nome === undefined" :to="{name: 'cadastro-usuario'}" id="cadastro" class="cabecalho__botao">Cadastre-se</router-link>
+    <p v-if="usuarioLogado?.nome !== undefined" class="mensagem-boas-vindas">Bem-vindo, {{usuarioLogado.nome}}</p>
+    <router-link v-if="usuarioLogado?.role === 'admin'" :to="{name: 'novo-produto'}" id="novo-produto" class="cabecalho__botao">Novo Produto</router-link>
+    <button v-if="usuarioLogado?.nome !== undefined" @click="logout()" id="logout" class="cabecalho__botao">Logout</button>
   </header>
 </template>
 

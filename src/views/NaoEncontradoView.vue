@@ -2,11 +2,11 @@
   <section class="nao-encontrado">
     <h2 class="nao-encontrado__titulo">Nada foi encontrado =(</h2>
     <h3 class="nao-encontrado__subtitulo">Erro 404</h3>
-    <a class="botao-voltar" @click="this.$router.back()">Voltar</a>
+    <a class="botao-voltar" @click="$router.back()">Voltar</a>
   </section>
 </template>
 
-<script>
+<script lang="ts">
 import { defineComponent } from "@vue/runtime-core";
 
 export default defineComponent({
