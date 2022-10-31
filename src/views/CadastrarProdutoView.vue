@@ -28,7 +28,7 @@
         <label for="urlImagem" class="formulario__label">Imagem (por url):</label>
         <input v-model="produto.urlImagem" id="urlImagem" type="url" name="urlImagem" class="formulario__campo formulario__campo--maior" placeholder="Url da imagem do produto" required>
     </div>
-    <div>
+    <div aria-hidden="true">
         <p class="formulario__label">Preview da imagem:</p>
         <img class="preview-imagem" :src="produto.urlImagem" alt="Imagem não carregada =(">
     </div>
@@ -52,7 +52,7 @@ export default defineComponent({
         if (this.usuarioLogado?.role !== 'admin') {
             this.$router.push({ name: 'home' });
         }
-        if (this.$route.params.id) {
+        if (this.$route?.params?.id) {
             store.dispatch(OBTER_PRODUTO_POR_ID, this.$route.params.id);
             this.produto = store.state.produtoDetalhado as IProduto;
         }

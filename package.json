@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "api": "json-server --watch db.json",
-    "test": "vitest"
+    "test": "vitest --watch",
+    "test:coverage": "vitest --coverage"
   },
   "dependencies": {
     "axios": "^0.27.2",

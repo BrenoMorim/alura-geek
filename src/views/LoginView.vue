@@ -1,8 +1,8 @@
 <template>
   <form class="formulario pagina-formulario" @submit.prevent="fazerLogin()">
     <h3 class="formulario__titulo formulario__titulo--maior ">Iniciar Sessão</h3>
-    <input v-model="usuario.email" name="email" type="email" class="formulario__campo formulario__campo--maior" placeholder="Digite seu email" required>
-    <input v-model="usuario.senha" type="password" name="senha" class="formulario__campo formulario__campo--maior" placeholder="Digite sua senha" required>
+    <input v-model="usuario.email" name="email" id="email" type="email" class="formulario__campo formulario__campo--maior" placeholder="Digite seu email" required>
+    <input v-model="usuario.senha" type="password" name="senha" id="senha" class="formulario__campo formulario__campo--maior" placeholder="Digite sua senha" required>
     <button class="formulario__botao formulario__botao--maior" type="submit">Entrar</button>
     <p v-if="mensagemDeErro" class="mensagem-erro">{{mensagemDeErro}}</p>
   </form>
@@ -17,7 +17,7 @@ export default defineComponent({
     name: 'LoginView',
     data() {
       return {
-        usuario: { email: "", senha: ""},
+        usuario: { email: "", senha: "" },
         mensagemDeErro: ''
       }
     },
@@ -32,7 +32,7 @@ export default defineComponent({
           this.mensagemDeErro = "Email ou senha inválidos!";
       }
     }
-})
+});
 </script>
 
 <style scoped>

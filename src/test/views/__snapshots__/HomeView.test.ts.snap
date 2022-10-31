@@ -1118,7 +1118,11 @@ VueWrapper {
                             "component": {
                               "a": null,
                               "accessCache": {
+                                "busca": 3,
                                 "categoria": 3,
+                                "filtrarProdutos": 4,
+                                "idProdutosOcultados": 3,
+                                "maximoDeItens": 3,
                                 "nomeDisplay": 3,
                                 "produtos": 2,
                               },
@@ -1326,6 +1330,22 @@ VueWrapper {
                                     "parent": undefined,
                                     "scheduler": [Function],
                                   },
+                                  ReactiveEffect {
+                                    "active": true,
+                                    "deps": [
+                                      Set {
+                                        [Circular],
+                                      },
+                                      Set {
+                                        [Circular],
+                                      },
+                                    ],
+                                    "fn": [Function],
+                                    "onTrack": undefined,
+                                    "onTrigger": undefined,
+                                    "parent": undefined,
+                                    "scheduler": [Function],
+                                  },
                                 ],
                               },
                               "setupContext": null,
@@ -1455,24 +1475,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="produtos__cabecalho"
-                                          data-v-9c467393=""
-                                        >
-                                          <h3
-                                            class="produtos__titulo"
-                                            data-v-9c467393=""
-                                          >
-                                            Star Wars
-                                          </h3>
-                                          <router-link
-                                            class="produtos__link"
-                                            data-v-9c467393=""
-                                            to="/produtos?busca=Star Wars"
-                                          >
-                                            Ver tudo ➜
-                                          </router-link>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -1564,19 +1567,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="lista__produtos"
-                                          data-v-9c467393=""
-                                        >
-                                          
-                                          
-                                          <p
-                                            class="mensagem-erro"
-                                            data-v-9c467393=""
-                                          >
-                                            Não foi possível encontrar nenhum produto =(
-                                          </p>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -1939,24 +1930,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="produtos__cabecalho"
-                                          data-v-9c467393=""
-                                        >
-                                          <h3
-                                            class="produtos__titulo"
-                                            data-v-9c467393=""
-                                          >
-                                            Star Wars
-                                          </h3>
-                                          <router-link
-                                            class="produtos__link"
-                                            data-v-9c467393=""
-                                            to="/produtos?busca=Star Wars"
-                                          >
-                                            Ver tudo ➜
-                                          </router-link>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -2048,19 +2022,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="lista__produtos"
-                                          data-v-9c467393=""
-                                        >
-                                          
-                                          
-                                          <p
-                                            class="mensagem-erro"
-                                            data-v-9c467393=""
-                                          >
-                                            Não foi possível encontrar nenhum produto =(
-                                          </p>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -2420,7 +2382,11 @@ VueWrapper {
                             "component": {
                               "a": null,
                               "accessCache": {
+                                "busca": 3,
                                 "categoria": 3,
+                                "filtrarProdutos": 4,
+                                "idProdutosOcultados": 3,
+                                "maximoDeItens": 3,
                                 "nomeDisplay": 3,
                                 "produtos": 2,
                               },
@@ -2628,6 +2594,22 @@ VueWrapper {
                                     "parent": undefined,
                                     "scheduler": [Function],
                                   },
+                                  ReactiveEffect {
+                                    "active": true,
+                                    "deps": [
+                                      Set {
+                                        [Circular],
+                                      },
+                                      Set {
+                                        [Circular],
+                                      },
+                                    ],
+                                    "fn": [Function],
+                                    "onTrack": undefined,
+                                    "onTrigger": undefined,
+                                    "parent": undefined,
+                                    "scheduler": [Function],
+                                  },
                                 ],
                               },
                               "setupContext": null,
@@ -2757,24 +2739,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="produtos__cabecalho"
-                                          data-v-9c467393=""
-                                        >
-                                          <h3
-                                            class="produtos__titulo"
-                                            data-v-9c467393=""
-                                          >
-                                            Consoles
-                                          </h3>
-                                          <router-link
-                                            class="produtos__link"
-                                            data-v-9c467393=""
-                                            to="/produtos?busca=Consoles"
-                                          >
-                                            Ver tudo ➜
-                                          </router-link>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -2866,19 +2831,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="lista__produtos"
-                                          data-v-9c467393=""
-                                        >
-                                          
-                                          
-                                          <p
-                                            class="mensagem-erro"
-                                            data-v-9c467393=""
-                                          >
-                                            Não foi possível encontrar nenhum produto =(
-                                          </p>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -3241,24 +3194,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="produtos__cabecalho"
-                                          data-v-9c467393=""
-                                        >
-                                          <h3
-                                            class="produtos__titulo"
-                                            data-v-9c467393=""
-                                          >
-                                            Consoles
-                                          </h3>
-                                          <router-link
-                                            class="produtos__link"
-                                            data-v-9c467393=""
-                                            to="/produtos?busca=Consoles"
-                                          >
-                                            Ver tudo ➜
-                                          </router-link>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -3350,19 +3286,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="lista__produtos"
-                                          data-v-9c467393=""
-                                        >
-                                          
-                                          
-                                          <p
-                                            class="mensagem-erro"
-                                            data-v-9c467393=""
-                                          >
-                                            Não foi possível encontrar nenhum produto =(
-                                          </p>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -3722,7 +3646,11 @@ VueWrapper {
                             "component": {
                               "a": null,
                               "accessCache": {
+                                "busca": 3,
                                 "categoria": 3,
+                                "filtrarProdutos": 4,
+                                "idProdutosOcultados": 3,
+                                "maximoDeItens": 3,
                                 "nomeDisplay": 3,
                                 "produtos": 2,
                               },
@@ -3930,6 +3858,22 @@ VueWrapper {
                                     "parent": undefined,
                                     "scheduler": [Function],
                                   },
+                                  ReactiveEffect {
+                                    "active": true,
+                                    "deps": [
+                                      Set {
+                                        [Circular],
+                                      },
+                                      Set {
+                                        [Circular],
+                                      },
+                                    ],
+                                    "fn": [Function],
+                                    "onTrack": undefined,
+                                    "onTrigger": undefined,
+                                    "parent": undefined,
+                                    "scheduler": [Function],
+                                  },
                                 ],
                               },
                               "setupContext": null,
@@ -4059,24 +4003,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="produtos__cabecalho"
-                                          data-v-9c467393=""
-                                        >
-                                          <h3
-                                            class="produtos__titulo"
-                                            data-v-9c467393=""
-                                          >
-                                            Diversos
-                                          </h3>
-                                          <router-link
-                                            class="produtos__link"
-                                            data-v-9c467393=""
-                                            to="/produtos?busca=Diversos"
-                                          >
-                                            Ver tudo ➜
-                                          </router-link>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -4168,19 +4095,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="lista__produtos"
-                                          data-v-9c467393=""
-                                        >
-                                          
-                                          
-                                          <p
-                                            class="mensagem-erro"
-                                            data-v-9c467393=""
-                                          >
-                                            Não foi possível encontrar nenhum produto =(
-                                          </p>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -4543,24 +4458,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="produtos__cabecalho"
-                                          data-v-9c467393=""
-                                        >
-                                          <h3
-                                            class="produtos__titulo"
-                                            data-v-9c467393=""
-                                          >
-                                            Diversos
-                                          </h3>
-                                          <router-link
-                                            class="produtos__link"
-                                            data-v-9c467393=""
-                                            to="/produtos?busca=Diversos"
-                                          >
-                                            Ver tudo ➜
-                                          </router-link>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -4652,19 +4550,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="lista__produtos"
-                                          data-v-9c467393=""
-                                        >
-                                          
-                                          
-                                          <p
-                                            class="mensagem-erro"
-                                            data-v-9c467393=""
-                                          >
-                                            Não foi possível encontrar nenhum produto =(
-                                          </p>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -5275,6 +5161,22 @@ VueWrapper {
                                     "parent": undefined,
                                     "scheduler": [Function],
                                   },
+                                  ReactiveEffect {
+                                    "active": true,
+                                    "deps": [
+                                      Set {
+                                        [Circular],
+                                      },
+                                      Set {
+                                        [Circular],
+                                      },
+                                    ],
+                                    "fn": [Function],
+                                    "onTrack": undefined,
+                                    "onTrigger": undefined,
+                                    "parent": undefined,
+                                    "scheduler": [Function],
+                                  },
                                 ],
                               },
                               "setupContext": null,
@@ -5404,24 +5306,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="produtos__cabecalho"
-                                          data-v-9c467393=""
-                                        >
-                                          <h3
-                                            class="produtos__titulo"
-                                            data-v-9c467393=""
-                                          >
-                                            Star Wars
-                                          </h3>
-                                          <router-link
-                                            class="produtos__link"
-                                            data-v-9c467393=""
-                                            to="/produtos?busca=Star Wars"
-                                          >
-                                            Ver tudo ➜
-                                          </router-link>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -5513,19 +5398,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="lista__produtos"
-                                          data-v-9c467393=""
-                                        >
-                                          
-                                          
-                                          <p
-                                            class="mensagem-erro"
-                                            data-v-9c467393=""
-                                          >
-                                            Não foi possível encontrar nenhum produto =(
-                                          </p>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -5888,24 +5761,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="produtos__cabecalho"
-                                          data-v-9c467393=""
-                                        >
-                                          <h3
-                                            class="produtos__titulo"
-                                            data-v-9c467393=""
-                                          >
-                                            Star Wars
-                                          </h3>
-                                          <router-link
-                                            class="produtos__link"
-                                            data-v-9c467393=""
-                                            to="/produtos?busca=Star Wars"
-                                          >
-                                            Ver tudo ➜
-                                          </router-link>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -5997,19 +5853,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="lista__produtos"
-                                          data-v-9c467393=""
-                                        >
-                                          
-                                          
-                                          <p
-                                            class="mensagem-erro"
-                                            data-v-9c467393=""
-                                          >
-                                            Não foi possível encontrar nenhum produto =(
-                                          </p>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -6588,6 +6432,22 @@ VueWrapper {
                                     "parent": undefined,
                                     "scheduler": [Function],
                                   },
+                                  ReactiveEffect {
+                                    "active": true,
+                                    "deps": [
+                                      Set {
+                                        [Circular],
+                                      },
+                                      Set {
+                                        [Circular],
+                                      },
+                                    ],
+                                    "fn": [Function],
+                                    "onTrack": undefined,
+                                    "onTrigger": undefined,
+                                    "parent": undefined,
+                                    "scheduler": [Function],
+                                  },
                                 ],
                               },
                               "setupContext": null,
@@ -6717,24 +6577,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="produtos__cabecalho"
-                                          data-v-9c467393=""
-                                        >
-                                          <h3
-                                            class="produtos__titulo"
-                                            data-v-9c467393=""
-                                          >
-                                            Consoles
-                                          </h3>
-                                          <router-link
-                                            class="produtos__link"
-                                            data-v-9c467393=""
-                                            to="/produtos?busca=Consoles"
-                                          >
-                                            Ver tudo ➜
-                                          </router-link>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -6826,19 +6669,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="lista__produtos"
-                                          data-v-9c467393=""
-                                        >
-                                          
-                                          
-                                          <p
-                                            class="mensagem-erro"
-                                            data-v-9c467393=""
-                                          >
-                                            Não foi possível encontrar nenhum produto =(
-                                          </p>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -7201,24 +7032,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="produtos__cabecalho"
-                                          data-v-9c467393=""
-                                        >
-                                          <h3
-                                            class="produtos__titulo"
-                                            data-v-9c467393=""
-                                          >
-                                            Consoles
-                                          </h3>
-                                          <router-link
-                                            class="produtos__link"
-                                            data-v-9c467393=""
-                                            to="/produtos?busca=Consoles"
-                                          >
-                                            Ver tudo ➜
-                                          </router-link>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -7310,19 +7124,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="lista__produtos"
-                                          data-v-9c467393=""
-                                        >
-                                          
-                                          
-                                          <p
-                                            class="mensagem-erro"
-                                            data-v-9c467393=""
-                                          >
-                                            Não foi possível encontrar nenhum produto =(
-                                          </p>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -7901,6 +7703,22 @@ VueWrapper {
                                     "parent": undefined,
                                     "scheduler": [Function],
                                   },
+                                  ReactiveEffect {
+                                    "active": true,
+                                    "deps": [
+                                      Set {
+                                        [Circular],
+                                      },
+                                      Set {
+                                        [Circular],
+                                      },
+                                    ],
+                                    "fn": [Function],
+                                    "onTrack": undefined,
+                                    "onTrigger": undefined,
+                                    "parent": undefined,
+                                    "scheduler": [Function],
+                                  },
                                 ],
                               },
                               "setupContext": null,
@@ -8030,24 +7848,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="produtos__cabecalho"
-                                          data-v-9c467393=""
-                                        >
-                                          <h3
-                                            class="produtos__titulo"
-                                            data-v-9c467393=""
-                                          >
-                                            Diversos
-                                          </h3>
-                                          <router-link
-                                            class="produtos__link"
-                                            data-v-9c467393=""
-                                            to="/produtos?busca=Diversos"
-                                          >
-                                            Ver tudo ➜
-                                          </router-link>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -8139,19 +7940,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="lista__produtos"
-                                          data-v-9c467393=""
-                                        >
-                                          
-                                          
-                                          <p
-                                            class="mensagem-erro"
-                                            data-v-9c467393=""
-                                          >
-                                            Não foi possível encontrar nenhum produto =(
-                                          </p>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -8514,24 +8303,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="produtos__cabecalho"
-                                          data-v-9c467393=""
-                                        >
-                                          <h3
-                                            class="produtos__titulo"
-                                            data-v-9c467393=""
-                                          >
-                                            Diversos
-                                          </h3>
-                                          <router-link
-                                            class="produtos__link"
-                                            data-v-9c467393=""
-                                            to="/produtos?busca=Diversos"
-                                          >
-                                            Ver tudo ➜
-                                          </router-link>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -8623,19 +8395,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="lista__produtos"
-                                          data-v-9c467393=""
-                                        >
-                                          
-                                          
-                                          <p
-                                            class="mensagem-erro"
-                                            data-v-9c467393=""
-                                          >
-                                            Não foi possível encontrar nenhum produto =(
-                                          </p>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -10277,6 +10037,22 @@ VueWrapper {
                                     "parent": undefined,
                                     "scheduler": [Function],
                                   },
+                                  ReactiveEffect {
+                                    "active": true,
+                                    "deps": [
+                                      Set {
+                                        [Circular],
+                                      },
+                                      Set {
+                                        [Circular],
+                                      },
+                                    ],
+                                    "fn": [Function],
+                                    "onTrack": undefined,
+                                    "onTrigger": undefined,
+                                    "parent": undefined,
+                                    "scheduler": [Function],
+                                  },
                                 ],
                               },
                               "setupContext": null,
@@ -10406,24 +10182,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="produtos__cabecalho"
-                                          data-v-9c467393=""
-                                        >
-                                          <h3
-                                            class="produtos__titulo"
-                                            data-v-9c467393=""
-                                          >
-                                            Star Wars
-                                          </h3>
-                                          <router-link
-                                            class="produtos__link"
-                                            data-v-9c467393=""
-                                            to="/produtos?busca=Star Wars"
-                                          >
-                                            Ver tudo ➜
-                                          </router-link>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -10515,19 +10274,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="lista__produtos"
-                                          data-v-9c467393=""
-                                        >
-                                          
-                                          
-                                          <p
-                                            class="mensagem-erro"
-                                            data-v-9c467393=""
-                                          >
-                                            Não foi possível encontrar nenhum produto =(
-                                          </p>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -10890,24 +10637,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="produtos__cabecalho"
-                                          data-v-9c467393=""
-                                        >
-                                          <h3
-                                            class="produtos__titulo"
-                                            data-v-9c467393=""
-                                          >
-                                            Star Wars
-                                          </h3>
-                                          <router-link
-                                            class="produtos__link"
-                                            data-v-9c467393=""
-                                            to="/produtos?busca=Star Wars"
-                                          >
-                                            Ver tudo ➜
-                                          </router-link>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -10999,19 +10729,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="lista__produtos"
-                                          data-v-9c467393=""
-                                        >
-                                          
-                                          
-                                          <p
-                                            class="mensagem-erro"
-                                            data-v-9c467393=""
-                                          >
-                                            Não foi possível encontrar nenhum produto =(
-                                          </p>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -11590,6 +11308,22 @@ VueWrapper {
                                     "parent": undefined,
                                     "scheduler": [Function],
                                   },
+                                  ReactiveEffect {
+                                    "active": true,
+                                    "deps": [
+                                      Set {
+                                        [Circular],
+                                      },
+                                      Set {
+                                        [Circular],
+                                      },
+                                    ],
+                                    "fn": [Function],
+                                    "onTrack": undefined,
+                                    "onTrigger": undefined,
+                                    "parent": undefined,
+                                    "scheduler": [Function],
+                                  },
                                 ],
                               },
                               "setupContext": null,
@@ -11719,24 +11453,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="produtos__cabecalho"
-                                          data-v-9c467393=""
-                                        >
-                                          <h3
-                                            class="produtos__titulo"
-                                            data-v-9c467393=""
-                                          >
-                                            Consoles
-                                          </h3>
-                                          <router-link
-                                            class="produtos__link"
-                                            data-v-9c467393=""
-                                            to="/produtos?busca=Consoles"
-                                          >
-                                            Ver tudo ➜
-                                          </router-link>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -11828,19 +11545,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="lista__produtos"
-                                          data-v-9c467393=""
-                                        >
-                                          
-                                          
-                                          <p
-                                            class="mensagem-erro"
-                                            data-v-9c467393=""
-                                          >
-                                            Não foi possível encontrar nenhum produto =(
-                                          </p>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -12203,24 +11908,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="produtos__cabecalho"
-                                          data-v-9c467393=""
-                                        >
-                                          <h3
-                                            class="produtos__titulo"
-                                            data-v-9c467393=""
-                                          >
-                                            Consoles
-                                          </h3>
-                                          <router-link
-                                            class="produtos__link"
-                                            data-v-9c467393=""
-                                            to="/produtos?busca=Consoles"
-                                          >
-                                            Ver tudo ➜
-                                          </router-link>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -12312,19 +12000,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="lista__produtos"
-                                          data-v-9c467393=""
-                                        >
-                                          
-                                          
-                                          <p
-                                            class="mensagem-erro"
-                                            data-v-9c467393=""
-                                          >
-                                            Não foi possível encontrar nenhum produto =(
-                                          </p>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -12903,6 +12579,22 @@ VueWrapper {
                                     "parent": undefined,
                                     "scheduler": [Function],
                                   },
+                                  ReactiveEffect {
+                                    "active": true,
+                                    "deps": [
+                                      Set {
+                                        [Circular],
+                                      },
+                                      Set {
+                                        [Circular],
+                                      },
+                                    ],
+                                    "fn": [Function],
+                                    "onTrack": undefined,
+                                    "onTrigger": undefined,
+                                    "parent": undefined,
+                                    "scheduler": [Function],
+                                  },
                                 ],
                               },
                               "setupContext": null,
@@ -13032,24 +12724,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="produtos__cabecalho"
-                                          data-v-9c467393=""
-                                        >
-                                          <h3
-                                            class="produtos__titulo"
-                                            data-v-9c467393=""
-                                          >
-                                            Diversos
-                                          </h3>
-                                          <router-link
-                                            class="produtos__link"
-                                            data-v-9c467393=""
-                                            to="/produtos?busca=Diversos"
-                                          >
-                                            Ver tudo ➜
-                                          </router-link>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -13141,19 +12816,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="lista__produtos"
-                                          data-v-9c467393=""
-                                        >
-                                          
-                                          
-                                          <p
-                                            class="mensagem-erro"
-                                            data-v-9c467393=""
-                                          >
-                                            Não foi possível encontrar nenhum produto =(
-                                          </p>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -13516,24 +13179,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="produtos__cabecalho"
-                                          data-v-9c467393=""
-                                        >
-                                          <h3
-                                            class="produtos__titulo"
-                                            data-v-9c467393=""
-                                          >
-                                            Diversos
-                                          </h3>
-                                          <router-link
-                                            class="produtos__link"
-                                            data-v-9c467393=""
-                                            to="/produtos?busca=Diversos"
-                                          >
-                                            Ver tudo ➜
-                                          </router-link>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -13625,19 +13271,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="lista__produtos"
-                                          data-v-9c467393=""
-                                        >
-                                          
-                                          
-                                          <p
-                                            class="mensagem-erro"
-                                            data-v-9c467393=""
-                                          >
-                                            Não foi possível encontrar nenhum produto =(
-                                          </p>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -14248,6 +13882,22 @@ VueWrapper {
                                     "parent": undefined,
                                     "scheduler": [Function],
                                   },
+                                  ReactiveEffect {
+                                    "active": true,
+                                    "deps": [
+                                      Set {
+                                        [Circular],
+                                      },
+                                      Set {
+                                        [Circular],
+                                      },
+                                    ],
+                                    "fn": [Function],
+                                    "onTrack": undefined,
+                                    "onTrigger": undefined,
+                                    "parent": undefined,
+                                    "scheduler": [Function],
+                                  },
                                 ],
                               },
                               "setupContext": null,
@@ -14377,24 +14027,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="produtos__cabecalho"
-                                          data-v-9c467393=""
-                                        >
-                                          <h3
-                                            class="produtos__titulo"
-                                            data-v-9c467393=""
-                                          >
-                                            Star Wars
-                                          </h3>
-                                          <router-link
-                                            class="produtos__link"
-                                            data-v-9c467393=""
-                                            to="/produtos?busca=Star Wars"
-                                          >
-                                            Ver tudo ➜
-                                          </router-link>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -14486,19 +14119,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="lista__produtos"
-                                          data-v-9c467393=""
-                                        >
-                                          
-                                          
-                                          <p
-                                            class="mensagem-erro"
-                                            data-v-9c467393=""
-                                          >
-                                            Não foi possível encontrar nenhum produto =(
-                                          </p>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -14861,24 +14482,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="produtos__cabecalho"
-                                          data-v-9c467393=""
-                                        >
-                                          <h3
-                                            class="produtos__titulo"
-                                            data-v-9c467393=""
-                                          >
-                                            Star Wars
-                                          </h3>
-                                          <router-link
-                                            class="produtos__link"
-                                            data-v-9c467393=""
-                                            to="/produtos?busca=Star Wars"
-                                          >
-                                            Ver tudo ➜
-                                          </router-link>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -14970,19 +14574,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="lista__produtos"
-                                          data-v-9c467393=""
-                                        >
-                                          
-                                          
-                                          <p
-                                            class="mensagem-erro"
-                                            data-v-9c467393=""
-                                          >
-                                            Não foi possível encontrar nenhum produto =(
-                                          </p>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -15561,6 +15153,22 @@ VueWrapper {
                                     "parent": undefined,
                                     "scheduler": [Function],
                                   },
+                                  ReactiveEffect {
+                                    "active": true,
+                                    "deps": [
+                                      Set {
+                                        [Circular],
+                                      },
+                                      Set {
+                                        [Circular],
+                                      },
+                                    ],
+                                    "fn": [Function],
+                                    "onTrack": undefined,
+                                    "onTrigger": undefined,
+                                    "parent": undefined,
+                                    "scheduler": [Function],
+                                  },
                                 ],
                               },
                               "setupContext": null,
@@ -15690,24 +15298,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="produtos__cabecalho"
-                                          data-v-9c467393=""
-                                        >
-                                          <h3
-                                            class="produtos__titulo"
-                                            data-v-9c467393=""
-                                          >
-                                            Consoles
-                                          </h3>
-                                          <router-link
-                                            class="produtos__link"
-                                            data-v-9c467393=""
-                                            to="/produtos?busca=Consoles"
-                                          >
-                                            Ver tudo ➜
-                                          </router-link>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -15799,19 +15390,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="lista__produtos"
-                                          data-v-9c467393=""
-                                        >
-                                          
-                                          
-                                          <p
-                                            class="mensagem-erro"
-                                            data-v-9c467393=""
-                                          >
-                                            Não foi possível encontrar nenhum produto =(
-                                          </p>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -16174,24 +15753,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="produtos__cabecalho"
-                                          data-v-9c467393=""
-                                        >
-                                          <h3
-                                            class="produtos__titulo"
-                                            data-v-9c467393=""
-                                          >
-                                            Consoles
-                                          </h3>
-                                          <router-link
-                                            class="produtos__link"
-                                            data-v-9c467393=""
-                                            to="/produtos?busca=Consoles"
-                                          >
-                                            Ver tudo ➜
-                                          </router-link>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -16283,19 +15845,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="lista__produtos"
-                                          data-v-9c467393=""
-                                        >
-                                          
-                                          
-                                          <p
-                                            class="mensagem-erro"
-                                            data-v-9c467393=""
-                                          >
-                                            Não foi possível encontrar nenhum produto =(
-                                          </p>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -16874,6 +16424,22 @@ VueWrapper {
                                     "parent": undefined,
                                     "scheduler": [Function],
                                   },
+                                  ReactiveEffect {
+                                    "active": true,
+                                    "deps": [
+                                      Set {
+                                        [Circular],
+                                      },
+                                      Set {
+                                        [Circular],
+                                      },
+                                    ],
+                                    "fn": [Function],
+                                    "onTrack": undefined,
+                                    "onTrigger": undefined,
+                                    "parent": undefined,
+                                    "scheduler": [Function],
+                                  },
                                 ],
                               },
                               "setupContext": null,
@@ -17003,24 +16569,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="produtos__cabecalho"
-                                          data-v-9c467393=""
-                                        >
-                                          <h3
-                                            class="produtos__titulo"
-                                            data-v-9c467393=""
-                                          >
-                                            Diversos
-                                          </h3>
-                                          <router-link
-                                            class="produtos__link"
-                                            data-v-9c467393=""
-                                            to="/produtos?busca=Diversos"
-                                          >
-                                            Ver tudo ➜
-                                          </router-link>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -17112,19 +16661,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="lista__produtos"
-                                          data-v-9c467393=""
-                                        >
-                                          
-                                          
-                                          <p
-                                            class="mensagem-erro"
-                                            data-v-9c467393=""
-                                          >
-                                            Não foi possível encontrar nenhum produto =(
-                                          </p>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -17487,24 +17024,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="produtos__cabecalho"
-                                          data-v-9c467393=""
-                                        >
-                                          <h3
-                                            class="produtos__titulo"
-                                            data-v-9c467393=""
-                                          >
-                                            Diversos
-                                          </h3>
-                                          <router-link
-                                            class="produtos__link"
-                                            data-v-9c467393=""
-                                            to="/produtos?busca=Diversos"
-                                          >
-                                            Ver tudo ➜
-                                          </router-link>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {
@@ -17596,19 +17116,7 @@ VueWrapper {
                                         "dirs": null,
                                         "dynamicChildren": null,
                                         "dynamicProps": null,
-                                        "el": <div
-                                          class="lista__produtos"
-                                          data-v-9c467393=""
-                                        >
-                                          
-                                          
-                                          <p
-                                            class="mensagem-erro"
-                                            data-v-9c467393=""
-                                          >
-                                            Não foi possível encontrar nenhum produto =(
-                                          </p>
-                                        </div>,
+                                        "el": null,
                                         "key": null,
                                         "patchFlag": 0,
                                         "props": {

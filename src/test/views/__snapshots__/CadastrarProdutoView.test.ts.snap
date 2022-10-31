@@ -1,0 +1,3850 @@
+// Vitest Snapshot v1
+
+exports[`Na tela de cadastrar produto > Deve ser renderizada corretamente 1`] = `
+VueWrapper {
+  "__app": {
+    "_component": {
+      "name": "VTU_ROOT",
+      "render": [Function],
+    },
+    "_container": <div
+      data-v-app=""
+    >
+      <form
+        class="formulario pagina-formulario"
+        data-v-2dff4f0a=""
+      >
+        <h3
+          class="formulario__titulo formulario__titulo--maior"
+          data-v-2dff4f0a=""
+        >
+          Cadastrar Produto
+        </h3>
+        <div
+          data-v-2dff4f0a=""
+        >
+          <label
+            class="formulario__label"
+            data-v-2dff4f0a=""
+            for="nome"
+          >
+            Nome:
+          </label>
+          <input
+            class="formulario__campo formulario__campo--maior"
+            data-v-2dff4f0a=""
+            id="nome"
+            name="nome"
+            placeholder="Nome do produto"
+            required=""
+            type="text"
+          />
+        </div>
+        <div
+          data-v-2dff4f0a=""
+        >
+          <label
+            class="formulario__label"
+            data-v-2dff4f0a=""
+            for="descricao"
+          >
+            Descrição:
+          </label>
+          <textarea
+            class="formulario__campo formulario__campo--maior"
+            data-v-2dff4f0a=""
+            id="descricao"
+            name="descricao"
+            placeholder="Descrição do produto"
+            required=""
+            type="text"
+          />
+        </div>
+        <div
+          class="campos-menores"
+          data-v-2dff4f0a=""
+        >
+          <div
+            class="preco-container"
+            data-v-2dff4f0a=""
+          >
+            <label
+              class="formulario__label"
+              data-v-2dff4f0a=""
+              for="preco"
+            >
+              Preço:
+            </label>
+            <input
+              class="formulario__campo"
+              data-v-2dff4f0a=""
+              id="preco"
+              name="preco"
+              placeholder="Preço do produto"
+              required=""
+              type="number"
+            />
+          </div>
+          <div
+            class="categoria-container"
+            data-v-2dff4f0a=""
+          >
+            <label
+              class="formulario__label"
+              data-v-2dff4f0a=""
+              for="categoria"
+            >
+              Categoria:
+            </label>
+            <select
+              class="formulario__campo"
+              data-v-2dff4f0a=""
+              id="categoria"
+              name="categoria"
+              required=""
+            >
+              <option
+                data-v-2dff4f0a=""
+                disabled=""
+                value="exemplo"
+              >
+                Categoria do produto:
+              </option>
+              
+              <option
+                data-v-2dff4f0a=""
+                value="Star Wars"
+              >
+                Star Wars
+              </option>
+              <option
+                data-v-2dff4f0a=""
+                value="Consoles"
+              >
+                Consoles
+              </option>
+              <option
+                data-v-2dff4f0a=""
+                value="Diversos"
+              >
+                Diversos
+              </option>
+              
+            </select>
+          </div>
+        </div>
+        <div
+          data-v-2dff4f0a=""
+        >
+          <label
+            class="formulario__label"
+            data-v-2dff4f0a=""
+            for="urlImagem"
+          >
+            Imagem (por url):
+          </label>
+          <input
+            class="formulario__campo formulario__campo--maior"
+            data-v-2dff4f0a=""
+            id="urlImagem"
+            name="urlImagem"
+            placeholder="Url da imagem do produto"
+            required=""
+            type="url"
+          />
+        </div>
+        <div
+          aria-hidden="true"
+          data-v-2dff4f0a=""
+        >
+          <p
+            class="formulario__label"
+            data-v-2dff4f0a=""
+          >
+            Preview da imagem:
+          </p>
+          <img
+            alt="Imagem não carregada =("
+            class="preview-imagem"
+            data-v-2dff4f0a=""
+          />
+        </div>
+        <button
+          class="formulario__botao formulario__botao--maior"
+          data-v-2dff4f0a=""
+          type="submit"
+        >
+          Enviar dados
+        </button>
+        
+        
+        <!--v-if-->
+      </form>
+    </div>,
+    "_context": {
+      "app": [Circular],
+      "components": {
+        "transition": {
+          "name": "transition",
+        },
+        "transition-group": {
+          "name": "transition-group",
+        },
+      },
+      "config": {
+        "compilerOptions": {},
+        "errorHandler": undefined,
+        "globalProperties": {},
+        "isNativeTag": [Function],
+        "optionMergeStrategies": {},
+        "performance": false,
+        "warnHandler": undefined,
+      },
+      "directives": {},
+      "emitsCache": WeakMap {},
+      "mixins": [
+        {
+          "beforeCreate": [Function],
+        },
+      ],
+      "optionsCache": WeakMap {},
+      "propsCache": WeakMap {},
+      "provides": {},
+      "reload": [Function],
+    },
+    "_instance": {
+      "a": null,
+      "accessCache": {},
+      "appContext": {
+        "app": [Circular],
+        "components": {
+          "transition": {
+            "name": "transition",
+          },
+          "transition-group": {
+            "name": "transition-group",
+          },
+        },
+        "config": {
+          "compilerOptions": {},
+          "errorHandler": undefined,
+          "globalProperties": {},
+          "isNativeTag": [Function],
+          "optionMergeStrategies": {},
+          "performance": false,
+          "warnHandler": undefined,
+        },
+        "directives": {},
+        "emitsCache": WeakMap {},
+        "mixins": [
+          {
+            "beforeCreate": [Function],
+          },
+        ],
+        "optionsCache": WeakMap {},
+        "propsCache": WeakMap {},
+        "provides": {},
+        "reload": [Function],
+      },
+      "asyncDep": null,
+      "asyncResolved": false,
+      "attrs": {},
+      "bc": null,
+      "bm": null,
+      "bu": null,
+      "bum": null,
+      "c": null,
+      "components": null,
+      "ctx": {},
+      "da": null,
+      "data": {},
+      "directives": null,
+      "ec": null,
+      "effect": ReactiveEffect {
+        "active": true,
+        "allowRecurse": true,
+        "deps": [
+          Set {
+            [Circular],
+          },
+          Set {
+            [Circular],
+          },
+          Set {
+            [Circular],
+          },
+        ],
+        "fn": [Function],
+        "onTrack": undefined,
+        "onTrigger": undefined,
+        "parent": undefined,
+        "scheduler": [Function],
+      },
+      "emit": [Function],
+      "emitsOptions": null,
+      "emitted": null,
+      "exposeProxy": null,
+      "exposed": null,
+      "inheritAttrs": undefined,
+      "isDeactivated": false,
+      "isMounted": true,
+      "isUnmounted": false,
+      "m": null,
+      "next": null,
+      "parent": null,
+      "props": {},
+      "propsDefaults": {},
+      "propsOptions": [
+        {},
+        [],
+      ],
+      "provides": {},
+      "proxy": {},
+      "refs": {
+        "VTU_COMPONENT": {
+          "categorias": [
+            "Star Wars",
+            "Consoles",
+            "Diversos",
+          ],
+          "enviarFormulario": [Function],
+          "hasOwnProperty": [Function],
+          "mensagemSucesso": "",
+          "mensagensDeErro": [],
+          "produto": {},
+          "usuarioLogado": {
+            "email": "usuario@teste.com",
+            "nome": "Usuário Teste",
+            "role": "admin",
+            "senha": "",
+          },
+          "validarFormulario": [Function],
+        },
+      },
+      "render": [Function],
+      "renderCache": [],
+      "root": [Circular],
+      "rtc": null,
+      "rtg": null,
+      "scope": EffectScope {
+        "active": true,
+        "cleanups": [],
+        "effects": [
+          ReactiveEffect {
+            "active": true,
+            "allowRecurse": true,
+            "deps": [
+              Set {
+                [Circular],
+              },
+              Set {
+                [Circular],
+              },
+              Set {
+                [Circular],
+              },
+            ],
+            "fn": [Function],
+            "onTrack": undefined,
+            "onTrigger": undefined,
+            "parent": undefined,
+            "scheduler": [Function],
+          },
+        ],
+      },
+      "setupContext": null,
+      "setupState": {},
+      "slots": {},
+      "sp": null,
+      "subTree": {
+        "__v_isVNode": true,
+        "__v_skip": true,
+        "anchor": null,
+        "appContext": null,
+        "children": null,
+        "component": {
+          "a": null,
+          "accessCache": {
+            "@@__IMMUTABLE_ITERABLE__@@": 0,
+            "@@__IMMUTABLE_RECORD__@@": 0,
+            "_isMockFunction": 0,
+            "categorias": 2,
+            "constructor": 0,
+            "enviarFormulario": 4,
+            "hasOwnProperty": 4,
+            "mensagemSucesso": 2,
+            "mensagensDeErro": 2,
+            "produto": 2,
+            "toJSON": 0,
+            "usuarioLogado": 2,
+            "validarFormulario": 4,
+            Symbol(Symbol.toStringTag): 0,
+          },
+          "appContext": {
+            "app": [Circular],
+            "components": {
+              "transition": {
+                "name": "transition",
+              },
+              "transition-group": {
+                "name": "transition-group",
+              },
+            },
+            "config": {
+              "compilerOptions": {},
+              "errorHandler": undefined,
+              "globalProperties": {},
+              "isNativeTag": [Function],
+              "optionMergeStrategies": {},
+              "performance": false,
+              "warnHandler": undefined,
+            },
+            "directives": {},
+            "emitsCache": WeakMap {},
+            "mixins": [
+              {
+                "beforeCreate": [Function],
+              },
+            ],
+            "optionsCache": WeakMap {},
+            "propsCache": WeakMap {},
+            "provides": {},
+            "reload": [Function],
+          },
+          "asyncDep": null,
+          "asyncResolved": false,
+          "attrs": {},
+          "bc": null,
+          "bm": null,
+          "bu": null,
+          "bum": null,
+          "c": null,
+          "components": {},
+          "ctx": {
+            "categorias": [
+              "Star Wars",
+              "Consoles",
+              "Diversos",
+            ],
+            "enviarFormulario": [Function],
+            "hasOwnProperty": [Function],
+            "mensagemSucesso": "",
+            "mensagensDeErro": [],
+            "produto": {},
+            "usuarioLogado": {
+              "email": "usuario@teste.com",
+              "nome": "Usuário Teste",
+              "role": "admin",
+              "senha": "",
+            },
+            "validarFormulario": [Function],
+          },
+          "da": null,
+          "data": {
+            "categorias": [
+              "Star Wars",
+              "Consoles",
+              "Diversos",
+            ],
+            "mensagemSucesso": "",
+            "mensagensDeErro": [],
+            "produto": {},
+            "usuarioLogado": {
+              "email": "usuario@teste.com",
+              "nome": "Usuário Teste",
+              "role": "admin",
+              "senha": "",
+            },
+          },
+          "directives": null,
+          "ec": null,
+          "effect": ReactiveEffect {
+            "active": true,
+            "allowRecurse": true,
+            "deps": [
+              Set {
+                [Circular],
+              },
+              Set {
+                [Circular],
+              },
+              Set {
+                [Circular],
+              },
+              Set {
+                [Circular],
+              },
+              Set {
+                [Circular],
+              },
+              Set {
+                [Circular],
+              },
+              Set {
+                [Circular],
+              },
+              Set {
+                [Circular],
+              },
+              Set {
+                [Circular],
+              },
+              Set {
+                [Circular],
+              },
+              Set {
+                [Circular],
+              },
+              Set {
+                [Circular],
+              },
+              Set {
+                [Circular],
+              },
+              Set {
+                [Circular],
+              },
+            ],
+            "fn": [Function],
+            "onTrack": undefined,
+            "onTrigger": undefined,
+            "parent": undefined,
+            "scheduler": [Function],
+          },
+          "emit": [Function],
+          "emitsOptions": null,
+          "emitted": null,
+          "exposeProxy": null,
+          "exposed": null,
+          "inheritAttrs": undefined,
+          "isDeactivated": false,
+          "isMounted": true,
+          "isUnmounted": false,
+          "m": null,
+          "next": null,
+          "parent": [Circular],
+          "props": {},
+          "propsDefaults": {},
+          "propsOptions": [
+            {},
+            [],
+          ],
+          "provides": {},
+          "proxy": {
+            "categorias": [
+              "Star Wars",
+              "Consoles",
+              "Diversos",
+            ],
+            "enviarFormulario": [Function],
+            "hasOwnProperty": [Function],
+            "mensagemSucesso": "",
+            "mensagensDeErro": [],
+            "produto": {},
+            "usuarioLogado": {
+              "email": "usuario@teste.com",
+              "nome": "Usuário Teste",
+              "role": "admin",
+              "senha": "",
+            },
+            "validarFormulario": [Function],
+          },
+          "refs": {},
+          "render": [Function],
+          "renderCache": [
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+          ],
+          "root": [Circular],
+          "rtc": null,
+          "rtg": null,
+          "scope": EffectScope {
+            "active": true,
+            "cleanups": [],
+            "effects": [
+              ReactiveEffect {
+                "active": true,
+                "allowRecurse": true,
+                "deps": [
+                  Set {
+                    [Circular],
+                  },
+                  Set {
+                    [Circular],
+                  },
+                  Set {
+                    [Circular],
+                  },
+                  Set {
+                    [Circular],
+                  },
+                  Set {
+                    [Circular],
+                  },
+                  Set {
+                    [Circular],
+                  },
+                  Set {
+                    [Circular],
+                  },
+                  Set {
+                    [Circular],
+                  },
+                  Set {
+                    [Circular],
+                  },
+                  Set {
+                    [Circular],
+                  },
+                  Set {
+                    [Circular],
+                  },
+                  Set {
+                    [Circular],
+                  },
+                  Set {
+                    [Circular],
+                  },
+                  Set {
+                    [Circular],
+                  },
+                ],
+                "fn": [Function],
+                "onTrack": undefined,
+                "onTrigger": undefined,
+                "parent": undefined,
+                "scheduler": [Function],
+              },
+            ],
+          },
+          "setupContext": null,
+          "setupState": {},
+          "slots": {},
+          "sp": null,
+          "subTree": {
+            "__v_isVNode": true,
+            "__v_skip": true,
+            "anchor": null,
+            "appContext": null,
+            "children": [
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": "Cadastrar Produto",
+                "component": null,
+                "dirs": null,
+                "dynamicChildren": null,
+                "dynamicProps": null,
+                "el": <h3
+                  class="formulario__titulo formulario__titulo--maior"
+                  data-v-2dff4f0a=""
+                >
+                  Cadastrar Produto
+                </h3>,
+                "key": null,
+                "patchFlag": -1,
+                "props": {
+                  "class": "formulario__titulo formulario__titulo--maior",
+                },
+                "ref": null,
+                "scopeId": "data-v-2dff4f0a",
+                "shapeFlag": 9,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": "h3",
+              },
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": [
+                  {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": null,
+                    "appContext": null,
+                    "children": "Nome:",
+                    "component": null,
+                    "dirs": null,
+                    "dynamicChildren": null,
+                    "dynamicProps": null,
+                    "el": <label
+                      class="formulario__label"
+                      data-v-2dff4f0a=""
+                      for="nome"
+                    >
+                      Nome:
+                    </label>,
+                    "key": null,
+                    "patchFlag": -1,
+                    "props": {
+                      "class": "formulario__label",
+                      "for": "nome",
+                    },
+                    "ref": null,
+                    "scopeId": "data-v-2dff4f0a",
+                    "shapeFlag": 9,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "transition": null,
+                    "type": "label",
+                  },
+                  {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": null,
+                    "appContext": null,
+                    "children": null,
+                    "component": null,
+                    "dirs": [
+                      {
+                        "arg": undefined,
+                        "dir": {
+                          "beforeUpdate": [Function],
+                          "created": [Function],
+                          "mounted": [Function],
+                        },
+                        "instance": {
+                          "categorias": [
+                            "Star Wars",
+                            "Consoles",
+                            "Diversos",
+                          ],
+                          "enviarFormulario": [Function],
+                          "hasOwnProperty": [Function],
+                          "mensagemSucesso": "",
+                          "mensagensDeErro": [],
+                          "produto": {},
+                          "usuarioLogado": {
+                            "email": "usuario@teste.com",
+                            "nome": "Usuário Teste",
+                            "role": "admin",
+                            "senha": "",
+                          },
+                          "validarFormulario": [Function],
+                        },
+                        "modifiers": {},
+                        "oldValue": undefined,
+                        "value": undefined,
+                      },
+                    ],
+                    "dynamicChildren": null,
+                    "dynamicProps": null,
+                    "el": <input
+                      class="formulario__campo formulario__campo--maior"
+                      data-v-2dff4f0a=""
+                      id="nome"
+                      name="nome"
+                      placeholder="Nome do produto"
+                      required=""
+                      type="text"
+                    />,
+                    "key": null,
+                    "patchFlag": 512,
+                    "props": {
+                      "class": "formulario__campo formulario__campo--maior",
+                      "id": "nome",
+                      "name": "nome",
+                      "onUpdate:modelValue": [Function],
+                      "placeholder": "Nome do produto",
+                      "required": "",
+                      "type": "text",
+                    },
+                    "ref": null,
+                    "scopeId": "data-v-2dff4f0a",
+                    "shapeFlag": 1,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "transition": null,
+                    "type": "input",
+                  },
+                ],
+                "component": null,
+                "dirs": null,
+                "dynamicChildren": null,
+                "dynamicProps": null,
+                "el": <div
+                  data-v-2dff4f0a=""
+                >
+                  <label
+                    class="formulario__label"
+                    data-v-2dff4f0a=""
+                    for="nome"
+                  >
+                    Nome:
+                  </label>
+                  <input
+                    class="formulario__campo formulario__campo--maior"
+                    data-v-2dff4f0a=""
+                    id="nome"
+                    name="nome"
+                    placeholder="Nome do produto"
+                    required=""
+                    type="text"
+                  />
+                </div>,
+                "key": null,
+                "patchFlag": 0,
+                "props": null,
+                "ref": null,
+                "scopeId": "data-v-2dff4f0a",
+                "shapeFlag": 17,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": "div",
+              },
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": [
+                  {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": null,
+                    "appContext": null,
+                    "children": "Descrição:",
+                    "component": null,
+                    "dirs": null,
+                    "dynamicChildren": null,
+                    "dynamicProps": null,
+                    "el": <label
+                      class="formulario__label"
+                      data-v-2dff4f0a=""
+                      for="descricao"
+                    >
+                      Descrição:
+                    </label>,
+                    "key": null,
+                    "patchFlag": -1,
+                    "props": {
+                      "class": "formulario__label",
+                      "for": "descricao",
+                    },
+                    "ref": null,
+                    "scopeId": "data-v-2dff4f0a",
+                    "shapeFlag": 9,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "transition": null,
+                    "type": "label",
+                  },
+                  {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": null,
+                    "appContext": null,
+                    "children": null,
+                    "component": null,
+                    "dirs": [
+                      {
+                        "arg": undefined,
+                        "dir": {
+                          "beforeUpdate": [Function],
+                          "created": [Function],
+                          "mounted": [Function],
+                        },
+                        "instance": {
+                          "categorias": [
+                            "Star Wars",
+                            "Consoles",
+                            "Diversos",
+                          ],
+                          "enviarFormulario": [Function],
+                          "hasOwnProperty": [Function],
+                          "mensagemSucesso": "",
+                          "mensagensDeErro": [],
+                          "produto": {},
+                          "usuarioLogado": {
+                            "email": "usuario@teste.com",
+                            "nome": "Usuário Teste",
+                            "role": "admin",
+                            "senha": "",
+                          },
+                          "validarFormulario": [Function],
+                        },
+                        "modifiers": {},
+                        "oldValue": undefined,
+                        "value": undefined,
+                      },
+                    ],
+                    "dynamicChildren": null,
+                    "dynamicProps": null,
+                    "el": <textarea
+                      class="formulario__campo formulario__campo--maior"
+                      data-v-2dff4f0a=""
+                      id="descricao"
+                      name="descricao"
+                      placeholder="Descrição do produto"
+                      required=""
+                      type="text"
+                    />,
+                    "key": null,
+                    "patchFlag": 512,
+                    "props": {
+                      "class": "formulario__campo formulario__campo--maior",
+                      "id": "descricao",
+                      "name": "descricao",
+                      "onUpdate:modelValue": [Function],
+                      "placeholder": "Descrição do produto",
+                      "required": "",
+                      "type": "text",
+                    },
+                    "ref": null,
+                    "scopeId": "data-v-2dff4f0a",
+                    "shapeFlag": 1,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "transition": null,
+                    "type": "textarea",
+                  },
+                ],
+                "component": null,
+                "dirs": null,
+                "dynamicChildren": null,
+                "dynamicProps": null,
+                "el": <div
+                  data-v-2dff4f0a=""
+                >
+                  <label
+                    class="formulario__label"
+                    data-v-2dff4f0a=""
+                    for="descricao"
+                  >
+                    Descrição:
+                  </label>
+                  <textarea
+                    class="formulario__campo formulario__campo--maior"
+                    data-v-2dff4f0a=""
+                    id="descricao"
+                    name="descricao"
+                    placeholder="Descrição do produto"
+                    required=""
+                    type="text"
+                  />
+                </div>,
+                "key": null,
+                "patchFlag": 0,
+                "props": null,
+                "ref": null,
+                "scopeId": "data-v-2dff4f0a",
+                "shapeFlag": 17,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": "div",
+              },
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": [
+                  {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": null,
+                    "appContext": null,
+                    "children": [
+                      {
+                        "__v_isVNode": true,
+                        "__v_skip": true,
+                        "anchor": null,
+                        "appContext": null,
+                        "children": "Preço:",
+                        "component": null,
+                        "dirs": null,
+                        "dynamicChildren": null,
+                        "dynamicProps": null,
+                        "el": <label
+                          class="formulario__label"
+                          data-v-2dff4f0a=""
+                          for="preco"
+                        >
+                          Preço:
+                        </label>,
+                        "key": null,
+                        "patchFlag": -1,
+                        "props": {
+                          "class": "formulario__label",
+                          "for": "preco",
+                        },
+                        "ref": null,
+                        "scopeId": "data-v-2dff4f0a",
+                        "shapeFlag": 9,
+                        "slotScopeIds": null,
+                        "ssContent": null,
+                        "ssFallback": null,
+                        "staticCount": 0,
+                        "suspense": null,
+                        "target": null,
+                        "targetAnchor": null,
+                        "transition": null,
+                        "type": "label",
+                      },
+                      {
+                        "__v_isVNode": true,
+                        "__v_skip": true,
+                        "anchor": null,
+                        "appContext": null,
+                        "children": null,
+                        "component": null,
+                        "dirs": [
+                          {
+                            "arg": undefined,
+                            "dir": {
+                              "beforeUpdate": [Function],
+                              "created": [Function],
+                              "mounted": [Function],
+                            },
+                            "instance": {
+                              "categorias": [
+                                "Star Wars",
+                                "Consoles",
+                                "Diversos",
+                              ],
+                              "enviarFormulario": [Function],
+                              "hasOwnProperty": [Function],
+                              "mensagemSucesso": "",
+                              "mensagensDeErro": [],
+                              "produto": {},
+                              "usuarioLogado": {
+                                "email": "usuario@teste.com",
+                                "nome": "Usuário Teste",
+                                "role": "admin",
+                                "senha": "",
+                              },
+                              "validarFormulario": [Function],
+                            },
+                            "modifiers": {},
+                            "oldValue": undefined,
+                            "value": undefined,
+                          },
+                        ],
+                        "dynamicChildren": null,
+                        "dynamicProps": null,
+                        "el": <input
+                          class="formulario__campo"
+                          data-v-2dff4f0a=""
+                          id="preco"
+                          name="preco"
+                          placeholder="Preço do produto"
+                          required=""
+                          type="number"
+                        />,
+                        "key": null,
+                        "patchFlag": 512,
+                        "props": {
+                          "class": "formulario__campo",
+                          "id": "preco",
+                          "name": "preco",
+                          "onUpdate:modelValue": [Function],
+                          "placeholder": "Preço do produto",
+                          "required": "",
+                          "type": "number",
+                        },
+                        "ref": null,
+                        "scopeId": "data-v-2dff4f0a",
+                        "shapeFlag": 1,
+                        "slotScopeIds": null,
+                        "ssContent": null,
+                        "ssFallback": null,
+                        "staticCount": 0,
+                        "suspense": null,
+                        "target": null,
+                        "targetAnchor": null,
+                        "transition": null,
+                        "type": "input",
+                      },
+                    ],
+                    "component": null,
+                    "dirs": null,
+                    "dynamicChildren": null,
+                    "dynamicProps": null,
+                    "el": <div
+                      class="preco-container"
+                      data-v-2dff4f0a=""
+                    >
+                      <label
+                        class="formulario__label"
+                        data-v-2dff4f0a=""
+                        for="preco"
+                      >
+                        Preço:
+                      </label>
+                      <input
+                        class="formulario__campo"
+                        data-v-2dff4f0a=""
+                        id="preco"
+                        name="preco"
+                        placeholder="Preço do produto"
+                        required=""
+                        type="number"
+                      />
+                    </div>,
+                    "key": null,
+                    "patchFlag": 0,
+                    "props": {
+                      "class": "preco-container",
+                    },
+                    "ref": null,
+                    "scopeId": "data-v-2dff4f0a",
+                    "shapeFlag": 17,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "transition": null,
+                    "type": "div",
+                  },
+                  {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": null,
+                    "appContext": null,
+                    "children": [
+                      {
+                        "__v_isVNode": true,
+                        "__v_skip": true,
+                        "anchor": null,
+                        "appContext": null,
+                        "children": "Categoria:",
+                        "component": null,
+                        "dirs": null,
+                        "dynamicChildren": null,
+                        "dynamicProps": null,
+                        "el": <label
+                          class="formulario__label"
+                          data-v-2dff4f0a=""
+                          for="categoria"
+                        >
+                          Categoria:
+                        </label>,
+                        "key": null,
+                        "patchFlag": -1,
+                        "props": {
+                          "class": "formulario__label",
+                          "for": "categoria",
+                        },
+                        "ref": null,
+                        "scopeId": "data-v-2dff4f0a",
+                        "shapeFlag": 9,
+                        "slotScopeIds": null,
+                        "ssContent": null,
+                        "ssFallback": null,
+                        "staticCount": 0,
+                        "suspense": null,
+                        "target": null,
+                        "targetAnchor": null,
+                        "transition": null,
+                        "type": "label",
+                      },
+                      {
+                        "__v_isVNode": true,
+                        "__v_skip": true,
+                        "anchor": null,
+                        "appContext": null,
+                        "children": [
+                          {
+                            "__v_isVNode": true,
+                            "__v_skip": true,
+                            "anchor": null,
+                            "appContext": null,
+                            "children": "Categoria do produto:",
+                            "component": null,
+                            "dirs": null,
+                            "dynamicChildren": null,
+                            "dynamicProps": null,
+                            "el": <option
+                              data-v-2dff4f0a=""
+                              disabled=""
+                              value="exemplo"
+                            >
+                              Categoria do produto:
+                            </option>,
+                            "key": null,
+                            "patchFlag": -1,
+                            "props": {
+                              "disabled": "",
+                              "value": "exemplo",
+                            },
+                            "ref": null,
+                            "scopeId": "data-v-2dff4f0a",
+                            "shapeFlag": 9,
+                            "slotScopeIds": null,
+                            "ssContent": null,
+                            "ssFallback": null,
+                            "staticCount": 0,
+                            "suspense": null,
+                            "target": null,
+                            "targetAnchor": null,
+                            "transition": null,
+                            "type": "option",
+                          },
+                          {
+                            "__v_isVNode": true,
+                            "__v_skip": true,
+                            "anchor": ,
+                            "appContext": null,
+                            "children": [
+                              {
+                                "__v_isVNode": true,
+                                "__v_skip": true,
+                                "anchor": null,
+                                "appContext": null,
+                                "children": "Star Wars",
+                                "component": null,
+                                "dirs": null,
+                                "dynamicChildren": [],
+                                "dynamicProps": [
+                                  "value",
+                                ],
+                                "el": <option
+                                  data-v-2dff4f0a=""
+                                  value="Star Wars"
+                                >
+                                  Star Wars
+                                </option>,
+                                "key": "Star Wars",
+                                "patchFlag": 9,
+                                "props": {
+                                  "key": "Star Wars",
+                                  "value": "Star Wars",
+                                },
+                                "ref": null,
+                                "scopeId": "data-v-2dff4f0a",
+                                "shapeFlag": 9,
+                                "slotScopeIds": null,
+                                "ssContent": null,
+                                "ssFallback": null,
+                                "staticCount": 0,
+                                "suspense": null,
+                                "target": null,
+                                "targetAnchor": null,
+                                "transition": null,
+                                "type": "option",
+                              },
+                              {
+                                "__v_isVNode": true,
+                                "__v_skip": true,
+                                "anchor": null,
+                                "appContext": null,
+                                "children": "Consoles",
+                                "component": null,
+                                "dirs": null,
+                                "dynamicChildren": [],
+                                "dynamicProps": [
+                                  "value",
+                                ],
+                                "el": <option
+                                  data-v-2dff4f0a=""
+                                  value="Consoles"
+                                >
+                                  Consoles
+                                </option>,
+                                "key": "Consoles",
+                                "patchFlag": 9,
+                                "props": {
+                                  "key": "Consoles",
+                                  "value": "Consoles",
+                                },
+                                "ref": null,
+                                "scopeId": "data-v-2dff4f0a",
+                                "shapeFlag": 9,
+                                "slotScopeIds": null,
+                                "ssContent": null,
+                                "ssFallback": null,
+                                "staticCount": 0,
+                                "suspense": null,
+                                "target": null,
+                                "targetAnchor": null,
+                                "transition": null,
+                                "type": "option",
+                              },
+                              {
+                                "__v_isVNode": true,
+                                "__v_skip": true,
+                                "anchor": null,
+                                "appContext": null,
+                                "children": "Diversos",
+                                "component": null,
+                                "dirs": null,
+                                "dynamicChildren": [],
+                                "dynamicProps": [
+                                  "value",
+                                ],
+                                "el": <option
+                                  data-v-2dff4f0a=""
+                                  value="Diversos"
+                                >
+                                  Diversos
+                                </option>,
+                                "key": "Diversos",
+                                "patchFlag": 9,
+                                "props": {
+                                  "key": "Diversos",
+                                  "value": "Diversos",
+                                },
+                                "ref": null,
+                                "scopeId": "data-v-2dff4f0a",
+                                "shapeFlag": 9,
+                                "slotScopeIds": null,
+                                "ssContent": null,
+                                "ssFallback": null,
+                                "staticCount": 0,
+                                "suspense": null,
+                                "target": null,
+                                "targetAnchor": null,
+                                "transition": null,
+                                "type": "option",
+                              },
+                            ],
+                            "component": null,
+                            "dirs": null,
+                            "dynamicChildren": [],
+                            "dynamicProps": null,
+                            "el": ,
+                            "key": null,
+                            "patchFlag": 128,
+                            "props": null,
+                            "ref": null,
+                            "scopeId": "data-v-2dff4f0a",
+                            "shapeFlag": 16,
+                            "slotScopeIds": null,
+                            "ssContent": null,
+                            "ssFallback": null,
+                            "staticCount": 0,
+                            "suspense": null,
+                            "target": null,
+                            "targetAnchor": null,
+                            "transition": null,
+                            "type": Symbol(Fragment),
+                          },
+                        ],
+                        "component": null,
+                        "dirs": [
+                          {
+                            "arg": undefined,
+                            "dir": {
+                              "beforeUpdate": [Function],
+                              "created": [Function],
+                              "deep": true,
+                              "mounted": [Function],
+                              "updated": [Function],
+                            },
+                            "instance": {
+                              "categorias": [
+                                "Star Wars",
+                                "Consoles",
+                                "Diversos",
+                              ],
+                              "enviarFormulario": [Function],
+                              "hasOwnProperty": [Function],
+                              "mensagemSucesso": "",
+                              "mensagensDeErro": [],
+                              "produto": {},
+                              "usuarioLogado": {
+                                "email": "usuario@teste.com",
+                                "nome": "Usuário Teste",
+                                "role": "admin",
+                                "senha": "",
+                              },
+                              "validarFormulario": [Function],
+                            },
+                            "modifiers": {},
+                            "oldValue": undefined,
+                            "value": undefined,
+                          },
+                        ],
+                        "dynamicChildren": null,
+                        "dynamicProps": null,
+                        "el": <select
+                          class="formulario__campo"
+                          data-v-2dff4f0a=""
+                          id="categoria"
+                          name="categoria"
+                          required=""
+                        >
+                          <option
+                            data-v-2dff4f0a=""
+                            disabled=""
+                            value="exemplo"
+                          >
+                            Categoria do produto:
+                          </option>
+                          
+                          <option
+                            data-v-2dff4f0a=""
+                            value="Star Wars"
+                          >
+                            Star Wars
+                          </option>
+                          <option
+                            data-v-2dff4f0a=""
+                            value="Consoles"
+                          >
+                            Consoles
+                          </option>
+                          <option
+                            data-v-2dff4f0a=""
+                            value="Diversos"
+                          >
+                            Diversos
+                          </option>
+                          
+                        </select>,
+                        "key": null,
+                        "patchFlag": 512,
+                        "props": {
+                          "class": "formulario__campo",
+                          "id": "categoria",
+                          "name": "categoria",
+                          "onUpdate:modelValue": [Function],
+                          "required": "",
+                        },
+                        "ref": null,
+                        "scopeId": "data-v-2dff4f0a",
+                        "shapeFlag": 17,
+                        "slotScopeIds": null,
+                        "ssContent": null,
+                        "ssFallback": null,
+                        "staticCount": 0,
+                        "suspense": null,
+                        "target": null,
+                        "targetAnchor": null,
+                        "transition": null,
+                        "type": "select",
+                      },
+                    ],
+                    "component": null,
+                    "dirs": null,
+                    "dynamicChildren": null,
+                    "dynamicProps": null,
+                    "el": <div
+                      class="categoria-container"
+                      data-v-2dff4f0a=""
+                    >
+                      <label
+                        class="formulario__label"
+                        data-v-2dff4f0a=""
+                        for="categoria"
+                      >
+                        Categoria:
+                      </label>
+                      <select
+                        class="formulario__campo"
+                        data-v-2dff4f0a=""
+                        id="categoria"
+                        name="categoria"
+                        required=""
+                      >
+                        <option
+                          data-v-2dff4f0a=""
+                          disabled=""
+                          value="exemplo"
+                        >
+                          Categoria do produto:
+                        </option>
+                        
+                        <option
+                          data-v-2dff4f0a=""
+                          value="Star Wars"
+                        >
+                          Star Wars
+                        </option>
+                        <option
+                          data-v-2dff4f0a=""
+                          value="Consoles"
+                        >
+                          Consoles
+                        </option>
+                        <option
+                          data-v-2dff4f0a=""
+                          value="Diversos"
+                        >
+                          Diversos
+                        </option>
+                        
+                      </select>
+                    </div>,
+                    "key": null,
+                    "patchFlag": 0,
+                    "props": {
+                      "class": "categoria-container",
+                    },
+                    "ref": null,
+                    "scopeId": "data-v-2dff4f0a",
+                    "shapeFlag": 17,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "transition": null,
+                    "type": "div",
+                  },
+                ],
+                "component": null,
+                "dirs": null,
+                "dynamicChildren": null,
+                "dynamicProps": null,
+                "el": <div
+                  class="campos-menores"
+                  data-v-2dff4f0a=""
+                >
+                  <div
+                    class="preco-container"
+                    data-v-2dff4f0a=""
+                  >
+                    <label
+                      class="formulario__label"
+                      data-v-2dff4f0a=""
+                      for="preco"
+                    >
+                      Preço:
+                    </label>
+                    <input
+                      class="formulario__campo"
+                      data-v-2dff4f0a=""
+                      id="preco"
+                      name="preco"
+                      placeholder="Preço do produto"
+                      required=""
+                      type="number"
+                    />
+                  </div>
+                  <div
+                    class="categoria-container"
+                    data-v-2dff4f0a=""
+                  >
+                    <label
+                      class="formulario__label"
+                      data-v-2dff4f0a=""
+                      for="categoria"
+                    >
+                      Categoria:
+                    </label>
+                    <select
+                      class="formulario__campo"
+                      data-v-2dff4f0a=""
+                      id="categoria"
+                      name="categoria"
+                      required=""
+                    >
+                      <option
+                        data-v-2dff4f0a=""
+                        disabled=""
+                        value="exemplo"
+                      >
+                        Categoria do produto:
+                      </option>
+                      
+                      <option
+                        data-v-2dff4f0a=""
+                        value="Star Wars"
+                      >
+                        Star Wars
+                      </option>
+                      <option
+                        data-v-2dff4f0a=""
+                        value="Consoles"
+                      >
+                        Consoles
+                      </option>
+                      <option
+                        data-v-2dff4f0a=""
+                        value="Diversos"
+                      >
+                        Diversos
+                      </option>
+                      
+                    </select>
+                  </div>
+                </div>,
+                "key": null,
+                "patchFlag": 0,
+                "props": {
+                  "class": "campos-menores",
+                },
+                "ref": null,
+                "scopeId": "data-v-2dff4f0a",
+                "shapeFlag": 17,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": "div",
+              },
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": [
+                  {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": null,
+                    "appContext": null,
+                    "children": "Imagem (por url):",
+                    "component": null,
+                    "dirs": null,
+                    "dynamicChildren": null,
+                    "dynamicProps": null,
+                    "el": <label
+                      class="formulario__label"
+                      data-v-2dff4f0a=""
+                      for="urlImagem"
+                    >
+                      Imagem (por url):
+                    </label>,
+                    "key": null,
+                    "patchFlag": -1,
+                    "props": {
+                      "class": "formulario__label",
+                      "for": "urlImagem",
+                    },
+                    "ref": null,
+                    "scopeId": "data-v-2dff4f0a",
+                    "shapeFlag": 9,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "transition": null,
+                    "type": "label",
+                  },
+                  {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": null,
+                    "appContext": null,
+                    "children": null,
+                    "component": null,
+                    "dirs": [
+                      {
+                        "arg": undefined,
+                        "dir": {
+                          "beforeUpdate": [Function],
+                          "created": [Function],
+                          "mounted": [Function],
+                        },
+                        "instance": {
+                          "categorias": [
+                            "Star Wars",
+                            "Consoles",
+                            "Diversos",
+                          ],
+                          "enviarFormulario": [Function],
+                          "hasOwnProperty": [Function],
+                          "mensagemSucesso": "",
+                          "mensagensDeErro": [],
+                          "produto": {},
+                          "usuarioLogado": {
+                            "email": "usuario@teste.com",
+                            "nome": "Usuário Teste",
+                            "role": "admin",
+                            "senha": "",
+                          },
+                          "validarFormulario": [Function],
+                        },
+                        "modifiers": {},
+                        "oldValue": undefined,
+                        "value": undefined,
+                      },
+                    ],
+                    "dynamicChildren": null,
+                    "dynamicProps": null,
+                    "el": <input
+                      class="formulario__campo formulario__campo--maior"
+                      data-v-2dff4f0a=""
+                      id="urlImagem"
+                      name="urlImagem"
+                      placeholder="Url da imagem do produto"
+                      required=""
+                      type="url"
+                    />,
+                    "key": null,
+                    "patchFlag": 512,
+                    "props": {
+                      "class": "formulario__campo formulario__campo--maior",
+                      "id": "urlImagem",
+                      "name": "urlImagem",
+                      "onUpdate:modelValue": [Function],
+                      "placeholder": "Url da imagem do produto",
+                      "required": "",
+                      "type": "url",
+                    },
+                    "ref": null,
+                    "scopeId": "data-v-2dff4f0a",
+                    "shapeFlag": 1,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "transition": null,
+                    "type": "input",
+                  },
+                ],
+                "component": null,
+                "dirs": null,
+                "dynamicChildren": null,
+                "dynamicProps": null,
+                "el": <div
+                  data-v-2dff4f0a=""
+                >
+                  <label
+                    class="formulario__label"
+                    data-v-2dff4f0a=""
+                    for="urlImagem"
+                  >
+                    Imagem (por url):
+                  </label>
+                  <input
+                    class="formulario__campo formulario__campo--maior"
+                    data-v-2dff4f0a=""
+                    id="urlImagem"
+                    name="urlImagem"
+                    placeholder="Url da imagem do produto"
+                    required=""
+                    type="url"
+                  />
+                </div>,
+                "key": null,
+                "patchFlag": 0,
+                "props": null,
+                "ref": null,
+                "scopeId": "data-v-2dff4f0a",
+                "shapeFlag": 17,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": "div",
+              },
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": [
+                  {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": null,
+                    "appContext": null,
+                    "children": "Preview da imagem:",
+                    "component": null,
+                    "dirs": null,
+                    "dynamicChildren": null,
+                    "dynamicProps": null,
+                    "el": <p
+                      class="formulario__label"
+                      data-v-2dff4f0a=""
+                    >
+                      Preview da imagem:
+                    </p>,
+                    "key": null,
+                    "patchFlag": -1,
+                    "props": {
+                      "class": "formulario__label",
+                    },
+                    "ref": null,
+                    "scopeId": "data-v-2dff4f0a",
+                    "shapeFlag": 9,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "transition": null,
+                    "type": "p",
+                  },
+                  {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": null,
+                    "appContext": null,
+                    "children": null,
+                    "component": null,
+                    "dirs": null,
+                    "dynamicChildren": null,
+                    "dynamicProps": [
+                      "src",
+                    ],
+                    "el": <img
+                      alt="Imagem não carregada =("
+                      class="preview-imagem"
+                      data-v-2dff4f0a=""
+                    />,
+                    "key": null,
+                    "patchFlag": 8,
+                    "props": {
+                      "alt": "Imagem não carregada =(",
+                      "class": "preview-imagem",
+                      "src": undefined,
+                    },
+                    "ref": null,
+                    "scopeId": "data-v-2dff4f0a",
+                    "shapeFlag": 1,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "transition": null,
+                    "type": "img",
+                  },
+                ],
+                "component": null,
+                "dirs": null,
+                "dynamicChildren": null,
+                "dynamicProps": null,
+                "el": <div
+                  aria-hidden="true"
+                  data-v-2dff4f0a=""
+                >
+                  <p
+                    class="formulario__label"
+                    data-v-2dff4f0a=""
+                  >
+                    Preview da imagem:
+                  </p>
+                  <img
+                    alt="Imagem não carregada =("
+                    class="preview-imagem"
+                    data-v-2dff4f0a=""
+                  />
+                </div>,
+                "key": null,
+                "patchFlag": 0,
+                "props": {
+                  "aria-hidden": "true",
+                },
+                "ref": null,
+                "scopeId": "data-v-2dff4f0a",
+                "shapeFlag": 17,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": "div",
+              },
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": "Enviar dados",
+                "component": null,
+                "dirs": null,
+                "dynamicChildren": null,
+                "dynamicProps": null,
+                "el": <button
+                  class="formulario__botao formulario__botao--maior"
+                  data-v-2dff4f0a=""
+                  type="submit"
+                >
+                  Enviar dados
+                </button>,
+                "key": null,
+                "patchFlag": -1,
+                "props": {
+                  "class": "formulario__botao formulario__botao--maior",
+                  "type": "submit",
+                },
+                "ref": null,
+                "scopeId": "data-v-2dff4f0a",
+                "shapeFlag": 9,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": "button",
+              },
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": ,
+                "appContext": null,
+                "children": [],
+                "component": null,
+                "dirs": null,
+                "dynamicChildren": [],
+                "dynamicProps": null,
+                "el": ,
+                "key": null,
+                "patchFlag": 128,
+                "props": null,
+                "ref": null,
+                "scopeId": "data-v-2dff4f0a",
+                "shapeFlag": 16,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": Symbol(Fragment),
+              },
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": "v-if",
+                "component": null,
+                "dirs": null,
+                "dynamicChildren": [],
+                "dynamicProps": null,
+                "el": <!--v-if-->,
+                "key": null,
+                "patchFlag": 0,
+                "props": null,
+                "ref": null,
+                "scopeId": "data-v-2dff4f0a",
+                "shapeFlag": 8,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": Symbol(Comment),
+              },
+            ],
+            "component": null,
+            "dirs": null,
+            "dynamicChildren": [
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": null,
+                "component": null,
+                "dirs": [
+                  {
+                    "arg": undefined,
+                    "dir": {
+                      "beforeUpdate": [Function],
+                      "created": [Function],
+                      "mounted": [Function],
+                    },
+                    "instance": {
+                      "categorias": [
+                        "Star Wars",
+                        "Consoles",
+                        "Diversos",
+                      ],
+                      "enviarFormulario": [Function],
+                      "hasOwnProperty": [Function],
+                      "mensagemSucesso": "",
+                      "mensagensDeErro": [],
+                      "produto": {},
+                      "usuarioLogado": {
+                        "email": "usuario@teste.com",
+                        "nome": "Usuário Teste",
+                        "role": "admin",
+                        "senha": "",
+                      },
+                      "validarFormulario": [Function],
+                    },
+                    "modifiers": {},
+                    "oldValue": undefined,
+                    "value": undefined,
+                  },
+                ],
+                "dynamicChildren": null,
+                "dynamicProps": null,
+                "el": <input
+                  class="formulario__campo formulario__campo--maior"
+                  data-v-2dff4f0a=""
+                  id="nome"
+                  name="nome"
+                  placeholder="Nome do produto"
+                  required=""
+                  type="text"
+                />,
+                "key": null,
+                "patchFlag": 512,
+                "props": {
+                  "class": "formulario__campo formulario__campo--maior",
+                  "id": "nome",
+                  "name": "nome",
+                  "onUpdate:modelValue": [Function],
+                  "placeholder": "Nome do produto",
+                  "required": "",
+                  "type": "text",
+                },
+                "ref": null,
+                "scopeId": "data-v-2dff4f0a",
+                "shapeFlag": 1,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": "input",
+              },
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": null,
+                "component": null,
+                "dirs": [
+                  {
+                    "arg": undefined,
+                    "dir": {
+                      "beforeUpdate": [Function],
+                      "created": [Function],
+                      "mounted": [Function],
+                    },
+                    "instance": {
+                      "categorias": [
+                        "Star Wars",
+                        "Consoles",
+                        "Diversos",
+                      ],
+                      "enviarFormulario": [Function],
+                      "hasOwnProperty": [Function],
+                      "mensagemSucesso": "",
+                      "mensagensDeErro": [],
+                      "produto": {},
+                      "usuarioLogado": {
+                        "email": "usuario@teste.com",
+                        "nome": "Usuário Teste",
+                        "role": "admin",
+                        "senha": "",
+                      },
+                      "validarFormulario": [Function],
+                    },
+                    "modifiers": {},
+                    "oldValue": undefined,
+                    "value": undefined,
+                  },
+                ],
+                "dynamicChildren": null,
+                "dynamicProps": null,
+                "el": <textarea
+                  class="formulario__campo formulario__campo--maior"
+                  data-v-2dff4f0a=""
+                  id="descricao"
+                  name="descricao"
+                  placeholder="Descrição do produto"
+                  required=""
+                  type="text"
+                />,
+                "key": null,
+                "patchFlag": 512,
+                "props": {
+                  "class": "formulario__campo formulario__campo--maior",
+                  "id": "descricao",
+                  "name": "descricao",
+                  "onUpdate:modelValue": [Function],
+                  "placeholder": "Descrição do produto",
+                  "required": "",
+                  "type": "text",
+                },
+                "ref": null,
+                "scopeId": "data-v-2dff4f0a",
+                "shapeFlag": 1,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": "textarea",
+              },
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": null,
+                "component": null,
+                "dirs": [
+                  {
+                    "arg": undefined,
+                    "dir": {
+                      "beforeUpdate": [Function],
+                      "created": [Function],
+                      "mounted": [Function],
+                    },
+                    "instance": {
+                      "categorias": [
+                        "Star Wars",
+                        "Consoles",
+                        "Diversos",
+                      ],
+                      "enviarFormulario": [Function],
+                      "hasOwnProperty": [Function],
+                      "mensagemSucesso": "",
+                      "mensagensDeErro": [],
+                      "produto": {},
+                      "usuarioLogado": {
+                        "email": "usuario@teste.com",
+                        "nome": "Usuário Teste",
+                        "role": "admin",
+                        "senha": "",
+                      },
+                      "validarFormulario": [Function],
+                    },
+                    "modifiers": {},
+                    "oldValue": undefined,
+                    "value": undefined,
+                  },
+                ],
+                "dynamicChildren": null,
+                "dynamicProps": null,
+                "el": <input
+                  class="formulario__campo"
+                  data-v-2dff4f0a=""
+                  id="preco"
+                  name="preco"
+                  placeholder="Preço do produto"
+                  required=""
+                  type="number"
+                />,
+                "key": null,
+                "patchFlag": 512,
+                "props": {
+                  "class": "formulario__campo",
+                  "id": "preco",
+                  "name": "preco",
+                  "onUpdate:modelValue": [Function],
+                  "placeholder": "Preço do produto",
+                  "required": "",
+                  "type": "number",
+                },
+                "ref": null,
+                "scopeId": "data-v-2dff4f0a",
+                "shapeFlag": 1,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": "input",
+              },
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": ,
+                "appContext": null,
+                "children": [
+                  {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": null,
+                    "appContext": null,
+                    "children": "Star Wars",
+                    "component": null,
+                    "dirs": null,
+                    "dynamicChildren": [],
+                    "dynamicProps": [
+                      "value",
+                    ],
+                    "el": <option
+                      data-v-2dff4f0a=""
+                      value="Star Wars"
+                    >
+                      Star Wars
+                    </option>,
+                    "key": "Star Wars",
+                    "patchFlag": 9,
+                    "props": {
+                      "key": "Star Wars",
+                      "value": "Star Wars",
+                    },
+                    "ref": null,
+                    "scopeId": "data-v-2dff4f0a",
+                    "shapeFlag": 9,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "transition": null,
+                    "type": "option",
+                  },
+                  {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": null,
+                    "appContext": null,
+                    "children": "Consoles",
+                    "component": null,
+                    "dirs": null,
+                    "dynamicChildren": [],
+                    "dynamicProps": [
+                      "value",
+                    ],
+                    "el": <option
+                      data-v-2dff4f0a=""
+                      value="Consoles"
+                    >
+                      Consoles
+                    </option>,
+                    "key": "Consoles",
+                    "patchFlag": 9,
+                    "props": {
+                      "key": "Consoles",
+                      "value": "Consoles",
+                    },
+                    "ref": null,
+                    "scopeId": "data-v-2dff4f0a",
+                    "shapeFlag": 9,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "transition": null,
+                    "type": "option",
+                  },
+                  {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": null,
+                    "appContext": null,
+                    "children": "Diversos",
+                    "component": null,
+                    "dirs": null,
+                    "dynamicChildren": [],
+                    "dynamicProps": [
+                      "value",
+                    ],
+                    "el": <option
+                      data-v-2dff4f0a=""
+                      value="Diversos"
+                    >
+                      Diversos
+                    </option>,
+                    "key": "Diversos",
+                    "patchFlag": 9,
+                    "props": {
+                      "key": "Diversos",
+                      "value": "Diversos",
+                    },
+                    "ref": null,
+                    "scopeId": "data-v-2dff4f0a",
+                    "shapeFlag": 9,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "transition": null,
+                    "type": "option",
+                  },
+                ],
+                "component": null,
+                "dirs": null,
+                "dynamicChildren": [],
+                "dynamicProps": null,
+                "el": ,
+                "key": null,
+                "patchFlag": 128,
+                "props": null,
+                "ref": null,
+                "scopeId": "data-v-2dff4f0a",
+                "shapeFlag": 16,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": Symbol(Fragment),
+              },
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": [
+                  {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": null,
+                    "appContext": null,
+                    "children": "Categoria do produto:",
+                    "component": null,
+                    "dirs": null,
+                    "dynamicChildren": null,
+                    "dynamicProps": null,
+                    "el": <option
+                      data-v-2dff4f0a=""
+                      disabled=""
+                      value="exemplo"
+                    >
+                      Categoria do produto:
+                    </option>,
+                    "key": null,
+                    "patchFlag": -1,
+                    "props": {
+                      "disabled": "",
+                      "value": "exemplo",
+                    },
+                    "ref": null,
+                    "scopeId": "data-v-2dff4f0a",
+                    "shapeFlag": 9,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "transition": null,
+                    "type": "option",
+                  },
+                  {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": ,
+                    "appContext": null,
+                    "children": [
+                      {
+                        "__v_isVNode": true,
+                        "__v_skip": true,
+                        "anchor": null,
+                        "appContext": null,
+                        "children": "Star Wars",
+                        "component": null,
+                        "dirs": null,
+                        "dynamicChildren": [],
+                        "dynamicProps": [
+                          "value",
+                        ],
+                        "el": <option
+                          data-v-2dff4f0a=""
+                          value="Star Wars"
+                        >
+                          Star Wars
+                        </option>,
+                        "key": "Star Wars",
+                        "patchFlag": 9,
+                        "props": {
+                          "key": "Star Wars",
+                          "value": "Star Wars",
+                        },
+                        "ref": null,
+                        "scopeId": "data-v-2dff4f0a",
+                        "shapeFlag": 9,
+                        "slotScopeIds": null,
+                        "ssContent": null,
+                        "ssFallback": null,
+                        "staticCount": 0,
+                        "suspense": null,
+                        "target": null,
+                        "targetAnchor": null,
+                        "transition": null,
+                        "type": "option",
+                      },
+                      {
+                        "__v_isVNode": true,
+                        "__v_skip": true,
+                        "anchor": null,
+                        "appContext": null,
+                        "children": "Consoles",
+                        "component": null,
+                        "dirs": null,
+                        "dynamicChildren": [],
+                        "dynamicProps": [
+                          "value",
+                        ],
+                        "el": <option
+                          data-v-2dff4f0a=""
+                          value="Consoles"
+                        >
+                          Consoles
+                        </option>,
+                        "key": "Consoles",
+                        "patchFlag": 9,
+                        "props": {
+                          "key": "Consoles",
+                          "value": "Consoles",
+                        },
+                        "ref": null,
+                        "scopeId": "data-v-2dff4f0a",
+                        "shapeFlag": 9,
+                        "slotScopeIds": null,
+                        "ssContent": null,
+                        "ssFallback": null,
+                        "staticCount": 0,
+                        "suspense": null,
+                        "target": null,
+                        "targetAnchor": null,
+                        "transition": null,
+                        "type": "option",
+                      },
+                      {
+                        "__v_isVNode": true,
+                        "__v_skip": true,
+                        "anchor": null,
+                        "appContext": null,
+                        "children": "Diversos",
+                        "component": null,
+                        "dirs": null,
+                        "dynamicChildren": [],
+                        "dynamicProps": [
+                          "value",
+                        ],
+                        "el": <option
+                          data-v-2dff4f0a=""
+                          value="Diversos"
+                        >
+                          Diversos
+                        </option>,
+                        "key": "Diversos",
+                        "patchFlag": 9,
+                        "props": {
+                          "key": "Diversos",
+                          "value": "Diversos",
+                        },
+                        "ref": null,
+                        "scopeId": "data-v-2dff4f0a",
+                        "shapeFlag": 9,
+                        "slotScopeIds": null,
+                        "ssContent": null,
+                        "ssFallback": null,
+                        "staticCount": 0,
+                        "suspense": null,
+                        "target": null,
+                        "targetAnchor": null,
+                        "transition": null,
+                        "type": "option",
+                      },
+                    ],
+                    "component": null,
+                    "dirs": null,
+                    "dynamicChildren": [],
+                    "dynamicProps": null,
+                    "el": ,
+                    "key": null,
+                    "patchFlag": 128,
+                    "props": null,
+                    "ref": null,
+                    "scopeId": "data-v-2dff4f0a",
+                    "shapeFlag": 16,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "transition": null,
+                    "type": Symbol(Fragment),
+                  },
+                ],
+                "component": null,
+                "dirs": [
+                  {
+                    "arg": undefined,
+                    "dir": {
+                      "beforeUpdate": [Function],
+                      "created": [Function],
+                      "deep": true,
+                      "mounted": [Function],
+                      "updated": [Function],
+                    },
+                    "instance": {
+                      "categorias": [
+                        "Star Wars",
+                        "Consoles",
+                        "Diversos",
+                      ],
+                      "enviarFormulario": [Function],
+                      "hasOwnProperty": [Function],
+                      "mensagemSucesso": "",
+                      "mensagensDeErro": [],
+                      "produto": {},
+                      "usuarioLogado": {
+                        "email": "usuario@teste.com",
+                        "nome": "Usuário Teste",
+                        "role": "admin",
+                        "senha": "",
+                      },
+                      "validarFormulario": [Function],
+                    },
+                    "modifiers": {},
+                    "oldValue": undefined,
+                    "value": undefined,
+                  },
+                ],
+                "dynamicChildren": null,
+                "dynamicProps": null,
+                "el": <select
+                  class="formulario__campo"
+                  data-v-2dff4f0a=""
+                  id="categoria"
+                  name="categoria"
+                  required=""
+                >
+                  <option
+                    data-v-2dff4f0a=""
+                    disabled=""
+                    value="exemplo"
+                  >
+                    Categoria do produto:
+                  </option>
+                  
+                  <option
+                    data-v-2dff4f0a=""
+                    value="Star Wars"
+                  >
+                    Star Wars
+                  </option>
+                  <option
+                    data-v-2dff4f0a=""
+                    value="Consoles"
+                  >
+                    Consoles
+                  </option>
+                  <option
+                    data-v-2dff4f0a=""
+                    value="Diversos"
+                  >
+                    Diversos
+                  </option>
+                  
+                </select>,
+                "key": null,
+                "patchFlag": 512,
+                "props": {
+                  "class": "formulario__campo",
+                  "id": "categoria",
+                  "name": "categoria",
+                  "onUpdate:modelValue": [Function],
+                  "required": "",
+                },
+                "ref": null,
+                "scopeId": "data-v-2dff4f0a",
+                "shapeFlag": 17,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": "select",
+              },
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": null,
+                "component": null,
+                "dirs": [
+                  {
+                    "arg": undefined,
+                    "dir": {
+                      "beforeUpdate": [Function],
+                      "created": [Function],
+                      "mounted": [Function],
+                    },
+                    "instance": {
+                      "categorias": [
+                        "Star Wars",
+                        "Consoles",
+                        "Diversos",
+                      ],
+                      "enviarFormulario": [Function],
+                      "hasOwnProperty": [Function],
+                      "mensagemSucesso": "",
+                      "mensagensDeErro": [],
+                      "produto": {},
+                      "usuarioLogado": {
+                        "email": "usuario@teste.com",
+                        "nome": "Usuário Teste",
+                        "role": "admin",
+                        "senha": "",
+                      },
+                      "validarFormulario": [Function],
+                    },
+                    "modifiers": {},
+                    "oldValue": undefined,
+                    "value": undefined,
+                  },
+                ],
+                "dynamicChildren": null,
+                "dynamicProps": null,
+                "el": <input
+                  class="formulario__campo formulario__campo--maior"
+                  data-v-2dff4f0a=""
+                  id="urlImagem"
+                  name="urlImagem"
+                  placeholder="Url da imagem do produto"
+                  required=""
+                  type="url"
+                />,
+                "key": null,
+                "patchFlag": 512,
+                "props": {
+                  "class": "formulario__campo formulario__campo--maior",
+                  "id": "urlImagem",
+                  "name": "urlImagem",
+                  "onUpdate:modelValue": [Function],
+                  "placeholder": "Url da imagem do produto",
+                  "required": "",
+                  "type": "url",
+                },
+                "ref": null,
+                "scopeId": "data-v-2dff4f0a",
+                "shapeFlag": 1,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": "input",
+              },
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": null,
+                "component": null,
+                "dirs": null,
+                "dynamicChildren": null,
+                "dynamicProps": [
+                  "src",
+                ],
+                "el": <img
+                  alt="Imagem não carregada =("
+                  class="preview-imagem"
+                  data-v-2dff4f0a=""
+                />,
+                "key": null,
+                "patchFlag": 8,
+                "props": {
+                  "alt": "Imagem não carregada =(",
+                  "class": "preview-imagem",
+                  "src": undefined,
+                },
+                "ref": null,
+                "scopeId": "data-v-2dff4f0a",
+                "shapeFlag": 1,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": "img",
+              },
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": ,
+                "appContext": null,
+                "children": [],
+                "component": null,
+                "dirs": null,
+                "dynamicChildren": [],
+                "dynamicProps": null,
+                "el": ,
+                "key": null,
+                "patchFlag": 128,
+                "props": null,
+                "ref": null,
+                "scopeId": "data-v-2dff4f0a",
+                "shapeFlag": 16,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": Symbol(Fragment),
+              },
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": "v-if",
+                "component": null,
+                "dirs": null,
+                "dynamicChildren": [],
+                "dynamicProps": null,
+                "el": <!--v-if-->,
+                "key": null,
+                "patchFlag": 0,
+                "props": null,
+                "ref": null,
+                "scopeId": "data-v-2dff4f0a",
+                "shapeFlag": 8,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": Symbol(Comment),
+              },
+            ],
+            "dynamicProps": null,
+            "el": <form
+              class="formulario pagina-formulario"
+              data-v-2dff4f0a=""
+            >
+              <h3
+                class="formulario__titulo formulario__titulo--maior"
+                data-v-2dff4f0a=""
+              >
+                Cadastrar Produto
+              </h3>
+              <div
+                data-v-2dff4f0a=""
+              >
+                <label
+                  class="formulario__label"
+                  data-v-2dff4f0a=""
+                  for="nome"
+                >
+                  Nome:
+                </label>
+                <input
+                  class="formulario__campo formulario__campo--maior"
+                  data-v-2dff4f0a=""
+                  id="nome"
+                  name="nome"
+                  placeholder="Nome do produto"
+                  required=""
+                  type="text"
+                />
+              </div>
+              <div
+                data-v-2dff4f0a=""
+              >
+                <label
+                  class="formulario__label"
+                  data-v-2dff4f0a=""
+                  for="descricao"
+                >
+                  Descrição:
+                </label>
+                <textarea
+                  class="formulario__campo formulario__campo--maior"
+                  data-v-2dff4f0a=""
+                  id="descricao"
+                  name="descricao"
+                  placeholder="Descrição do produto"
+                  required=""
+                  type="text"
+                />
+              </div>
+              <div
+                class="campos-menores"
+                data-v-2dff4f0a=""
+              >
+                <div
+                  class="preco-container"
+                  data-v-2dff4f0a=""
+                >
+                  <label
+                    class="formulario__label"
+                    data-v-2dff4f0a=""
+                    for="preco"
+                  >
+                    Preço:
+                  </label>
+                  <input
+                    class="formulario__campo"
+                    data-v-2dff4f0a=""
+                    id="preco"
+                    name="preco"
+                    placeholder="Preço do produto"
+                    required=""
+                    type="number"
+                  />
+                </div>
+                <div
+                  class="categoria-container"
+                  data-v-2dff4f0a=""
+                >
+                  <label
+                    class="formulario__label"
+                    data-v-2dff4f0a=""
+                    for="categoria"
+                  >
+                    Categoria:
+                  </label>
+                  <select
+                    class="formulario__campo"
+                    data-v-2dff4f0a=""
+                    id="categoria"
+                    name="categoria"
+                    required=""
+                  >
+                    <option
+                      data-v-2dff4f0a=""
+                      disabled=""
+                      value="exemplo"
+                    >
+                      Categoria do produto:
+                    </option>
+                    
+                    <option
+                      data-v-2dff4f0a=""
+                      value="Star Wars"
+                    >
+                      Star Wars
+                    </option>
+                    <option
+                      data-v-2dff4f0a=""
+                      value="Consoles"
+                    >
+                      Consoles
+                    </option>
+                    <option
+                      data-v-2dff4f0a=""
+                      value="Diversos"
+                    >
+                      Diversos
+                    </option>
+                    
+                  </select>
+                </div>
+              </div>
+              <div
+                data-v-2dff4f0a=""
+              >
+                <label
+                  class="formulario__label"
+                  data-v-2dff4f0a=""
+                  for="urlImagem"
+                >
+                  Imagem (por url):
+                </label>
+                <input
+                  class="formulario__campo formulario__campo--maior"
+                  data-v-2dff4f0a=""
+                  id="urlImagem"
+                  name="urlImagem"
+                  placeholder="Url da imagem do produto"
+                  required=""
+                  type="url"
+                />
+              </div>
+              <div
+                aria-hidden="true"
+                data-v-2dff4f0a=""
+              >
+                <p
+                  class="formulario__label"
+                  data-v-2dff4f0a=""
+                >
+                  Preview da imagem:
+                </p>
+                <img
+                  alt="Imagem não carregada =("
+                  class="preview-imagem"
+                  data-v-2dff4f0a=""
+                />
+              </div>
+              <button
+                class="formulario__botao formulario__botao--maior"
+                data-v-2dff4f0a=""
+                type="submit"
+              >
+                Enviar dados
+              </button>
+              
+              
+              <!--v-if-->
+            </form>,
+            "key": null,
+            "patchFlag": 32,
+            "props": {
+              "class": "formulario pagina-formulario",
+              "onSubmit": [Function],
+            },
+            "ref": null,
+            "scopeId": "data-v-2dff4f0a",
+            "shapeFlag": 17,
+            "slotScopeIds": null,
+            "ssContent": null,
+            "ssFallback": null,
+            "staticCount": 0,
+            "suspense": null,
+            "target": null,
+            "targetAnchor": null,
+            "transition": null,
+            "type": "form",
+          },
+          "suspense": null,
+          "suspenseId": 0,
+          "type": {
+            "__file": "/home/breno/Studies/front-end/alura-geek/src/views/CadastrarProdutoView.vue",
+            "__scopeId": "data-v-2dff4f0a",
+            "components": {},
+            "created": [Function],
+            "data": [Function],
+            "methods": {
+              "enviarFormulario": [Function],
+              "validarFormulario": [Function],
+            },
+            "name": "CadastrarProdutoView",
+            "render": [Function],
+          },
+          "u": null,
+          "uid": 1,
+          "um": null,
+          "update": [Function],
+          "vnode": [Circular],
+          "withProxy": null,
+        },
+        "dirs": null,
+        "dynamicChildren": null,
+        "dynamicProps": null,
+        "el": <form
+          class="formulario pagina-formulario"
+          data-v-2dff4f0a=""
+        >
+          <h3
+            class="formulario__titulo formulario__titulo--maior"
+            data-v-2dff4f0a=""
+          >
+            Cadastrar Produto
+          </h3>
+          <div
+            data-v-2dff4f0a=""
+          >
+            <label
+              class="formulario__label"
+              data-v-2dff4f0a=""
+              for="nome"
+            >
+              Nome:
+            </label>
+            <input
+              class="formulario__campo formulario__campo--maior"
+              data-v-2dff4f0a=""
+              id="nome"
+              name="nome"
+              placeholder="Nome do produto"
+              required=""
+              type="text"
+            />
+          </div>
+          <div
+            data-v-2dff4f0a=""
+          >
+            <label
+              class="formulario__label"
+              data-v-2dff4f0a=""
+              for="descricao"
+            >
+              Descrição:
+            </label>
+            <textarea
+              class="formulario__campo formulario__campo--maior"
+              data-v-2dff4f0a=""
+              id="descricao"
+              name="descricao"
+              placeholder="Descrição do produto"
+              required=""
+              type="text"
+            />
+          </div>
+          <div
+            class="campos-menores"
+            data-v-2dff4f0a=""
+          >
+            <div
+              class="preco-container"
+              data-v-2dff4f0a=""
+            >
+              <label
+                class="formulario__label"
+                data-v-2dff4f0a=""
+                for="preco"
+              >
+                Preço:
+              </label>
+              <input
+                class="formulario__campo"
+                data-v-2dff4f0a=""
+                id="preco"
+                name="preco"
+                placeholder="Preço do produto"
+                required=""
+                type="number"
+              />
+            </div>
+            <div
+              class="categoria-container"
+              data-v-2dff4f0a=""
+            >
+              <label
+                class="formulario__label"
+                data-v-2dff4f0a=""
+                for="categoria"
+              >
+                Categoria:
+              </label>
+              <select
+                class="formulario__campo"
+                data-v-2dff4f0a=""
+                id="categoria"
+                name="categoria"
+                required=""
+              >
+                <option
+                  data-v-2dff4f0a=""
+                  disabled=""
+                  value="exemplo"
+                >
+                  Categoria do produto:
+                </option>
+                
+                <option
+                  data-v-2dff4f0a=""
+                  value="Star Wars"
+                >
+                  Star Wars
+                </option>
+                <option
+                  data-v-2dff4f0a=""
+                  value="Consoles"
+                >
+                  Consoles
+                </option>
+                <option
+                  data-v-2dff4f0a=""
+                  value="Diversos"
+                >
+                  Diversos
+                </option>
+                
+              </select>
+            </div>
+          </div>
+          <div
+            data-v-2dff4f0a=""
+          >
+            <label
+              class="formulario__label"
+              data-v-2dff4f0a=""
+              for="urlImagem"
+            >
+              Imagem (por url):
+            </label>
+            <input
+              class="formulario__campo formulario__campo--maior"
+              data-v-2dff4f0a=""
+              id="urlImagem"
+              name="urlImagem"
+              placeholder="Url da imagem do produto"
+              required=""
+              type="url"
+            />
+          </div>
+          <div
+            aria-hidden="true"
+            data-v-2dff4f0a=""
+          >
+            <p
+              class="formulario__label"
+              data-v-2dff4f0a=""
+            >
+              Preview da imagem:
+            </p>
+            <img
+              alt="Imagem não carregada =("
+              class="preview-imagem"
+              data-v-2dff4f0a=""
+            />
+          </div>
+          <button
+            class="formulario__botao formulario__botao--maior"
+            data-v-2dff4f0a=""
+            type="submit"
+          >
+            Enviar dados
+          </button>
+          
+          
+          <!--v-if-->
+        </form>,
+        "key": null,
+        "patchFlag": 0,
+        "props": {
+          "ref": "VTU_COMPONENT",
+        },
+        "ref": {
+          "f": false,
+          "i": [Circular],
+          "k": undefined,
+          "r": "VTU_COMPONENT",
+        },
+        "scopeId": null,
+        "shapeFlag": 4,
+        "slotScopeIds": null,
+        "ssContent": null,
+        "ssFallback": null,
+        "staticCount": 0,
+        "suspense": null,
+        "target": null,
+        "targetAnchor": null,
+        "transition": null,
+        "type": {
+          "__file": "/home/breno/Studies/front-end/alura-geek/src/views/CadastrarProdutoView.vue",
+          "__scopeId": "data-v-2dff4f0a",
+          "components": {},
+          "created": [Function],
+          "data": [Function],
+          "methods": {
+            "enviarFormulario": [Function],
+            "validarFormulario": [Function],
+          },
+          "name": "CadastrarProdutoView",
+          "render": [Function],
+        },
+      },
+      "suspense": null,
+      "suspenseId": 0,
+      "type": {
+        "name": "VTU_ROOT",
+        "render": [Function],
+      },
+      "u": null,
+      "uid": 0,
+      "um": null,
+      "update": [Function],
+      "vnode": {
+        "__v_isVNode": true,
+        "__v_skip": true,
+        "anchor": null,
+        "appContext": {
+          "app": [Circular],
+          "components": {
+            "transition": {
+              "name": "transition",
+            },
+            "transition-group": {
+              "name": "transition-group",
+            },
+          },
+          "config": {
+            "compilerOptions": {},
+            "errorHandler": undefined,
+            "globalProperties": {},
+            "isNativeTag": [Function],
+            "optionMergeStrategies": {},
+            "performance": false,
+            "warnHandler": undefined,
+          },
+          "directives": {},
+          "emitsCache": WeakMap {},
+          "mixins": [
+            {
+              "beforeCreate": [Function],
+            },
+          ],
+          "optionsCache": WeakMap {},
+          "propsCache": WeakMap {},
+          "provides": {},
+          "reload": [Function],
+        },
+        "children": null,
+        "component": [Circular],
+        "dirs": null,
+        "dynamicChildren": null,
+        "dynamicProps": null,
+        "el": <form
+          class="formulario pagina-formulario"
+          data-v-2dff4f0a=""
+        >
+          <h3
+            class="formulario__titulo formulario__titulo--maior"
+            data-v-2dff4f0a=""
+          >
+            Cadastrar Produto
+          </h3>
+          <div
+            data-v-2dff4f0a=""
+          >
+            <label
+              class="formulario__label"
+              data-v-2dff4f0a=""
+              for="nome"
+            >
+              Nome:
+            </label>
+            <input
+              class="formulario__campo formulario__campo--maior"
+              data-v-2dff4f0a=""
+              id="nome"
+              name="nome"
+              placeholder="Nome do produto"
+              required=""
+              type="text"
+            />
+          </div>
+          <div
+            data-v-2dff4f0a=""
+          >
+            <label
+              class="formulario__label"
+              data-v-2dff4f0a=""
+              for="descricao"
+            >
+              Descrição:
+            </label>
+            <textarea
+              class="formulario__campo formulario__campo--maior"
+              data-v-2dff4f0a=""
+              id="descricao"
+              name="descricao"
+              placeholder="Descrição do produto"
+              required=""
+              type="text"
+            />
+          </div>
+          <div
+            class="campos-menores"
+            data-v-2dff4f0a=""
+          >
+            <div
+              class="preco-container"
+              data-v-2dff4f0a=""
+            >
+              <label
+                class="formulario__label"
+                data-v-2dff4f0a=""
+                for="preco"
+              >
+                Preço:
+              </label>
+              <input
+                class="formulario__campo"
+                data-v-2dff4f0a=""
+                id="preco"
+                name="preco"
+                placeholder="Preço do produto"
+                required=""
+                type="number"
+              />
+            </div>
+            <div
+              class="categoria-container"
+              data-v-2dff4f0a=""
+            >
+              <label
+                class="formulario__label"
+                data-v-2dff4f0a=""
+                for="categoria"
+              >
+                Categoria:
+              </label>
+              <select
+                class="formulario__campo"
+                data-v-2dff4f0a=""
+                id="categoria"
+                name="categoria"
+                required=""
+              >
+                <option
+                  data-v-2dff4f0a=""
+                  disabled=""
+                  value="exemplo"
+                >
+                  Categoria do produto:
+                </option>
+                
+                <option
+                  data-v-2dff4f0a=""
+                  value="Star Wars"
+                >
+                  Star Wars
+                </option>
+                <option
+                  data-v-2dff4f0a=""
+                  value="Consoles"
+                >
+                  Consoles
+                </option>
+                <option
+                  data-v-2dff4f0a=""
+                  value="Diversos"
+                >
+                  Diversos
+                </option>
+                
+              </select>
+            </div>
+          </div>
+          <div
+            data-v-2dff4f0a=""
+          >
+            <label
+              class="formulario__label"
+              data-v-2dff4f0a=""
+              for="urlImagem"
+            >
+              Imagem (por url):
+            </label>
+            <input
+              class="formulario__campo formulario__campo--maior"
+              data-v-2dff4f0a=""
+              id="urlImagem"
+              name="urlImagem"
+              placeholder="Url da imagem do produto"
+              required=""
+              type="url"
+            />
+          </div>
+          <div
+            aria-hidden="true"
+            data-v-2dff4f0a=""
+          >
+            <p
+              class="formulario__label"
+              data-v-2dff4f0a=""
+            >
+              Preview da imagem:
+            </p>
+            <img
+              alt="Imagem não carregada =("
+              class="preview-imagem"
+              data-v-2dff4f0a=""
+            />
+          </div>
+          <button
+            class="formulario__botao formulario__botao--maior"
+            data-v-2dff4f0a=""
+            type="submit"
+          >
+            Enviar dados
+          </button>
+          
+          
+          <!--v-if-->
+        </form>,
+        "key": null,
+        "patchFlag": 0,
+        "props": null,
+        "ref": null,
+        "scopeId": null,
+        "shapeFlag": 4,
+        "slotScopeIds": null,
+        "ssContent": null,
+        "ssFallback": null,
+        "staticCount": 0,
+        "suspense": null,
+        "target": null,
+        "targetAnchor": null,
+        "transition": null,
+        "type": {
+          "name": "VTU_ROOT",
+          "render": [Function],
+        },
+      },
+      "withProxy": null,
+    },
+    "_props": null,
+    "_uid": 0,
+    "component": [Function],
+    "config": {
+      "compilerOptions": {},
+      "errorHandler": undefined,
+      "globalProperties": {},
+      "isNativeTag": [Function],
+      "optionMergeStrategies": {},
+      "performance": false,
+      "warnHandler": undefined,
+    },
+    "directive": [Function],
+    "mixin": [Function],
+    "mount": [Function],
+    "provide": [Function],
+    "unmount": [Function],
+    "use": [Function],
+    "version": "3.2.37",
+  },
+  "__setProps": [Function],
+  "cleanUpCallbacks": [
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+  ],
+  "componentVM": {
+    "categorias": [
+      "Star Wars",
+      "Consoles",
+      "Diversos",
+    ],
+    "enviarFormulario": [Function],
+    "hasOwnProperty": [Function],
+    "mensagemSucesso": "",
+    "mensagensDeErro": [],
+    "produto": {},
+    "usuarioLogado": {
+      "email": "usuario@teste.com",
+      "nome": "Usuário Teste",
+      "role": "admin",
+      "senha": "",
+    },
+    "validarFormulario": [Function],
+  },
+  "isDisabled": [Function],
+  "rootVM": {},
+  "wrapperElement": <form
+    class="formulario pagina-formulario"
+    data-v-2dff4f0a=""
+  >
+    <h3
+      class="formulario__titulo formulario__titulo--maior"
+      data-v-2dff4f0a=""
+    >
+      Cadastrar Produto
+    </h3>
+    <div
+      data-v-2dff4f0a=""
+    >
+      <label
+        class="formulario__label"
+        data-v-2dff4f0a=""
+        for="nome"
+      >
+        Nome:
+      </label>
+      <input
+        class="formulario__campo formulario__campo--maior"
+        data-v-2dff4f0a=""
+        id="nome"
+        name="nome"
+        placeholder="Nome do produto"
+        required=""
+        type="text"
+      />
+    </div>
+    <div
+      data-v-2dff4f0a=""
+    >
+      <label
+        class="formulario__label"
+        data-v-2dff4f0a=""
+        for="descricao"
+      >
+        Descrição:
+      </label>
+      <textarea
+        class="formulario__campo formulario__campo--maior"
+        data-v-2dff4f0a=""
+        id="descricao"
+        name="descricao"
+        placeholder="Descrição do produto"
+        required=""
+        type="text"
+      />
+    </div>
+    <div
+      class="campos-menores"
+      data-v-2dff4f0a=""
+    >
+      <div
+        class="preco-container"
+        data-v-2dff4f0a=""
+      >
+        <label
+          class="formulario__label"
+          data-v-2dff4f0a=""
+          for="preco"
+        >
+          Preço:
+        </label>
+        <input
+          class="formulario__campo"
+          data-v-2dff4f0a=""
+          id="preco"
+          name="preco"
+          placeholder="Preço do produto"
+          required=""
+          type="number"
+        />
+      </div>
+      <div
+        class="categoria-container"
+        data-v-2dff4f0a=""
+      >
+        <label
+          class="formulario__label"
+          data-v-2dff4f0a=""
+          for="categoria"
+        >
+          Categoria:
+        </label>
+        <select
+          class="formulario__campo"
+          data-v-2dff4f0a=""
+          id="categoria"
+          name="categoria"
+          required=""
+        >
+          <option
+            data-v-2dff4f0a=""
+            disabled=""
+            value="exemplo"
+          >
+            Categoria do produto:
+          </option>
+          
+          <option
+            data-v-2dff4f0a=""
+            value="Star Wars"
+          >
+            Star Wars
+          </option>
+          <option
+            data-v-2dff4f0a=""
+            value="Consoles"
+          >
+            Consoles
+          </option>
+          <option
+            data-v-2dff4f0a=""
+            value="Diversos"
+          >
+            Diversos
+          </option>
+          
+        </select>
+      </div>
+    </div>
+    <div
+      data-v-2dff4f0a=""
+    >
+      <label
+        class="formulario__label"
+        data-v-2dff4f0a=""
+        for="urlImagem"
+      >
+        Imagem (por url):
+      </label>
+      <input
+        class="formulario__campo formulario__campo--maior"
+        data-v-2dff4f0a=""
+        id="urlImagem"
+        name="urlImagem"
+        placeholder="Url da imagem do produto"
+        required=""
+        type="url"
+      />
+    </div>
+    <div
+      aria-hidden="true"
+      data-v-2dff4f0a=""
+    >
+      <p
+        class="formulario__label"
+        data-v-2dff4f0a=""
+      >
+        Preview da imagem:
+      </p>
+      <img
+        alt="Imagem não carregada =("
+        class="preview-imagem"
+        data-v-2dff4f0a=""
+      />
+    </div>
+    <button
+      class="formulario__botao formulario__botao--maior"
+      data-v-2dff4f0a=""
+      type="submit"
+    >
+      Enviar dados
+    </button>
+    
+    
+    <!--v-if-->
+  </form>,
+}
+`;

@@ -1,9 +1,11 @@
-import { expect, describe, it } from "vitest";
+import { expect, describe, it, vi, beforeEach } from "vitest";
 import { mount } from '@vue/test-utils';
 import HomeView from '../../views/HomeView.vue';
+import store from '../../store';
 
 describe('Na página home', () => {
     
+    store.dispatch = vi.fn().mockImplementation(() => {});
     const wrapper = mount(HomeView);
     
     it('Deve estar visível', () => {

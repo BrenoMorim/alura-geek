@@ -12,10 +12,10 @@
     <div>
         <label for="senha" class="formulario__label">Senha:</label>
         <input v-model="usuario.senha" id="senha" type="password" name="senha" class="formulario__campo formulario__campo--maior" placeholder="Digite sua senha" required>
-        <input v-model="usuario.confirmarSenha" type="password" name="confirmarSenha" class="formulario__campo formulario__campo--maior" placeholder="Confirme a senha" required>
+        <input v-model="usuario.confirmarSenha" id="confirmar-senha" type="password" name="confirmarSenha" class="formulario__campo formulario__campo--maior" placeholder="Confirme a senha" required>
     </div>
     <button class="formulario__botao formulario__botao--maior" type="submit">Enviar dados</button>
-    <p v-for="(mensagemDeErro, index) in mensagensDeErro" :key="index" class="mensagem-erro">{{mensagemDeErro}}</p>
+    <p v-for="mensagemDeErro in mensagensDeErro" :key="mensagemDeErro" class="mensagem-erro">{{mensagemDeErro}}</p>
   </form>
 </template>
 
@@ -29,7 +29,7 @@ export default defineComponent({
     name: 'CadastrarUsuarioView',
     data() {
       return {
-        usuario: { nome: "", email: "", senha: "", confirmarSenha: ""},
+        usuario: { nome: "", email: "", senha: "", confirmarSenha: "" },
         mensagensDeErro: [] as string[]
       }
     },

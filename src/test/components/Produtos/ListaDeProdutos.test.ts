@@ -62,7 +62,5 @@ describe('Quando a lista de produtos está vazia', () => {
         
         const mensagemDeErro = wrapper.get('.mensagem-erro');
         expect(mensagemDeErro.text()).toEqual('Não foi possível encontrar nenhum produto =(');
-   
     });
-
 });
