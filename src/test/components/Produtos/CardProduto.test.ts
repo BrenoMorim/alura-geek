@@ -18,8 +18,8 @@ describe('No card de produto', () => {
 
     it('Deve conter as informações do produto', () => {
 
-        expect(card.get('p.produto__nome').text()).toEqual(produto.nome);
-        expect(card.get('p.produto__preco').text()).toEqual('R$ 100,00');
+        expect(card.get('.produto__nome').text()).toEqual(produto.nome);
+        expect(card.get('.produto__preco').text()).toEqual('R$ 100,00');
 
     });
 
@@ -37,6 +37,6 @@ describe('No card de produto', () => {
         expect(link.text()).toEqual('Ver produto');
         expect(link.attributes('to')).toEqual(`/produtos/${produto.id}`);
 
-    })
+    });
 
 });

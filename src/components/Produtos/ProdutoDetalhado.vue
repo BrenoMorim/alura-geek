@@ -10,8 +10,8 @@
             <h4 class="produto__preco">Preço: R$ {{preco?.toFixed(2).replace('.', ',')}}</h4>
             <button class="botao botao--principal" @click="adicionarNoCarrinho()">Adicionar produto no carrinho</button>
             <div v-if="usuarioLogado?.role === 'admin'">
-                <router-link :to="`/produtos/editar/${id}`" class="botao botao--principal">Editar Produto</router-link>
-                <button @click="excluirProduto()" class="botao botao--alternativo">Excluir Produto</button>
+                <router-link :to="`/produtos/editar/${id}`" id="editar-produto" class="botao botao--principal">Editar Produto</router-link>
+                <button @click="excluirProduto()" id="excluir-produto" class="botao botao--alternativo">Excluir Produto</button>
             </div>
             <p v-if="mensagemSucesso" class="mensagem-sucesso">{{mensagemSucesso}}</p>
             <p v-if="mensagemErro" class="mensagem-erro">{{mensagemErro}}</p>

@@ -51,12 +51,14 @@ describe('Quando o usuário logado é administrador', () => {
     
     it('Deve conter botões para editar e excluir produto', async () => {
 
-        const botaoEditar = wrapper.get('.botao--editar');
+        const botaoEditar = wrapper.get('#editar-produto');
         expect(botaoEditar.attributes('to')).toBe(`/produtos/editar/${produto.id}`);
         expect(botaoEditar.text()).toBe('Editar Produto');
+        expect(botaoEditar.attributes('disabled')).toBeFalsy();
 
-        const botaoExcluir = wrapper.get('.botao--excluir');
+        const botaoExcluir = wrapper.get('#excluir-produto');
         expect(botaoExcluir.text()).toBe('Excluir Produto');
+        expect(botaoExcluir.attributes('disabled')).toBeFalsy();
 
         await botaoExcluir.trigger('click');
     
