@@ -60,7 +60,12 @@
     font-weight: 300;
     width: auto;
     font-family: var(--fonte-principal);
+    border: none;
     cursor: pointer;
+    transition: 1s all;
+}
+.formulario__botao:active {
+    transform: scale(1.2);
 }
 .mensagem-erro, .mensagem-sucesso {
     margin-top: .5rem;

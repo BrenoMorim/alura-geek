@@ -6,6 +6,7 @@ import ProdutoDetalhadoView from '../views/ProdutoDetalhadoView.vue';
 import CadastrarUsuarioView from '../views/CadastrarUsuarioView.vue';
 import CadastrarProdutoView from '../views/CadastrarProdutoView.vue';
 import ProdutosView from '../views/ProdutosView.vue';
+import CarrinhoView from '../views/CarrinhoView.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -42,6 +43,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/cadastroUsuario',
     name: 'cadastro-usuario',
     component: CadastrarUsuarioView
+  },
+  {
+    path: '/carrinho',
+    name: 'carrinho',
+    component: CarrinhoView
   },
   {
     path: '/:pathMatch(.*)*',

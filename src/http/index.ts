@@ -1,6 +1,7 @@
 import IProduto from '../types/IProduto';
 import IUsuario from '../types/IUsuario';
 import axios from 'axios';
+import IPedido from '../types/IPedido';
 
 const http = axios.create({
     baseURL: String(process.env.VUE_APP_API_URL),
@@ -48,4 +49,8 @@ export async function cadastrarUsuario(usuario: IUsuario) {
 
 export async function postarMensagem(mensagem: {nome: string, mensagem: string}) {
     await http.post('/mensagens', mensagem);
+}
+
+export async function postarPedido(pedido: IPedido) {
+    await http.post('/pedidos', pedido);
 }

@@ -1,16 +1,19 @@
-import { buscarProdutoPorId, buscarProdutos, buscarUsuarioPorEmail, cadastrarProduto, cadastrarUsuario, deletarProduto, postarMensagem } from '../http'
-import { CADASTRAR_PRODUTO, CADASTRAR_USUARIO, DELETAR_PRODUTO, ENVIAR_MENSAGEM, FAZER_LOGIN, FAZER_LOGOUT, OBTER_PRODUTOS, OBTER_PRODUTO_POR_ID } from '../types/Actions';
-import { DEFINIR_PRODUTOS, DEFINIR_PRODUTO_POR_ID, DEFINIR_USUARIO_LOGADO, DESLOGAR_USUARIO } from '../types/Mutations';
+import { buscarProdutoPorId, buscarProdutos, buscarUsuarioPorEmail, cadastrarProduto, cadastrarUsuario, deletarProduto, postarMensagem, postarPedido } from '../http'
+import { ADICIONAR_ITEM_CARRINHO, AUMENTAR_QUANTIDADE_ITEM, CADASTRAR_PRODUTO, CADASTRAR_USUARIO, DELETAR_PRODUTO, DIMINUIR_QUANTIDADE_ITEM, ENVIAR_MENSAGEM, ESVAZIAR_CARRINHO, FAZER_LOGIN, FAZER_LOGOUT, OBTER_PRODUTOS, OBTER_PRODUTO_POR_ID, REALIZAR_PEDIDO, REMOVER_ITEM_CARRINHO } from '../types/Actions';
+import { DEFINIR_CARRINHO, DEFINIR_PRODUTOS, DEFINIR_PRODUTO_POR_ID, DEFINIR_USUARIO_LOGADO, DESLOGAR_USUARIO } from '../types/Mutations';
 import IProduto from '../types/IProduto';
 import IUsuario from '../types/IUsuario';
 import { createStore } from 'vuex';
 import { gerarHash, autenticarUsuario } from '../service/senhaService';
+import IItem from '../types/IItem';
+import IPedido from '../types/IPedido';
 
 export default createStore({
   state: {
     produtos: [] as IProduto[],
     produtoDetalhado: {} as IProduto | undefined,
-    usuarioLogado: {} as IUsuario | undefined
+    usuarioLogado: {} as IUsuario | undefined,
+    itensCarrinho: [] as IItem[]
   },
   getters: {
   },
@@ -26,6 +29,9 @@ export default createStore({
     },
     [DESLOGAR_USUARIO] (state) {
       state.usuarioLogado = undefined;
+    },
+    [DEFINIR_CARRINHO] (state, novoCarrinho: IItem[]) {
+      state.itensCarrinho = novoCarrinho;
     }
   },
   actions: {
@@ -63,7 +69,6 @@ export default createStore({
         return false;
       } catch(erro) {
         console.log(erro);
-        
         return false;
       }
     },
@@ -75,7 +80,7 @@ export default createStore({
       try {
         const senhaHash = gerarHash(usuario.senha);
         await cadastrarUsuario({id: usuario.email, nome: usuario.nome, role: 'usuario', email: usuario.email, senha: senhaHash});
-        return true
+        return true;
       } catch(erro) {
         return false;
       }
@@ -104,6 +109,50 @@ export default createStore({
       } catch(erro) {
         console.log(erro);   
       }
+    },
+    async [ADICIONAR_ITEM_CARRINHO] ({ commit }, item: IItem) {
+      
+      const indiceNoCarrinho = this.state.itensCarrinho.findIndex(i => i.produto.id === item.produto.id);
+      
+      if (indiceNoCarrinho !== -1) {
+        return false;
+      }
+
+      commit(DEFINIR_CARRINHO, [...this.state.itensCarrinho, item]);
+      return true;
+    },
+    async [REMOVER_ITEM_CARRINHO] ({ commit }, item: IItem) {
+      try {
+        const novoCarrinho = this.state.itensCarrinho.filter(i => i.produto.id !== item.produto.id);
+        commit(DEFINIR_CARRINHO, novoCarrinho);
+        return true;
+      } catch(erro) {
+        console.log(erro);
+        return false;
+      }
+    },
+    async [AUMENTAR_QUANTIDADE_ITEM] (_, item: IItem) {
+      const itemNoCarrinho = this.state.itensCarrinho.find(i => i.produto.id === item.produto.id);
+      
+      if (itemNoCarrinho === undefined) return;
+      const novoItem = {quantidade: itemNoCarrinho.quantidade + 1, produto: itemNoCarrinho.produto};
+
+      await this.dispatch(REMOVER_ITEM_CARRINHO, itemNoCarrinho);
+      await this.dispatch(ADICIONAR_ITEM_CARRINHO, novoItem);
+    },
+    async [DIMINUIR_QUANTIDADE_ITEM] (_, item: IItem) {
+      const itemNoCarrinho = this.state.itensCarrinho.find(i => i.produto.id === item.produto.id);
+      
+      if (itemNoCarrinho === undefined) return;
+      const novoItem = {quantidade: itemNoCarrinho.quantidade - 1, produto: itemNoCarrinho.produto};
+      await this.dispatch(REMOVER_ITEM_CARRINHO, itemNoCarrinho);
+      await this.dispatch(ADICIONAR_ITEM_CARRINHO, novoItem);
+    },
+    [ESVAZIAR_CARRINHO] ({ commit }) {
+      commit(DEFINIR_CARRINHO, []);
+    },
+    async [REALIZAR_PEDIDO] (_, pedido: IPedido) {
+      await postarPedido(pedido);
     }
   },
   modules: {

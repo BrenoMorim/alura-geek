@@ -8,11 +8,13 @@
             <h2 class="produto__nome">{{nome}}</h2>
             <p class="produto__descricao">{{descricao}}</p>
             <h4 class="produto__preco">Preço: R$ {{preco?.toFixed(2).replace('.', ',')}}</h4>
+            <button class="botao botao--principal" @click="adicionarNoCarrinho()">Adicionar produto no carrinho</button>
             <div v-if="usuarioLogado?.role === 'admin'">
-                <router-link :to="`/produtos/editar/${id}`" class="botao botao--editar">Editar Produto</router-link>
-                <button @click="excluirProduto()" class="botao botao--excluir">Excluir Produto</button>
-                <p v-if="mensagemErro" class="mensagem-erro">{{mensagemErro}}</p>
+                <router-link :to="`/produtos/editar/${id}`" class="botao botao--principal">Editar Produto</router-link>
+                <button @click="excluirProduto()" class="botao botao--alternativo">Excluir Produto</button>
             </div>
+            <p v-if="mensagemSucesso" class="mensagem-sucesso">{{mensagemSucesso}}</p>
+            <p v-if="mensagemErro" class="mensagem-erro">{{mensagemErro}}</p>
         </div>
     </div>
   </article>
@@ -22,29 +24,61 @@
 import { defineComponent } from "@vue/runtime-core";
 import IUsuario from "../../types/IUsuario";
 import store from "../../store";
-import { DELETAR_PRODUTO } from "../../types/Actions";
+import { ADICIONAR_ITEM_CARRINHO, DELETAR_PRODUTO } from "../../types/Actions";
 
 export default defineComponent({
     name: 'ProdutoDetalhado',
     data() {
         return {
             usuarioLogado: {} as IUsuario | undefined,
-            mensagemErro: ''
+            mensagemErro: '',
+            mensagemSucesso: ''
         }
     },
     created() {
         this.usuarioLogado = store.state.usuarioLogado;
     },
     methods: {
+        mostrarMensagem(mensagem: string, tipo: string) {
+            if (tipo === 'sucesso') {
+                this.mensagemSucesso = mensagem;
+                setTimeout(() => {
+                    this.mensagemSucesso = '';
+                }, 3000);
+            } else if (tipo === 'erro') {
+                this.mensagemErro = mensagem;
+                setTimeout(() => {
+                    this.mensagemErro = '';
+                }, 3000);
+            }
+        },
         excluirProduto() {
             try {
                 store.dispatch(DELETAR_PRODUTO, this.id);
                 this.$router.push({name: 'home'});
             } catch(erro) {
-                this.mensagemErro = 'Não foi possível excluir o produto';
-                setTimeout(() => {
-                    this.mensagemErro = '';
-                }, 3000);
+                this.mostrarMensagem('Não foi possível excluir o produto', 'erro');
+            }
+        },
+        async adicionarNoCarrinho() {
+            try {
+                const conseguiuAdicionar = await store.dispatch(ADICIONAR_ITEM_CARRINHO, {
+                    produto: {
+                        id: this.id,
+                        nome: this.nome,
+                        descricao: this.descricao,
+                        preco: this.preco,
+                        urlImagem: this.urlImagem
+                    },
+                    quantidade: 1
+                });
+                if (conseguiuAdicionar) {
+                    this.mostrarMensagem('Produto adicionado no carrinho com sucesso!', 'sucesso');
+                } else {
+                    this.mostrarMensagem('O item já está no carrinho', 'erro');
+                }
+            } catch(erro) {
+                this.mostrarMensagem('Não foi possível adicionar produto =(', 'erro');
             }
         }
     },
@@ -125,14 +159,18 @@ export default defineComponent({
     cursor: pointer;
     border: none;
     line-height: 1.2rem;
+    font-family: var(--fonte-principal);
+    transition: 1s all;
 }
-.botao--editar {
+.botao--principal {
     background-color: var(--azul);
     margin-right: 1rem;
     text-decoration: none;
 }
-.botao--excluir {
+.botao--alternativo {
     background-color: var(--vermelho);
-    font-family: var(--fonte-principal);
+}
+.botao:active {
+    transform: scale(1.2);
 }
 </style>

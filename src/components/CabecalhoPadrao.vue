@@ -10,6 +10,8 @@
     <p v-if="usuarioLogado?.nome !== undefined" class="mensagem-boas-vindas">Bem-vindo, {{usuarioLogado.nome}}</p>
     <router-link v-if="usuarioLogado?.role === 'admin'" :to="{name: 'novo-produto'}" id="novo-produto" class="cabecalho__botao">Novo Produto</router-link>
     <button v-if="usuarioLogado?.nome !== undefined" @click="logout()" id="logout" class="cabecalho__botao">Logout</button>
+    <router-link :to="{name: 'carrinho'}" id="carrinho" class="cabecalho__botao">Carrinho</router-link>
+    
   </header>
 </template>
 
@@ -71,6 +73,10 @@ export default defineComponent({
   padding: 1rem;
   cursor: pointer;
   background-color: var(--branco);
+  transition: 1s all;
+}
+.cabecalho__botao:active {
+  transform: scale(1.2);
 }
 .busca__container {
   background-color: var(--cinza-claro);
@@ -94,8 +100,12 @@ export default defineComponent({
   background-color: var(--cinza);
   padding: .5rem;
   border-radius: 50%;
+  transition: 1s all; 
 }
-.busca__campo {
+.busca__lupa:active {
+  transform: scale(1.2);
+}
+ .busca__campo {
   width: 100%;
 }
 @media screen and (max-width: 768px) {

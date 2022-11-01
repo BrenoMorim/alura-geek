@@ -11,3 +11,12 @@ export default defineComponent({
     name: 'LogoPadrao'
 })
 </script>
+
+<style scoped>
+.logo {
+    transition: 1s all;
+}
+.logo:active {
+    transform: scale(1.2);
+}
+</style>

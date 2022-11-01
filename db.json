@@ -108,5 +108,37 @@
       "mensagem": "Testando o envio de mensagens!",
       "id": 2
     }
+  ],
+  "pedidos": [
+    {
+      "itens": [
+        {
+          "produtoId": "3",
+          "quantidade": 1
+        }
+      ],
+      "emailUsuario": "teste@usuario.com",
+      "valorTotal": 15,
+      "id": 1
+    },
+    {
+      "itens": [
+        {
+          "produtoId": "6",
+          "quantidade": 1
+        },
+        {
+          "produtoId": "WUEEjhy",
+          "quantidade": 1
+        },
+        {
+          "produtoId": "aSaPsaKEsd",
+          "quantidade": 2
+        }
+      ],
+      "emailUsuario": "teste@usuario.com",
+      "valorTotal": 170,
+      "id": 2
+    }
   ]
 }

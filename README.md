@@ -16,7 +16,7 @@ Uma loja virtual de produtos geek para praticar desenvolvimento front-end com Vu
 
 A api front-end da loja Alura Geek não possui um banco de dados real nem uma api back-end, tudo é simulado com a bibilioteca json-server. Há um sistema de cadastro e login de usuários improvisado também com json-server, sem autenticação via Token JWT como seria o ideal por conta dessa limitação.
 
-A aplicação permite que um usuário se cadastre ou faça login, para navegar entre os produtos e inclusive fazer pesquisas, além de que é possível enviar mensagens para a loja. Se o usuário logado for um admin, novas funcionalidades ficam disponíveis, como adicionar, editar e excluir produtos. Os usuários padrões para acesso são: teste@usuario.com - 1234567 e admin@admin.com - admin123.
+A aplicação permite que um usuário se cadastre ou faça login, para navegar entre os produtos, fazer pesquisas, adicionar produtos no seu carrinho e realizar pedidos, além de que é possível enviar mensagens para a loja. Se o usuário logado for um admin, novas funcionalidades ficam disponíveis, como adicionar, editar e excluir produtos. Os usuários padrões para acesso são: teste@usuario.com - 1234567 e admin@admin.com - admin123.
 
 Também há um sistema de criptografia de senhas improvisado usando crypto-js e algumas variáveis como a chave privada para criptografia e a url da api back-end simulada são externalizadas por ambiente.
 

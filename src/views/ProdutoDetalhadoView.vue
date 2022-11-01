@@ -44,7 +44,7 @@ export default defineComponent({
         await this.carregarProduto();
         this.$watch(() => this.$route.params, async () => {
             await this.carregarProduto();
-        })
+        });
     },
     methods: {
         async carregarProduto() {
