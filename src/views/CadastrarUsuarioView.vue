@@ -2,8 +2,8 @@
   <form class="formulario pagina-formulario" @submit.prevent="enviarFormulario()">
     <h3 class="formulario__titulo formulario__titulo--maior">Realizar Cadastro</h3>
     <div>
-        <label for="nome" class="formulario__label">Nome:</label>
-        <input v-model="usuario.nome" id="nome" name="nome" type="text" class="formulario__campo formulario__campo--maior" placeholder="Digite seu nome" required>
+        <label for="nomeUsuario" class="formulario__label">Nome:</label>
+        <input v-model="usuario.nome" id="nomeUsuario" name="nome" type="text" class="formulario__campo formulario__campo--maior" placeholder="Digite seu nome" required>
     </div>
     <div>
         <label for="email" class="formulario__label">Email:</label>

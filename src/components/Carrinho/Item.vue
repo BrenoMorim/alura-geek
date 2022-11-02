@@ -1,7 +1,11 @@
 <template>
     <article class="item">
-        <img :src="produto.urlImagem" :alt="`Imagem de ${produto.nome}`" class="item__imagem-produto">
-        <h3 class="item__nome">{{produto.nome}}</h3>
+        <div class="item__imagem-container">
+            <img :src="produto.urlImagem" :alt="`Imagem de ${produto.nome}`" class="item__imagem-produto">
+            <div>
+                <h3 class="item__nome">{{produto.nome}}</h3>
+            </div>
+        </div>
         <p class="item__preco">Preço Unitário: R$ {{produto.preco.toFixed(2).replace('.', ',')}}</p>
         <div class="item__quantidade__container">
             <h4 class="item__quantidade__titulo">Quantidade:</h4>
@@ -69,6 +73,25 @@ export default defineComponent({
     border-radius: 1.25rem;
     height: 7rem;
 }
+
+.item__imagem-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 3rem;
+    flex-wrap: nowrap
+}
+
+@media screen and (max-width: 768px) {
+    .item {
+        flex-wrap: wrap;
+        text-align: center;
+        height: auto;
+        row-gap: 1rem;
+    }
+}
+
 .item__imagem-produto {
     display: inline-block;
     max-width: 6rem;
@@ -77,6 +100,7 @@ export default defineComponent({
 }
 .item__nome {
     font-size: 1.5rem;
+    line-height: 1.75rem;
 }
 .item__preco {
     font-size: 1.5rem;

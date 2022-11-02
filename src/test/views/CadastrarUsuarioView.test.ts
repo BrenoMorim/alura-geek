@@ -8,7 +8,7 @@ describe('Na tela de cadastrar usuário', () => {
     const wrapper = mount(CadastrarUsuarioView);
 
     const formulario = wrapper.get('.formulario');
-    const inputNome = formulario.get('#nome');
+    const inputNome = formulario.get('#nomeUsuario');
     const inputEmail = formulario.get('#email');
     const inputSenha = formulario.get('#senha');
     const inputConfirmarSenha = formulario.get('#confirmar-senha');

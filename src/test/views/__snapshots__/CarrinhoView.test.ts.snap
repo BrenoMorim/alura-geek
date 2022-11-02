@@ -30,18 +30,27 @@ VueWrapper {
             data-v-3f685b77=""
             data-v-f4fe258e=""
           >
-            <img
-              alt="Imagem de Produto Teste"
-              class="item__imagem-produto"
-              data-v-3f685b77=""
-              src="www.imagemteste.com/imagemteste"
-            />
-            <h3
-              class="item__nome"
+            <div
+              class="item__imagem-container"
               data-v-3f685b77=""
             >
-              Produto Teste
-            </h3>
+              <img
+                alt="Imagem de Produto Teste"
+                class="item__imagem-produto"
+                data-v-3f685b77=""
+                src="www.imagemteste.com/imagemteste"
+              />
+              <div
+                data-v-3f685b77=""
+              >
+                <h3
+                  class="item__nome"
+                  data-v-3f685b77=""
+                >
+                  Produto Teste
+                </h3>
+              </div>
+            </div>
             <p
               class="item__preco"
               data-v-3f685b77=""
@@ -96,18 +105,27 @@ VueWrapper {
             data-v-3f685b77=""
             data-v-f4fe258e=""
           >
-            <img
-              alt="Imagem de Produto Teste 2"
-              class="item__imagem-produto"
-              data-v-3f685b77=""
-              src="www.imagemteste.com/imagemteste"
-            />
-            <h3
-              class="item__nome"
+            <div
+              class="item__imagem-container"
               data-v-3f685b77=""
             >
-              Produto Teste 2
-            </h3>
+              <img
+                alt="Imagem de Produto Teste 2"
+                class="item__imagem-produto"
+                data-v-3f685b77=""
+                src="www.imagemteste.com/imagemteste"
+              />
+              <div
+                data-v-3f685b77=""
+              >
+                <h3
+                  class="item__nome"
+                  data-v-3f685b77=""
+                >
+                  Produto Teste 2
+                </h3>
+              </div>
+            </div>
             <p
               class="item__preco"
               data-v-3f685b77=""
@@ -2073,64 +2091,151 @@ VueWrapper {
                                 "__v_skip": true,
                                 "anchor": null,
                                 "appContext": null,
-                                "children": null,
-                                "component": null,
-                                "dirs": null,
-                                "dynamicChildren": null,
-                                "dynamicProps": [
-                                  "src",
-                                  "alt",
+                                "children": [
+                                  {
+                                    "__v_isVNode": true,
+                                    "__v_skip": true,
+                                    "anchor": null,
+                                    "appContext": null,
+                                    "children": null,
+                                    "component": null,
+                                    "dirs": null,
+                                    "dynamicChildren": null,
+                                    "dynamicProps": [
+                                      "src",
+                                      "alt",
+                                    ],
+                                    "el": <img
+                                      alt="Imagem de Produto Teste"
+                                      class="item__imagem-produto"
+                                      data-v-3f685b77=""
+                                      src="www.imagemteste.com/imagemteste"
+                                    />,
+                                    "key": null,
+                                    "patchFlag": 8,
+                                    "props": {
+                                      "alt": "Imagem de Produto Teste",
+                                      "class": "item__imagem-produto",
+                                      "src": "www.imagemteste.com/imagemteste",
+                                    },
+                                    "ref": null,
+                                    "scopeId": "data-v-3f685b77",
+                                    "shapeFlag": 1,
+                                    "slotScopeIds": null,
+                                    "ssContent": null,
+                                    "ssFallback": null,
+                                    "staticCount": 0,
+                                    "suspense": null,
+                                    "target": null,
+                                    "targetAnchor": null,
+                                    "transition": null,
+                                    "type": "img",
+                                  },
+                                  {
+                                    "__v_isVNode": true,
+                                    "__v_skip": true,
+                                    "anchor": null,
+                                    "appContext": null,
+                                    "children": [
+                                      {
+                                        "__v_isVNode": true,
+                                        "__v_skip": true,
+                                        "anchor": null,
+                                        "appContext": null,
+                                        "children": "Produto Teste",
+                                        "component": null,
+                                        "dirs": null,
+                                        "dynamicChildren": null,
+                                        "dynamicProps": null,
+                                        "el": <h3
+                                          class="item__nome"
+                                          data-v-3f685b77=""
+                                        >
+                                          Produto Teste
+                                        </h3>,
+                                        "key": null,
+                                        "patchFlag": 1,
+                                        "props": {
+                                          "class": "item__nome",
+                                        },
+                                        "ref": null,
+                                        "scopeId": "data-v-3f685b77",
+                                        "shapeFlag": 9,
+                                        "slotScopeIds": null,
+                                        "ssContent": null,
+                                        "ssFallback": null,
+                                        "staticCount": 0,
+                                        "suspense": null,
+                                        "target": null,
+                                        "targetAnchor": null,
+                                        "transition": null,
+                                        "type": "h3",
+                                      },
+                                    ],
+                                    "component": null,
+                                    "dirs": null,
+                                    "dynamicChildren": null,
+                                    "dynamicProps": null,
+                                    "el": <div
+                                      data-v-3f685b77=""
+                                    >
+                                      <h3
+                                        class="item__nome"
+                                        data-v-3f685b77=""
+                                      >
+                                        Produto Teste
+                                      </h3>
+                                    </div>,
+                                    "key": null,
+                                    "patchFlag": 0,
+                                    "props": null,
+                                    "ref": null,
+                                    "scopeId": "data-v-3f685b77",
+                                    "shapeFlag": 17,
+                                    "slotScopeIds": null,
+                                    "ssContent": null,
+                                    "ssFallback": null,
+                                    "staticCount": 0,
+                                    "suspense": null,
+                                    "target": null,
+                                    "targetAnchor": null,
+                                    "transition": null,
+                                    "type": "div",
+                                  },
                                 ],
-                                "el": <img
-                                  alt="Imagem de Produto Teste"
-                                  class="item__imagem-produto"
-                                  data-v-3f685b77=""
-                                  src="www.imagemteste.com/imagemteste"
-                                />,
-                                "key": null,
-                                "patchFlag": 8,
-                                "props": {
-                                  "alt": "Imagem de Produto Teste",
-                                  "class": "item__imagem-produto",
-                                  "src": "www.imagemteste.com/imagemteste",
-                                },
-                                "ref": null,
-                                "scopeId": "data-v-3f685b77",
-                                "shapeFlag": 1,
-                                "slotScopeIds": null,
-                                "ssContent": null,
-                                "ssFallback": null,
-                                "staticCount": 0,
-                                "suspense": null,
-                                "target": null,
-                                "targetAnchor": null,
-                                "transition": null,
-                                "type": "img",
-                              },
-                              {
-                                "__v_isVNode": true,
-                                "__v_skip": true,
-                                "anchor": null,
-                                "appContext": null,
-                                "children": "Produto Teste",
                                 "component": null,
                                 "dirs": null,
                                 "dynamicChildren": null,
                                 "dynamicProps": null,
-                                "el": <h3
-                                  class="item__nome"
+                                "el": <div
+                                  class="item__imagem-container"
                                   data-v-3f685b77=""
                                 >
-                                  Produto Teste
-                                </h3>,
+                                  <img
+                                    alt="Imagem de Produto Teste"
+                                    class="item__imagem-produto"
+                                    data-v-3f685b77=""
+                                    src="www.imagemteste.com/imagemteste"
+                                  />
+                                  <div
+                                    data-v-3f685b77=""
+                                  >
+                                    <h3
+                                      class="item__nome"
+                                      data-v-3f685b77=""
+                                    >
+                                      Produto Teste
+                                    </h3>
+                                  </div>
+                                </div>,
                                 "key": null,
-                                "patchFlag": 1,
+                                "patchFlag": 0,
                                 "props": {
-                                  "class": "item__nome",
+                                  "class": "item__imagem-container",
                                 },
                                 "ref": null,
                                 "scopeId": "data-v-3f685b77",
-                                "shapeFlag": 9,
+                                "shapeFlag": 17,
                                 "slotScopeIds": null,
                                 "ssContent": null,
                                 "ssFallback": null,
@@ -2139,7 +2244,7 @@ VueWrapper {
                                 "target": null,
                                 "targetAnchor": null,
                                 "transition": null,
-                                "type": "h3",
+                                "type": "div",
                               },
                               {
                                 "__v_isVNode": true,
@@ -2709,18 +2814,27 @@ VueWrapper {
                               data-v-3f685b77=""
                               data-v-f4fe258e=""
                             >
-                              <img
-                                alt="Imagem de Produto Teste"
-                                class="item__imagem-produto"
-                                data-v-3f685b77=""
-                                src="www.imagemteste.com/imagemteste"
-                              />
-                              <h3
-                                class="item__nome"
+                              <div
+                                class="item__imagem-container"
                                 data-v-3f685b77=""
                               >
-                                Produto Teste
-                              </h3>
+                                <img
+                                  alt="Imagem de Produto Teste"
+                                  class="item__imagem-produto"
+                                  data-v-3f685b77=""
+                                  src="www.imagemteste.com/imagemteste"
+                                />
+                                <div
+                                  data-v-3f685b77=""
+                                >
+                                  <h3
+                                    class="item__nome"
+                                    data-v-3f685b77=""
+                                  >
+                                    Produto Teste
+                                  </h3>
+                                </div>
+                              </div>
                               <p
                                 class="item__preco"
                                 data-v-3f685b77=""
@@ -2833,18 +2947,27 @@ VueWrapper {
                           data-v-3f685b77=""
                           data-v-f4fe258e=""
                         >
-                          <img
-                            alt="Imagem de Produto Teste"
-                            class="item__imagem-produto"
-                            data-v-3f685b77=""
-                            src="www.imagemteste.com/imagemteste"
-                          />
-                          <h3
-                            class="item__nome"
+                          <div
+                            class="item__imagem-container"
                             data-v-3f685b77=""
                           >
-                            Produto Teste
-                          </h3>
+                            <img
+                              alt="Imagem de Produto Teste"
+                              class="item__imagem-produto"
+                              data-v-3f685b77=""
+                              src="www.imagemteste.com/imagemteste"
+                            />
+                            <div
+                              data-v-3f685b77=""
+                            >
+                              <h3
+                                class="item__nome"
+                                data-v-3f685b77=""
+                              >
+                                Produto Teste
+                              </h3>
+                            </div>
+                          </div>
                           <p
                             class="item__preco"
                             data-v-3f685b77=""
@@ -3308,64 +3431,151 @@ VueWrapper {
                                 "__v_skip": true,
                                 "anchor": null,
                                 "appContext": null,
-                                "children": null,
-                                "component": null,
-                                "dirs": null,
-                                "dynamicChildren": null,
-                                "dynamicProps": [
-                                  "src",
-                                  "alt",
+                                "children": [
+                                  {
+                                    "__v_isVNode": true,
+                                    "__v_skip": true,
+                                    "anchor": null,
+                                    "appContext": null,
+                                    "children": null,
+                                    "component": null,
+                                    "dirs": null,
+                                    "dynamicChildren": null,
+                                    "dynamicProps": [
+                                      "src",
+                                      "alt",
+                                    ],
+                                    "el": <img
+                                      alt="Imagem de Produto Teste 2"
+                                      class="item__imagem-produto"
+                                      data-v-3f685b77=""
+                                      src="www.imagemteste.com/imagemteste"
+                                    />,
+                                    "key": null,
+                                    "patchFlag": 8,
+                                    "props": {
+                                      "alt": "Imagem de Produto Teste 2",
+                                      "class": "item__imagem-produto",
+                                      "src": "www.imagemteste.com/imagemteste",
+                                    },
+                                    "ref": null,
+                                    "scopeId": "data-v-3f685b77",
+                                    "shapeFlag": 1,
+                                    "slotScopeIds": null,
+                                    "ssContent": null,
+                                    "ssFallback": null,
+                                    "staticCount": 0,
+                                    "suspense": null,
+                                    "target": null,
+                                    "targetAnchor": null,
+                                    "transition": null,
+                                    "type": "img",
+                                  },
+                                  {
+                                    "__v_isVNode": true,
+                                    "__v_skip": true,
+                                    "anchor": null,
+                                    "appContext": null,
+                                    "children": [
+                                      {
+                                        "__v_isVNode": true,
+                                        "__v_skip": true,
+                                        "anchor": null,
+                                        "appContext": null,
+                                        "children": "Produto Teste 2",
+                                        "component": null,
+                                        "dirs": null,
+                                        "dynamicChildren": null,
+                                        "dynamicProps": null,
+                                        "el": <h3
+                                          class="item__nome"
+                                          data-v-3f685b77=""
+                                        >
+                                          Produto Teste 2
+                                        </h3>,
+                                        "key": null,
+                                        "patchFlag": 1,
+                                        "props": {
+                                          "class": "item__nome",
+                                        },
+                                        "ref": null,
+                                        "scopeId": "data-v-3f685b77",
+                                        "shapeFlag": 9,
+                                        "slotScopeIds": null,
+                                        "ssContent": null,
+                                        "ssFallback": null,
+                                        "staticCount": 0,
+                                        "suspense": null,
+                                        "target": null,
+                                        "targetAnchor": null,
+                                        "transition": null,
+                                        "type": "h3",
+                                      },
+                                    ],
+                                    "component": null,
+                                    "dirs": null,
+                                    "dynamicChildren": null,
+                                    "dynamicProps": null,
+                                    "el": <div
+                                      data-v-3f685b77=""
+                                    >
+                                      <h3
+                                        class="item__nome"
+                                        data-v-3f685b77=""
+                                      >
+                                        Produto Teste 2
+                                      </h3>
+                                    </div>,
+                                    "key": null,
+                                    "patchFlag": 0,
+                                    "props": null,
+                                    "ref": null,
+                                    "scopeId": "data-v-3f685b77",
+                                    "shapeFlag": 17,
+                                    "slotScopeIds": null,
+                                    "ssContent": null,
+                                    "ssFallback": null,
+                                    "staticCount": 0,
+                                    "suspense": null,
+                                    "target": null,
+                                    "targetAnchor": null,
+                                    "transition": null,
+                                    "type": "div",
+                                  },
                                 ],
-                                "el": <img
-                                  alt="Imagem de Produto Teste 2"
-                                  class="item__imagem-produto"
-                                  data-v-3f685b77=""
-                                  src="www.imagemteste.com/imagemteste"
-                                />,
-                                "key": null,
-                                "patchFlag": 8,
-                                "props": {
-                                  "alt": "Imagem de Produto Teste 2",
-                                  "class": "item__imagem-produto",
-                                  "src": "www.imagemteste.com/imagemteste",
-                                },
-                                "ref": null,
-                                "scopeId": "data-v-3f685b77",
-                                "shapeFlag": 1,
-                                "slotScopeIds": null,
-                                "ssContent": null,
-                                "ssFallback": null,
-                                "staticCount": 0,
-                                "suspense": null,
-                                "target": null,
-                                "targetAnchor": null,
-                                "transition": null,
-                                "type": "img",
-                              },
-                              {
-                                "__v_isVNode": true,
-                                "__v_skip": true,
-                                "anchor": null,
-                                "appContext": null,
-                                "children": "Produto Teste 2",
                                 "component": null,
                                 "dirs": null,
                                 "dynamicChildren": null,
                                 "dynamicProps": null,
-                                "el": <h3
-                                  class="item__nome"
+                                "el": <div
+                                  class="item__imagem-container"
                                   data-v-3f685b77=""
                                 >
-                                  Produto Teste 2
-                                </h3>,
+                                  <img
+                                    alt="Imagem de Produto Teste 2"
+                                    class="item__imagem-produto"
+                                    data-v-3f685b77=""
+                                    src="www.imagemteste.com/imagemteste"
+                                  />
+                                  <div
+                                    data-v-3f685b77=""
+                                  >
+                                    <h3
+                                      class="item__nome"
+                                      data-v-3f685b77=""
+                                    >
+                                      Produto Teste 2
+                                    </h3>
+                                  </div>
+                                </div>,
                                 "key": null,
-                                "patchFlag": 1,
+                                "patchFlag": 0,
                                 "props": {
-                                  "class": "item__nome",
+                                  "class": "item__imagem-container",
                                 },
                                 "ref": null,
                                 "scopeId": "data-v-3f685b77",
-                                "shapeFlag": 9,
+                                "shapeFlag": 17,
                                 "slotScopeIds": null,
                                 "ssContent": null,
                                 "ssFallback": null,
@@ -3374,7 +3584,7 @@ VueWrapper {
                                 "target": null,
                                 "targetAnchor": null,
                                 "transition": null,
-                                "type": "h3",
+                                "type": "div",
                               },
                               {
                                 "__v_isVNode": true,
@@ -3948,18 +4158,27 @@ VueWrapper {
                               data-v-3f685b77=""
                               data-v-f4fe258e=""
                             >
-                              <img
-                                alt="Imagem de Produto Teste 2"
-                                class="item__imagem-produto"
-                                data-v-3f685b77=""
-                                src="www.imagemteste.com/imagemteste"
-                              />
-                              <h3
-                                class="item__nome"
+                              <div
+                                class="item__imagem-container"
                                 data-v-3f685b77=""
                               >
-                                Produto Teste 2
-                              </h3>
+                                <img
+                                  alt="Imagem de Produto Teste 2"
+                                  class="item__imagem-produto"
+                                  data-v-3f685b77=""
+                                  src="www.imagemteste.com/imagemteste"
+                                />
+                                <div
+                                  data-v-3f685b77=""
+                                >
+                                  <h3
+                                    class="item__nome"
+                                    data-v-3f685b77=""
+                                  >
+                                    Produto Teste 2
+                                  </h3>
+                                </div>
+                              </div>
                               <p
                                 class="item__preco"
                                 data-v-3f685b77=""
@@ -4073,18 +4292,27 @@ VueWrapper {
                           data-v-3f685b77=""
                           data-v-f4fe258e=""
                         >
-                          <img
-                            alt="Imagem de Produto Teste 2"
-                            class="item__imagem-produto"
-                            data-v-3f685b77=""
-                            src="www.imagemteste.com/imagemteste"
-                          />
-                          <h3
-                            class="item__nome"
+                          <div
+                            class="item__imagem-container"
                             data-v-3f685b77=""
                           >
-                            Produto Teste 2
-                          </h3>
+                            <img
+                              alt="Imagem de Produto Teste 2"
+                              class="item__imagem-produto"
+                              data-v-3f685b77=""
+                              src="www.imagemteste.com/imagemteste"
+                            />
+                            <div
+                              data-v-3f685b77=""
+                            >
+                              <h3
+                                class="item__nome"
+                                data-v-3f685b77=""
+                              >
+                                Produto Teste 2
+                              </h3>
+                            </div>
+                          </div>
                           <p
                             class="item__preco"
                             data-v-3f685b77=""
@@ -4829,64 +5057,151 @@ VueWrapper {
                             "__v_skip": true,
                             "anchor": null,
                             "appContext": null,
-                            "children": null,
-                            "component": null,
-                            "dirs": null,
-                            "dynamicChildren": null,
-                            "dynamicProps": [
-                              "src",
-                              "alt",
+                            "children": [
+                              {
+                                "__v_isVNode": true,
+                                "__v_skip": true,
+                                "anchor": null,
+                                "appContext": null,
+                                "children": null,
+                                "component": null,
+                                "dirs": null,
+                                "dynamicChildren": null,
+                                "dynamicProps": [
+                                  "src",
+                                  "alt",
+                                ],
+                                "el": <img
+                                  alt="Imagem de Produto Teste"
+                                  class="item__imagem-produto"
+                                  data-v-3f685b77=""
+                                  src="www.imagemteste.com/imagemteste"
+                                />,
+                                "key": null,
+                                "patchFlag": 8,
+                                "props": {
+                                  "alt": "Imagem de Produto Teste",
+                                  "class": "item__imagem-produto",
+                                  "src": "www.imagemteste.com/imagemteste",
+                                },
+                                "ref": null,
+                                "scopeId": "data-v-3f685b77",
+                                "shapeFlag": 1,
+                                "slotScopeIds": null,
+                                "ssContent": null,
+                                "ssFallback": null,
+                                "staticCount": 0,
+                                "suspense": null,
+                                "target": null,
+                                "targetAnchor": null,
+                                "transition": null,
+                                "type": "img",
+                              },
+                              {
+                                "__v_isVNode": true,
+                                "__v_skip": true,
+                                "anchor": null,
+                                "appContext": null,
+                                "children": [
+                                  {
+                                    "__v_isVNode": true,
+                                    "__v_skip": true,
+                                    "anchor": null,
+                                    "appContext": null,
+                                    "children": "Produto Teste",
+                                    "component": null,
+                                    "dirs": null,
+                                    "dynamicChildren": null,
+                                    "dynamicProps": null,
+                                    "el": <h3
+                                      class="item__nome"
+                                      data-v-3f685b77=""
+                                    >
+                                      Produto Teste
+                                    </h3>,
+                                    "key": null,
+                                    "patchFlag": 1,
+                                    "props": {
+                                      "class": "item__nome",
+                                    },
+                                    "ref": null,
+                                    "scopeId": "data-v-3f685b77",
+                                    "shapeFlag": 9,
+                                    "slotScopeIds": null,
+                                    "ssContent": null,
+                                    "ssFallback": null,
+                                    "staticCount": 0,
+                                    "suspense": null,
+                                    "target": null,
+                                    "targetAnchor": null,
+                                    "transition": null,
+                                    "type": "h3",
+                                  },
+                                ],
+                                "component": null,
+                                "dirs": null,
+                                "dynamicChildren": null,
+                                "dynamicProps": null,
+                                "el": <div
+                                  data-v-3f685b77=""
+                                >
+                                  <h3
+                                    class="item__nome"
+                                    data-v-3f685b77=""
+                                  >
+                                    Produto Teste
+                                  </h3>
+                                </div>,
+                                "key": null,
+                                "patchFlag": 0,
+                                "props": null,
+                                "ref": null,
+                                "scopeId": "data-v-3f685b77",
+                                "shapeFlag": 17,
+                                "slotScopeIds": null,
+                                "ssContent": null,
+                                "ssFallback": null,
+                                "staticCount": 0,
+                                "suspense": null,
+                                "target": null,
+                                "targetAnchor": null,
+                                "transition": null,
+                                "type": "div",
+                              },
                             ],
-                            "el": <img
-                              alt="Imagem de Produto Teste"
-                              class="item__imagem-produto"
-                              data-v-3f685b77=""
-                              src="www.imagemteste.com/imagemteste"
-                            />,
-                            "key": null,
-                            "patchFlag": 8,
-                            "props": {
-                              "alt": "Imagem de Produto Teste",
-                              "class": "item__imagem-produto",
-                              "src": "www.imagemteste.com/imagemteste",
-                            },
-                            "ref": null,
-                            "scopeId": "data-v-3f685b77",
-                            "shapeFlag": 1,
-                            "slotScopeIds": null,
-                            "ssContent": null,
-                            "ssFallback": null,
-                            "staticCount": 0,
-                            "suspense": null,
-                            "target": null,
-                            "targetAnchor": null,
-                            "transition": null,
-                            "type": "img",
-                          },
-                          {
-                            "__v_isVNode": true,
-                            "__v_skip": true,
-                            "anchor": null,
-                            "appContext": null,
-                            "children": "Produto Teste",
                             "component": null,
                             "dirs": null,
                             "dynamicChildren": null,
                             "dynamicProps": null,
-                            "el": <h3
-                              class="item__nome"
+                            "el": <div
+                              class="item__imagem-container"
                               data-v-3f685b77=""
                             >
-                              Produto Teste
-                            </h3>,
+                              <img
+                                alt="Imagem de Produto Teste"
+                                class="item__imagem-produto"
+                                data-v-3f685b77=""
+                                src="www.imagemteste.com/imagemteste"
+                              />
+                              <div
+                                data-v-3f685b77=""
+                              >
+                                <h3
+                                  class="item__nome"
+                                  data-v-3f685b77=""
+                                >
+                                  Produto Teste
+                                </h3>
+                              </div>
+                            </div>,
                             "key": null,
-                            "patchFlag": 1,
+                            "patchFlag": 0,
                             "props": {
-                              "class": "item__nome",
+                              "class": "item__imagem-container",
                             },
                             "ref": null,
                             "scopeId": "data-v-3f685b77",
-                            "shapeFlag": 9,
+                            "shapeFlag": 17,
                             "slotScopeIds": null,
                             "ssContent": null,
                             "ssFallback": null,
@@ -4895,7 +5210,7 @@ VueWrapper {
                             "target": null,
                             "targetAnchor": null,
                             "transition": null,
-                            "type": "h3",
+                            "type": "div",
                           },
                           {
                             "__v_isVNode": true,
@@ -5465,18 +5780,27 @@ VueWrapper {
                           data-v-3f685b77=""
                           data-v-f4fe258e=""
                         >
-                          <img
-                            alt="Imagem de Produto Teste"
-                            class="item__imagem-produto"
-                            data-v-3f685b77=""
-                            src="www.imagemteste.com/imagemteste"
-                          />
-                          <h3
-                            class="item__nome"
+                          <div
+                            class="item__imagem-container"
                             data-v-3f685b77=""
                           >
-                            Produto Teste
-                          </h3>
+                            <img
+                              alt="Imagem de Produto Teste"
+                              class="item__imagem-produto"
+                              data-v-3f685b77=""
+                              src="www.imagemteste.com/imagemteste"
+                            />
+                            <div
+                              data-v-3f685b77=""
+                            >
+                              <h3
+                                class="item__nome"
+                                data-v-3f685b77=""
+                              >
+                                Produto Teste
+                              </h3>
+                            </div>
+                          </div>
                           <p
                             class="item__preco"
                             data-v-3f685b77=""
@@ -5589,18 +5913,27 @@ VueWrapper {
                       data-v-3f685b77=""
                       data-v-f4fe258e=""
                     >
-                      <img
-                        alt="Imagem de Produto Teste"
-                        class="item__imagem-produto"
-                        data-v-3f685b77=""
-                        src="www.imagemteste.com/imagemteste"
-                      />
-                      <h3
-                        class="item__nome"
+                      <div
+                        class="item__imagem-container"
                         data-v-3f685b77=""
                       >
-                        Produto Teste
-                      </h3>
+                        <img
+                          alt="Imagem de Produto Teste"
+                          class="item__imagem-produto"
+                          data-v-3f685b77=""
+                          src="www.imagemteste.com/imagemteste"
+                        />
+                        <div
+                          data-v-3f685b77=""
+                        >
+                          <h3
+                            class="item__nome"
+                            data-v-3f685b77=""
+                          >
+                            Produto Teste
+                          </h3>
+                        </div>
+                      </div>
                       <p
                         class="item__preco"
                         data-v-3f685b77=""
@@ -6073,64 +6406,151 @@ VueWrapper {
                             "__v_skip": true,
                             "anchor": null,
                             "appContext": null,
-                            "children": null,
-                            "component": null,
-                            "dirs": null,
-                            "dynamicChildren": null,
-                            "dynamicProps": [
-                              "src",
-                              "alt",
+                            "children": [
+                              {
+                                "__v_isVNode": true,
+                                "__v_skip": true,
+                                "anchor": null,
+                                "appContext": null,
+                                "children": null,
+                                "component": null,
+                                "dirs": null,
+                                "dynamicChildren": null,
+                                "dynamicProps": [
+                                  "src",
+                                  "alt",
+                                ],
+                                "el": <img
+                                  alt="Imagem de Produto Teste 2"
+                                  class="item__imagem-produto"
+                                  data-v-3f685b77=""
+                                  src="www.imagemteste.com/imagemteste"
+                                />,
+                                "key": null,
+                                "patchFlag": 8,
+                                "props": {
+                                  "alt": "Imagem de Produto Teste 2",
+                                  "class": "item__imagem-produto",
+                                  "src": "www.imagemteste.com/imagemteste",
+                                },
+                                "ref": null,
+                                "scopeId": "data-v-3f685b77",
+                                "shapeFlag": 1,
+                                "slotScopeIds": null,
+                                "ssContent": null,
+                                "ssFallback": null,
+                                "staticCount": 0,
+                                "suspense": null,
+                                "target": null,
+                                "targetAnchor": null,
+                                "transition": null,
+                                "type": "img",
+                              },
+                              {
+                                "__v_isVNode": true,
+                                "__v_skip": true,
+                                "anchor": null,
+                                "appContext": null,
+                                "children": [
+                                  {
+                                    "__v_isVNode": true,
+                                    "__v_skip": true,
+                                    "anchor": null,
+                                    "appContext": null,
+                                    "children": "Produto Teste 2",
+                                    "component": null,
+                                    "dirs": null,
+                                    "dynamicChildren": null,
+                                    "dynamicProps": null,
+                                    "el": <h3
+                                      class="item__nome"
+                                      data-v-3f685b77=""
+                                    >
+                                      Produto Teste 2
+                                    </h3>,
+                                    "key": null,
+                                    "patchFlag": 1,
+                                    "props": {
+                                      "class": "item__nome",
+                                    },
+                                    "ref": null,
+                                    "scopeId": "data-v-3f685b77",
+                                    "shapeFlag": 9,
+                                    "slotScopeIds": null,
+                                    "ssContent": null,
+                                    "ssFallback": null,
+                                    "staticCount": 0,
+                                    "suspense": null,
+                                    "target": null,
+                                    "targetAnchor": null,
+                                    "transition": null,
+                                    "type": "h3",
+                                  },
+                                ],
+                                "component": null,
+                                "dirs": null,
+                                "dynamicChildren": null,
+                                "dynamicProps": null,
+                                "el": <div
+                                  data-v-3f685b77=""
+                                >
+                                  <h3
+                                    class="item__nome"
+                                    data-v-3f685b77=""
+                                  >
+                                    Produto Teste 2
+                                  </h3>
+                                </div>,
+                                "key": null,
+                                "patchFlag": 0,
+                                "props": null,
+                                "ref": null,
+                                "scopeId": "data-v-3f685b77",
+                                "shapeFlag": 17,
+                                "slotScopeIds": null,
+                                "ssContent": null,
+                                "ssFallback": null,
+                                "staticCount": 0,
+                                "suspense": null,
+                                "target": null,
+                                "targetAnchor": null,
+                                "transition": null,
+                                "type": "div",
+                              },
                             ],
-                            "el": <img
-                              alt="Imagem de Produto Teste 2"
-                              class="item__imagem-produto"
-                              data-v-3f685b77=""
-                              src="www.imagemteste.com/imagemteste"
-                            />,
-                            "key": null,
-                            "patchFlag": 8,
-                            "props": {
-                              "alt": "Imagem de Produto Teste 2",
-                              "class": "item__imagem-produto",
-                              "src": "www.imagemteste.com/imagemteste",
-                            },
-                            "ref": null,
-                            "scopeId": "data-v-3f685b77",
-                            "shapeFlag": 1,
-                            "slotScopeIds": null,
-                            "ssContent": null,
-                            "ssFallback": null,
-                            "staticCount": 0,
-                            "suspense": null,
-                            "target": null,
-                            "targetAnchor": null,
-                            "transition": null,
-                            "type": "img",
-                          },
-                          {
-                            "__v_isVNode": true,
-                            "__v_skip": true,
-                            "anchor": null,
-                            "appContext": null,
-                            "children": "Produto Teste 2",
                             "component": null,
                             "dirs": null,
                             "dynamicChildren": null,
                             "dynamicProps": null,
-                            "el": <h3
-                              class="item__nome"
+                            "el": <div
+                              class="item__imagem-container"
                               data-v-3f685b77=""
                             >
-                              Produto Teste 2
-                            </h3>,
+                              <img
+                                alt="Imagem de Produto Teste 2"
+                                class="item__imagem-produto"
+                                data-v-3f685b77=""
+                                src="www.imagemteste.com/imagemteste"
+                              />
+                              <div
+                                data-v-3f685b77=""
+                              >
+                                <h3
+                                  class="item__nome"
+                                  data-v-3f685b77=""
+                                >
+                                  Produto Teste 2
+                                </h3>
+                              </div>
+                            </div>,
                             "key": null,
-                            "patchFlag": 1,
+                            "patchFlag": 0,
                             "props": {
-                              "class": "item__nome",
+                              "class": "item__imagem-container",
                             },
                             "ref": null,
                             "scopeId": "data-v-3f685b77",
-                            "shapeFlag": 9,
+                            "shapeFlag": 17,
                             "slotScopeIds": null,
                             "ssContent": null,
                             "ssFallback": null,
@@ -6139,7 +6559,7 @@ VueWrapper {
                             "target": null,
                             "targetAnchor": null,
                             "transition": null,
-                            "type": "h3",
+                            "type": "div",
                           },
                           {
                             "__v_isVNode": true,
@@ -6713,18 +7133,27 @@ VueWrapper {
                           data-v-3f685b77=""
                           data-v-f4fe258e=""
                         >
-                          <img
-                            alt="Imagem de Produto Teste 2"
-                            class="item__imagem-produto"
-                            data-v-3f685b77=""
-                            src="www.imagemteste.com/imagemteste"
-                          />
-                          <h3
-                            class="item__nome"
+                          <div
+                            class="item__imagem-container"
                             data-v-3f685b77=""
                           >
-                            Produto Teste 2
-                          </h3>
+                            <img
+                              alt="Imagem de Produto Teste 2"
+                              class="item__imagem-produto"
+                              data-v-3f685b77=""
+                              src="www.imagemteste.com/imagemteste"
+                            />
+                            <div
+                              data-v-3f685b77=""
+                            >
+                              <h3
+                                class="item__nome"
+                                data-v-3f685b77=""
+                              >
+                                Produto Teste 2
+                              </h3>
+                            </div>
+                          </div>
                           <p
                             class="item__preco"
                             data-v-3f685b77=""
@@ -6838,18 +7267,27 @@ VueWrapper {
                       data-v-3f685b77=""
                       data-v-f4fe258e=""
                     >
-                      <img
-                        alt="Imagem de Produto Teste 2"
-                        class="item__imagem-produto"
-                        data-v-3f685b77=""
-                        src="www.imagemteste.com/imagemteste"
-                      />
-                      <h3
-                        class="item__nome"
+                      <div
+                        class="item__imagem-container"
                         data-v-3f685b77=""
                       >
-                        Produto Teste 2
-                      </h3>
+                        <img
+                          alt="Imagem de Produto Teste 2"
+                          class="item__imagem-produto"
+                          data-v-3f685b77=""
+                          src="www.imagemteste.com/imagemteste"
+                        />
+                        <div
+                          data-v-3f685b77=""
+                        >
+                          <h3
+                            class="item__nome"
+                            data-v-3f685b77=""
+                          >
+                            Produto Teste 2
+                          </h3>
+                        </div>
+                      </div>
                       <p
                         class="item__preco"
                         data-v-3f685b77=""
@@ -7175,18 +7613,27 @@ VueWrapper {
                   data-v-3f685b77=""
                   data-v-f4fe258e=""
                 >
-                  <img
-                    alt="Imagem de Produto Teste"
-                    class="item__imagem-produto"
-                    data-v-3f685b77=""
-                    src="www.imagemteste.com/imagemteste"
-                  />
-                  <h3
-                    class="item__nome"
+                  <div
+                    class="item__imagem-container"
                     data-v-3f685b77=""
                   >
-                    Produto Teste
-                  </h3>
+                    <img
+                      alt="Imagem de Produto Teste"
+                      class="item__imagem-produto"
+                      data-v-3f685b77=""
+                      src="www.imagemteste.com/imagemteste"
+                    />
+                    <div
+                      data-v-3f685b77=""
+                    >
+                      <h3
+                        class="item__nome"
+                        data-v-3f685b77=""
+                      >
+                        Produto Teste
+                      </h3>
+                    </div>
+                  </div>
                   <p
                     class="item__preco"
                     data-v-3f685b77=""
@@ -7241,18 +7688,27 @@ VueWrapper {
                   data-v-3f685b77=""
                   data-v-f4fe258e=""
                 >
-                  <img
-                    alt="Imagem de Produto Teste 2"
-                    class="item__imagem-produto"
-                    data-v-3f685b77=""
-                    src="www.imagemteste.com/imagemteste"
-                  />
-                  <h3
-                    class="item__nome"
+                  <div
+                    class="item__imagem-container"
                     data-v-3f685b77=""
                   >
-                    Produto Teste 2
-                  </h3>
+                    <img
+                      alt="Imagem de Produto Teste 2"
+                      class="item__imagem-produto"
+                      data-v-3f685b77=""
+                      src="www.imagemteste.com/imagemteste"
+                    />
+                    <div
+                      data-v-3f685b77=""
+                    >
+                      <h3
+                        class="item__nome"
+                        data-v-3f685b77=""
+                      >
+                        Produto Teste 2
+                      </h3>
+                    </div>
+                  </div>
                   <p
                     class="item__preco"
                     data-v-3f685b77=""
@@ -7420,18 +7876,27 @@ VueWrapper {
               data-v-3f685b77=""
               data-v-f4fe258e=""
             >
-              <img
-                alt="Imagem de Produto Teste"
-                class="item__imagem-produto"
-                data-v-3f685b77=""
-                src="www.imagemteste.com/imagemteste"
-              />
-              <h3
-                class="item__nome"
+              <div
+                class="item__imagem-container"
                 data-v-3f685b77=""
               >
-                Produto Teste
-              </h3>
+                <img
+                  alt="Imagem de Produto Teste"
+                  class="item__imagem-produto"
+                  data-v-3f685b77=""
+                  src="www.imagemteste.com/imagemteste"
+                />
+                <div
+                  data-v-3f685b77=""
+                >
+                  <h3
+                    class="item__nome"
+                    data-v-3f685b77=""
+                  >
+                    Produto Teste
+                  </h3>
+                </div>
+              </div>
               <p
                 class="item__preco"
                 data-v-3f685b77=""
@@ -7486,18 +7951,27 @@ VueWrapper {
               data-v-3f685b77=""
               data-v-f4fe258e=""
             >
-              <img
-                alt="Imagem de Produto Teste 2"
-                class="item__imagem-produto"
-                data-v-3f685b77=""
-                src="www.imagemteste.com/imagemteste"
-              />
-              <h3
-                class="item__nome"
+              <div
+                class="item__imagem-container"
                 data-v-3f685b77=""
               >
-                Produto Teste 2
-              </h3>
+                <img
+                  alt="Imagem de Produto Teste 2"
+                  class="item__imagem-produto"
+                  data-v-3f685b77=""
+                  src="www.imagemteste.com/imagemteste"
+                />
+                <div
+                  data-v-3f685b77=""
+                >
+                  <h3
+                    class="item__nome"
+                    data-v-3f685b77=""
+                  >
+                    Produto Teste 2
+                  </h3>
+                </div>
+              </div>
               <p
                 class="item__preco"
                 data-v-3f685b77=""
@@ -7707,18 +8181,27 @@ VueWrapper {
               data-v-3f685b77=""
               data-v-f4fe258e=""
             >
-              <img
-                alt="Imagem de Produto Teste"
-                class="item__imagem-produto"
-                data-v-3f685b77=""
-                src="www.imagemteste.com/imagemteste"
-              />
-              <h3
-                class="item__nome"
+              <div
+                class="item__imagem-container"
                 data-v-3f685b77=""
               >
-                Produto Teste
-              </h3>
+                <img
+                  alt="Imagem de Produto Teste"
+                  class="item__imagem-produto"
+                  data-v-3f685b77=""
+                  src="www.imagemteste.com/imagemteste"
+                />
+                <div
+                  data-v-3f685b77=""
+                >
+                  <h3
+                    class="item__nome"
+                    data-v-3f685b77=""
+                  >
+                    Produto Teste
+                  </h3>
+                </div>
+              </div>
               <p
                 class="item__preco"
                 data-v-3f685b77=""
@@ -7773,18 +8256,27 @@ VueWrapper {
               data-v-3f685b77=""
               data-v-f4fe258e=""
             >
-              <img
-                alt="Imagem de Produto Teste 2"
-                class="item__imagem-produto"
-                data-v-3f685b77=""
-                src="www.imagemteste.com/imagemteste"
-              />
-              <h3
-                class="item__nome"
+              <div
+                class="item__imagem-container"
                 data-v-3f685b77=""
               >
-                Produto Teste 2
-              </h3>
+                <img
+                  alt="Imagem de Produto Teste 2"
+                  class="item__imagem-produto"
+                  data-v-3f685b77=""
+                  src="www.imagemteste.com/imagemteste"
+                />
+                <div
+                  data-v-3f685b77=""
+                >
+                  <h3
+                    class="item__nome"
+                    data-v-3f685b77=""
+                  >
+                    Produto Teste 2
+                  </h3>
+                </div>
+              </div>
               <p
                 class="item__preco"
                 data-v-3f685b77=""
@@ -8132,18 +8624,27 @@ VueWrapper {
         data-v-3f685b77=""
         data-v-f4fe258e=""
       >
-        <img
-          alt="Imagem de Produto Teste"
-          class="item__imagem-produto"
-          data-v-3f685b77=""
-          src="www.imagemteste.com/imagemteste"
-        />
-        <h3
-          class="item__nome"
+        <div
+          class="item__imagem-container"
           data-v-3f685b77=""
         >
-          Produto Teste
-        </h3>
+          <img
+            alt="Imagem de Produto Teste"
+            class="item__imagem-produto"
+            data-v-3f685b77=""
+            src="www.imagemteste.com/imagemteste"
+          />
+          <div
+            data-v-3f685b77=""
+          >
+            <h3
+              class="item__nome"
+              data-v-3f685b77=""
+            >
+              Produto Teste
+            </h3>
+          </div>
+        </div>
         <p
           class="item__preco"
           data-v-3f685b77=""
@@ -8198,18 +8699,27 @@ VueWrapper {
         data-v-3f685b77=""
         data-v-f4fe258e=""
       >
-        <img
-          alt="Imagem de Produto Teste 2"
-          class="item__imagem-produto"
-          data-v-3f685b77=""
-          src="www.imagemteste.com/imagemteste"
-        />
-        <h3
-          class="item__nome"
+        <div
+          class="item__imagem-container"
           data-v-3f685b77=""
         >
-          Produto Teste 2
-        </h3>
+          <img
+            alt="Imagem de Produto Teste 2"
+            class="item__imagem-produto"
+            data-v-3f685b77=""
+            src="www.imagemteste.com/imagemteste"
+          />
+          <div
+            data-v-3f685b77=""
+          >
+            <h3
+              class="item__nome"
+              data-v-3f685b77=""
+            >
+              Produto Teste 2
+            </h3>
+          </div>
+        </div>
         <p
           class="item__preco"
           data-v-3f685b77=""

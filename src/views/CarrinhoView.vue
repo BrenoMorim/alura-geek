@@ -133,6 +133,8 @@ export default defineComponent({
     transition: 1s all;
     display: inline-block;
     text-decoration: none;
+    text-align: center;
+    line-height: 1.4rem;
 }
 .carrinho__botao:active {
     transform: scale(1.2);
