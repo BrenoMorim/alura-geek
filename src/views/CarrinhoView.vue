@@ -9,14 +9,16 @@
                 :quantidade="item.quantidade"
             />
         </div>
-        <div v-if="itensCarrinho.length === 0">
-            <h3 class="carrinho__subtitulo">Seu carrinho está vazio!</h3>
-            <router-link :to="{name: 'produtos'}" class="carrinho__botao">Que tal pesquisar alguns produtos?</router-link>
-        </div>
+        
+        <h3 v-if="itensCarrinho.length === 0" class="carrinho__subtitulo">Seu carrinho está vazio!</h3>
+        
+        <router-link :to="{name: 'produtos'}" id="navegar" class="carrinho__botao">{{ itensCarrinho.length === 0 ? 'Que tal navegar entre nossa variedade de produtos?' : 'Adicionar mais produtos'}}</router-link>
+        
         <p v-if="mensagemErro" class="mensagem-erro">{{mensagemErro}}</p>
         <p v-if="mensagemSucesso" class="mensagem-sucesso">{{mensagemSucesso}}</p>
+        
         <h4 v-if="valorTotal > 0" class="carrinho__valor-total">Valor total do pedido: R$ {{valorTotal.toFixed(2).replace('.', ',')}}</h4>
-        <button v-if="itensCarrinho.length > 0" class="carrinho__botao" @click="finalizarCompra()">Finalizar compra</button>
+        <button v-if="itensCarrinho.length > 0" id="finalizar" class="carrinho__botao" @click="finalizarCompra()">Finalizar compra</button>
     </section>
 </template>
 

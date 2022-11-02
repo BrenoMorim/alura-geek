@@ -2,6 +2,7 @@ import { expect, describe, it, vi, afterEach } from "vitest";
 import { mount } from '@vue/test-utils';
 import Item from '../../../components/Carrinho/Item.vue';
 import store from "../../../store";
+import IProduto from "../../../types/IProduto";
 
 describe('No card de item', () => {
     const produto = {
@@ -10,7 +11,7 @@ describe('No card de item', () => {
         urlImagem: 'www.imagemteste.com/imagemteste',
         descricao: 'Um produto de testes',
         preco: 100
-    };
+    } as IProduto;
     const quantidade = 1;
     const wrapper = mount(Item, {
         props: {

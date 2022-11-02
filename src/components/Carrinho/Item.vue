@@ -2,7 +2,7 @@
     <article class="item">
         <img :src="produto.urlImagem" :alt="`Imagem de ${produto.nome}`" class="item__imagem-produto">
         <h3 class="item__nome">{{produto.nome}}</h3>
-        <p class="item__preco">Preço: R$ {{produto.preco.toFixed(2).replace('.', ',')}}</p>
+        <p class="item__preco">Preço Unitário: R$ {{produto.preco.toFixed(2).replace('.', ',')}}</p>
         <div class="item__quantidade__container">
             <h4 class="item__quantidade__titulo">Quantidade:</h4>
             <div class="item__botoes-alterar-quantidade">
