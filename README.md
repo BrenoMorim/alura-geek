@@ -8,9 +8,9 @@ Uma loja virtual de produtos geek para praticar desenvolvimento front-end com Vu
 | -------------  | --- |
 | :sparkles: Nome        | **Alura Geek**
 | :label: Tecnologias | Vue, TypeScript, HTML, CSS
-| :fire: Desafio     | https://www.alura.com.br/challenges/front-end-3
+| :fire: Desafio     | <https://www.alura.com.br/challenges/front-end-3>
 
-![](https://github.com/BrenoMorim/alura-geek/blob/main/imagem-projeto.png?raw=true#vitrinedev)
+![Página inicial do projeto](https://github.com/BrenoMorim/alura-geek/blob/main/imagem-projeto.png?raw=true#vitrinedev)
 
 ## Detalhes da aplicação
 
@@ -21,6 +21,42 @@ A aplicação permite que um usuário se cadastre ou faça login, para navegar e
 Também há um sistema de criptografia de senhas improvisado usando crypto-js e algumas variáveis como a chave privada para criptografia e a url da api back-end simulada são externalizadas por ambiente.
 
 A aplicação conta também com testes automatizados, que testam desde os componentes separados até as views completas. A implementação dos testes foi feita com a biblioteca vitest, que é uma das ferramentas com maior compatibilidade com Vue.
+
+## Features
+
+- Cadastro e login de usuários
+- Buscas por produtos por categoria e/ou nome
+- Visualização de detalhes dos produtos
+- Envio de mensagens para a equipe pelo rodapé das páginas
+- Adição de produtos no carrinho
+- Finalização de compra
+- Criação de novos produtos para usuários administradores
+
+## Páginas
+
+### Login
+
+![Página de Login](./paginas/login.png)
+
+### Cadastro
+
+![Cadastro de usuário](./paginas/cadastro.png)
+
+### Busca
+
+![Busca](./paginas/busca.png)
+
+### Detalhes de produto
+
+![Página de detalhes do produto](./paginas/detalhes-produto.png)
+
+### Carrinho
+
+![Página de carrinho](./paginas/carrinho.png)
+
+### Cadastro de novo produto
+
+![Página de cadastro de novos produtos](./paginas/novo-produto.png)
 
 ## Setup
 

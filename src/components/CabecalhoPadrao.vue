@@ -10,7 +10,7 @@
     <p v-if="usuarioLogado?.nome !== undefined" class="mensagem-boas-vindas">Bem-vindo, {{usuarioLogado.nome}}</p>
     <router-link v-if="usuarioLogado?.role === 'admin'" :to="{name: 'novo-produto'}" id="novo-produto" class="cabecalho__botao">Novo Produto</router-link>
     <button v-if="usuarioLogado?.nome !== undefined" @click="logout()" id="logout" class="cabecalho__botao">Logout</button>
-    <router-link :to="{name: 'carrinho'}" id="carrinho" class="cabecalho__botao">Carrinho</router-link>
+    <router-link v-if="usuarioLogado?.nome !== undefined" :to="{name: 'carrinho'}" id="carrinho" class="cabecalho__botao">Carrinho</router-link>
     
   </header>
 </template>

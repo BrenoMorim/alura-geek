@@ -68,7 +68,6 @@ export default createStore({
         }
         return false;
       } catch(erro) {
-        console.log(erro);
         return false;
       }
     },

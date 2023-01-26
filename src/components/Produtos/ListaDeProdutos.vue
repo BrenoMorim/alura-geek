@@ -122,4 +122,9 @@ export default defineComponent({
     color: red;
     font-weight: 700;
 }
+@media screen and (max-width: 768px) {
+    .lista__produtos {
+        justify-content: space-between;
+    }
+}
 </style>
